@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
                 moveDir.Set(1f, 0f, 0f);
             }
         }
-        else if (h == 0f)
+        /*else if (h == 0f)
         {
             if (v < 0f) //-1f
             {
@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
                 //Debug.Log("DOWN RIGHT");
                 moveDir.Set(1f, 0f, -1f);
             }
-        }
+        }*/
 
         return moveDir;
     }
