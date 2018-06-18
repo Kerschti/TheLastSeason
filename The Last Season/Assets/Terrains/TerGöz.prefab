@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 218999108838095552}
   - component: {fileID: 154780452832244134}
   m_Layer: 0
-  m_Name: "TerGo\u0308z"
+  m_Name: "TerG\xF6z"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
