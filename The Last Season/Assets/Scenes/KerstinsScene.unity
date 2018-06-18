@@ -227,7 +227,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4030638525798474, guid: b89dbef923dac4ef3a3959993e54fb65, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b89dbef923dac4ef3a3959993e54fb65, type: 2}
@@ -474,6 +474,7 @@ Transform:
   - {fileID: 1294838871}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 3
 =======
 <<<<<<< HEAD:The Last Season/Assets/Scenes/TerrainScene.unity
@@ -482,6 +483,9 @@ Transform:
 =======
   m_RootOrder: 4
 >>>>>>> c8d913146a1d4f35b70ca6647b353423103bde04
+=======
+  m_RootOrder: 4
+>>>>>>> parent of b7cd035... update kerschti scene
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 >>>>>>> 6e092edb603c2ba1e0ba1181391ee261ae8feb9b:The Last Season/Assets/Scenes/KerstinsScene.unity
 --- !u!1 &174687419
@@ -547,7 +551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 <<<<<<< HEAD:The Last Season/Assets/Scenes/TerrainScene.unity
 --- !u!1 &218338512
@@ -807,14 +811,17 @@ Transform:
   - {fileID: 1623816943}
   - {fileID: 1566034203}
   - {fileID: 525793912}
-  - {fileID: 985594426}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 6
 =======
   m_RootOrder: 5
 >>>>>>> 6e092edb603c2ba1e0ba1181391ee261ae8feb9b:The Last Season/Assets/Scenes/KerstinsScene.unity
 >>>>>>> c8d913146a1d4f35b70ca6647b353423103bde04
+=======
+  m_RootOrder: 5
+>>>>>>> parent of b7cd035... update kerschti scene
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &339692997
 MeshRenderer:
@@ -1048,22 +1055,23 @@ Prefab:
   serializedVersion: 2
 <<<<<<< HEAD
   m_Modification:
-    m_TransformParent: {fileID: 542873091}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 29.010422
+      value: 84.68996
       objectReference: {fileID: 0}
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -35.0691
+      value: 13.87398
       objectReference: {fileID: 0}
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalRotation.x
+<<<<<<< HEAD
       value: -0
 =======
 <<<<<<< HEAD:The Last Season/Assets/Scenes/TerrainScene.unity
@@ -1541,6 +1549,9 @@ MeshFilter:
       propertyPath: m_LocalRotation.x
       value: 0
 >>>>>>> c8d913146a1d4f35b70ca6647b353423103bde04
+=======
+      value: 0
+>>>>>>> parent of b7cd035... update kerschti scene
       objectReference: {fileID: 0}
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalRotation.y
@@ -1549,10 +1560,14 @@ MeshFilter:
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalRotation.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0
 =======
       value: 0
 >>>>>>> c8d913146a1d4f35b70ca6647b353423103bde04
+=======
+      value: 0
+>>>>>>> parent of b7cd035... update kerschti scene
       objectReference: {fileID: 0}
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1561,10 +1576,14 @@ MeshFilter:
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 3
 =======
       value: 1
 >>>>>>> c8d913146a1d4f35b70ca6647b353423103bde04
+=======
+      value: 1
+>>>>>>> parent of b7cd035... update kerschti scene
       objectReference: {fileID: 0}
     - target: {fileID: 4000010915331504, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
       propertyPath: m_LocalScale.x
@@ -1584,6 +1603,7 @@ MeshFilter:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76291aa6edc00c940a81a0696dcaa859, type: 2}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_IsPrefabParent: 0
 --- !u!4 &985594426 stripped
@@ -2423,6 +2443,9 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258061162}
   m_Mesh: {fileID: 4300082, guid: f982fb1f4ec5e4cd899aa0512122a7e1, type: 3}
+=======
+  m_IsPrefabParent: 0
+>>>>>>> parent of b7cd035... update kerschti scene
 --- !u!1001 &1294838870
 Prefab:
   m_ObjectHideFlags: 0
@@ -4619,10 +4642,14 @@ Prefab:
     - target: {fileID: 4779358099310956, guid: babde3f3ef45f4048bbca9fdd43e2974, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 5
 =======
       value: 0
 >>>>>>> c8d913146a1d4f35b70ca6647b353423103bde04
+=======
+      value: 6
+>>>>>>> parent of b7cd035... update kerschti scene
       objectReference: {fileID: 0}
     - target: {fileID: 4779358099310956, guid: babde3f3ef45f4048bbca9fdd43e2974, type: 2}
       propertyPath: m_LocalScale.x
@@ -4956,7 +4983,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1392400554
 Rigidbody:
