@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
          Move(h, v);
 
         // Turn the player to face the mouse cursor.
-        Turning();
+        //Turning();
 
     }
 
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     void Move(float h, float v)
     {
         // Set the movement vector based on the axis input.
-        movement.Set(h, 0f, v);
+        movement.Set(h, 0f, 0f);
 
         // Normalise the movement vector and make it proportional to the speed per second.
         movement = movement.normalized * Speed * Time.deltaTime;
@@ -57,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
         // Move the player to it's current position plus the movement.
         playerRigidbody.MovePosition(transform.position + movement);
     }
+
+
 
     void Turning()
     {
