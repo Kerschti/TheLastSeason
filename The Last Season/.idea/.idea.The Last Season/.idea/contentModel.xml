@@ -170,9 +170,18 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CameraFollow.cs" t="Include" />
-          <e p="FlyingRock.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
+          <e p="Enviroment Autumn" t="Include">
+            <e p="DoorOpen.cs" t="Include" />
+          </e>
+          <e p="Environment Winter" t="Include">
+            <e p="FlyingRock.cs" t="Include" />
+          </e>
+          <e p="Global Environment" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="PlayerMovement.cs" t="Include" />
+          </e>
         </e>
         <e p="Stylized Mushroom" t="Include">
           <e p="Shader" t="Include">
