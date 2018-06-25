@@ -807,6 +807,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 812596606}
+  - component: {fileID: 812596607}
   m_Layer: 0
   m_Name: RockThatFlyes
   m_TagString: Untagged
@@ -829,6 +830,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &812596607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812596605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8865ed2435c9a4f36b5c57b2d087b8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rock: {fileID: 2035347546}
+  player: {fileID: 181240773}
 --- !u!1001 &1294838870
 Prefab:
   m_ObjectHideFlags: 0
@@ -1000,6 +1014,10 @@ Transform:
   m_PrefabParentObject: {fileID: 4779358099310956, guid: babde3f3ef45f4048bbca9fdd43e2974,
     type: 2}
   m_PrefabInternal: {fileID: 1955780849}
+--- !u!1 &2035347546 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: dc45e6b341488de4083c19da40d80b3a, type: 3}
+  m_PrefabInternal: {fileID: 97208964}
 --- !u!1001 &2116828120
 Prefab:
   m_ObjectHideFlags: 0
