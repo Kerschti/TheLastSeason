@@ -7,7 +7,7 @@ public class DoorOpen : MonoBehaviour {
 
 	// Use this for initialization
 	public void SceneSwitcher () {
-		SceneManager.LoadScene(MeltemsRoom);
+		SceneManager.LoadScene('MeltemsRoom');
 	}
 	
 

@@ -30,12 +30,12 @@
       <file leaf-file-name="DoorOpen.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="165">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <marker date="1529947279168" expanded="true" signature="6:113" ph="..." />
-                <marker date="1529947279168" expanded="true" signature="153:266" ph="{...}" />
-                <marker date="1529947279168" expanded="true" signature="218:261" ph="{...}" />
+                <marker date="1530548699649" expanded="false" signature="6:113" ph="..." />
+                <marker date="1530548699649" expanded="true" signature="153:268" ph="{...}" />
+                <marker date="1530548699649" expanded="true" signature="218:263" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -48,8 +48,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Stylized Mushroom/Shader/mushroom.shader" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,8 +68,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="836" />
-    <option name="y" value="81" />
+    <option name="x" value="168" />
+    <option name="y" value="23" />
     <option name="width" value="616" />
     <option name="height" value="877" />
   </component>
@@ -79,6 +79,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -90,11 +95,6 @@
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="Scratches" />
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
       </pane>
     </panes>
   </component>
@@ -135,12 +135,14 @@
       <workItem from="1529585210836" duration="972000" />
       <workItem from="1529683411619" duration="276000" />
       <workItem from="1529935866507" duration="597000" />
-      <workItem from="1529945065083" duration="2064000" />
+      <workItem from="1529945065083" duration="2662000" />
+      <workItem from="1530548563173" duration="21000" />
+      <workItem from="1530548655181" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3919000" />
+    <option name="totallyTimeSpent" value="4583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -152,7 +154,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="836" y="81" width="616" height="877" extended-state="0" />
+    <frame x="168" y="23" width="616" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -160,16 +162,16 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15033658" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15505226" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="8" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -204,12 +206,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="135">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="42" />
           <folding>
-            <marker date="1529947279168" expanded="true" signature="6:113" ph="..." />
-            <marker date="1529947279168" expanded="true" signature="153:266" ph="{...}" />
-            <marker date="1529947279168" expanded="true" signature="218:261" ph="{...}" />
+            <marker date="1530548699649" expanded="false" signature="6:113" ph="..." />
+            <marker date="1530548699649" expanded="true" signature="153:268" ph="{...}" />
+            <marker date="1530548699649" expanded="true" signature="218:263" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
+            <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <marker date="1530548699649" expanded="false" signature="6:113" ph="..." />
+            <marker date="1530548699649" expanded="true" signature="153:268" ph="{...}" />
+            <marker date="1530548699649" expanded="true" signature="218:263" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
+            <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
+            <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <marker date="1530548699649" expanded="false" signature="6:113" ph="..." />
+            <marker date="1530548699649" expanded="true" signature="153:268" ph="{...}" />
+            <marker date="1530548699649" expanded="true" signature="218:263" ph="{...}" />
           </folding>
         </state>
       </provider>
