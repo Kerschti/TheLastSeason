@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
    
         playerRigidbody = GetComponent<Rigidbody>();
- 
+        anim = GetComponent<Animator>();
     }
 
 
@@ -32,12 +32,12 @@ public class PlayerMovement : MonoBehaviour
     {
         // Store the input axes.
         float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-
+        // float v = Input.GetAxis("Vertical");
+        anim.SetFloat("speed", Mathf.Abs(h));
         // Move the player around the scene.
         //prevent moving the player while he's attacking 
 
-         Move(h, v);
+         Move(h);
 
         // Turn the player to face the mouse cursor.
         //Turning();
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    void Move(float h, float v)
+    void Move(float h)
     {
         // Set the movement vector based on the axis input.
         movement.Set(h, 0f, 0f);
