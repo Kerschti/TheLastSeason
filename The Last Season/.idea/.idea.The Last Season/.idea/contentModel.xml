@@ -172,6 +172,7 @@
         <e p="Scripts" t="Include">
           <e p="Enviroment Autumn" t="Include">
             <e p="DoorOpen.cs" t="Include" />
+            <e p="RoomTestScript.cs" t="Include" />
           </e>
           <e p="Environment Winter" t="Include">
             <e p="FlyingRock.cs" t="Include" />
