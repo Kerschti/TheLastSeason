@@ -11,12 +11,12 @@ public class PlayerMovement : MonoBehaviour
     private int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
     private float camRayLength = 100f;          // The length of the ray from the camera into the scene.    
     private Vector3 playerToMouse;
-    private float rotation;
+    private Vector3 rotation;
     private CapsuleCollider col;
     private float smooth = 5f;
     private float animSmooth = 0.1f;
 
-    public float jumpForce = 7f;
+    public float jumpForce = 2f;
     public float Speed = 7f;
     public float rotationSpeed = 75f;
 
@@ -40,28 +40,24 @@ public class PlayerMovement : MonoBehaviour
 
         //anim.SetFloat("speedX", Mathf.Abs(h));
         //anim.SetFloat("speedY", Mathf.Abs(v));
-        if(Mathf.Abs(h)!=0f || Mathf.Abs(v)!=0f){
-             anim.SetBool("IsWalking", true);
-         } else{
-             anim.SetBool("IsWalking", false);
-         }
+       
 
-        if(IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            Debug.Log("jump");
+
         }
 
-         // Move the player around the scene.
-         //prevent moving the player while he's attacking 
+        // Move the player around the scene.
+        //prevent moving the player while he's attacking 
 
-          Move(h, v);
+        Move(h, v);
 
-         // Turn the player to face the mouse cursor.
-         Turning(v);
+        // Turn the player to face the mouse cursor.
+        Turning(h, v);
 
-         // Animate the player.
-         Animating(h, v);
+        // Animate the player.
+        Animating(h, v);
 
 
     }
@@ -69,9 +65,9 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
-                                                                   col.bounds.center.y,
+                                                                   col.bounds.min.y,
                                                                    col.bounds.center.z),
-                                    col.radius * 0.9f, floorMask);
+                                    col.radius * 1.2f, floorMask);
     }
 
     void Move(float h, float v)
@@ -79,18 +75,28 @@ public class PlayerMovement : MonoBehaviour
         // Set the movement vector based on the axis input.
         movement.Set(h, 0f, v);
 
+
+
         // Normalise the movement vector and make it proportional to the speed per second.
-        movement = movement.normalized * Speed * Time.deltaTime;
+       // movement = movement.normalized * Speed * Time.deltaTime;
 
         // Move the player to it's current position plus the movement.
-        playerRigidbody.MovePosition(transform.position + movement);
+        //playerRigidbody.MovePosition(transform.position + movement);
+        transform.Translate(movement * Speed * Time.deltaTime, Space.World);
+
     }
 
 
 
-    void Turning(float v)
+    void Turning(float h, float v)
     {
 
+        rotation.Set(h, 0f, v);
+
+        if (rotation != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rotation), 0.15F);
+        }
 
         //rotation = v * rotationSpeed;
         //rotation *= Time.deltaTime;
@@ -100,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         //transform.Rotate(0, rotation, 0);
 
         // Create a ray from the mouse cursor on screen in the direction of the camera.
-        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        /*Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         // Create a RaycastHit variable to store information about what was hit by the ray.
         RaycastHit floorHit;
@@ -119,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
             // Set the player's rotation to this new rotation.
             playerRigidbody.MoveRotation(newRotation);
-        }
+        }*/
 
     }
 
@@ -129,7 +135,26 @@ public class PlayerMovement : MonoBehaviour
 
         //anim.SetBool("IsWalking", IsWalking);
 
-        Vector3 moveDirection, lookDirection;
+        if (!IsGrounded())
+        {
+            anim.SetBool("IsJumping", true);
+        }
+        else if (IsGrounded())
+        {
+            anim.SetBool("IsJumping", false);
+        }
+
+
+        if (IsWalking)
+        {
+            anim.SetBool("IsWalking", true);
+        }
+        else
+        {
+            anim.SetBool("IsWalking", false);
+        }
+
+       /* Vector3 moveDirection, lookDirection;
         if (IsWalking)
         {
             moveDirection = GetDirVec3(h, v);
@@ -140,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 angle = -angle;
             }
-           // Debug.Log("ANGLE:" + angle);
+            // Debug.Log("ANGLE:" + angle);
 
             //animation based on angle starts here:
 
@@ -173,7 +198,7 @@ public class PlayerMovement : MonoBehaviour
             //idle animation
             anim.SetFloat("speedX", 0f, animSmooth, Time.deltaTime);
             anim.SetFloat("speedZ", 0f, animSmooth, Time.deltaTime);
-        }
+        }*/
     }
 
     private void SetAnimationCoords(float angle, float angleToProject, Vector2 a, Vector2 b)
