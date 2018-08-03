@@ -223,6 +223,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &367814438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 367814435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f9f1a6d08864cc7999bedabbb42f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  curHealth: 0
 --- !u!1 &457550681
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +970,18 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: e5171f72421770240bd7c3989fe351e3, type: 2}
   m_PrefabInternal: {fileID: 1255987060}
+--- !u!114 &1103093377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103093376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09757fb2e18c7441b8250b1355694791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atkDamage: 10
 --- !u!114 &1103093383
 MonoBehaviour:
   m_ObjectHideFlags: 0
