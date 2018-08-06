@@ -7,15 +7,24 @@ public class EnemyMovement : MonoBehaviour {
 
     private Transform player;
     private NavMeshAgent nav;
+    private EnemyHealth health;
 
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         nav = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        nav.SetDestination(player.position);
+        if(!health.isDead)
+        {
+            nav.SetDestination(player.position);
+        }
+        else
+        {
+            nav.enabled = false;
+        }
 	}
 }

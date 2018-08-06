@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
+    public float timeBetweenAttacks = 0.5f;
 
+    private float timer;
     private GameObject player;
     private bool playerInRange;
     private PlayerHealth playerHealth;
@@ -21,7 +23,9 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange)
+        timer += Time.deltaTime;
+
+        if (timer >= timeBetweenAttacks && playerInRange)
         {
             Attack();
         }
@@ -29,6 +33,8 @@ public class EnemyAttack : MonoBehaviour
 
     void Attack()
     {
+        timer = 0f;
+
         if(playerHealth.curHealth > 0)
         {
             playerHealth.TakeDamage(atkDamage);

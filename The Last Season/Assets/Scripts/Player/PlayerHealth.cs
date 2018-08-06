@@ -31,6 +31,8 @@ public class PlayerHealth : MonoBehaviour
 
         curHealth -= amount;
 
+        Debug.Log("Health of Player: " + curHealth);
+
         if(curHealth <=0 && !dead)
         {
             Death();
