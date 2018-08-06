@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlyingRock : MonoBehaviour {
 
 
-    public GameObject rock;
+    //public GameObject rock;
     public GameObject player;
 
     private Collider playerCollider;
@@ -25,7 +25,7 @@ public class FlyingRock : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if(other == playerCollider){
-            rock.transform.Translate(Vector3.up);
+            this.transform.Translate(Vector3.up);
         }
     }
 
