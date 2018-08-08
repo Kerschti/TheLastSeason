@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <marker date="1533129164646" expanded="true" signature="6:114" ph="..." />
                 <marker date="1533129164646" expanded="true" signature="160:281" ph="{...}" />
@@ -157,12 +157,12 @@
       <workItem from="1529945065083" duration="2662000" />
       <workItem from="1530548563173" duration="21000" />
       <workItem from="1530548655181" duration="45000" />
-      <workItem from="1533124491033" duration="4109000" />
+      <workItem from="1533124491033" duration="4584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8692000" />
+    <option name="totallyTimeSpent" value="9167000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,7 +351,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <marker date="1533129164646" expanded="true" signature="6:114" ph="..." />
             <marker date="1533129164646" expanded="true" signature="160:281" ph="{...}" />
