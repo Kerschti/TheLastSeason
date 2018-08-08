@@ -5,6 +5,13 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Enemys" t="Include">
+          <e p="Rhino" t="Include">
+            <e p="Sheder" t="Include">
+              <e p="StandardDoubleSided.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="LowpolySimpleHouse" t="Include">
           <e p="PostProcessing" t="Include">
             <e p="Editor" t="Include">
@@ -170,8 +177,14 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Enemys" t="Include">
+            <e p="EnemyAttack.cs" t="Include" />
+            <e p="EnemyHealth.cs" t="Include" />
+            <e p="EnemyMovement.cs" t="Include" />
+          </e>
           <e p="Enviroment Autumn" t="Include">
             <e p="DoorOpen.cs" t="Include" />
+            <e p="RoomGenerator.cs" t="Include" />
             <e p="RoomTestScript.cs" t="Include" />
           </e>
           <e p="Environment Winter" t="Include">
@@ -179,8 +192,13 @@
           </e>
           <e p="Global Environment" t="Include">
             <e p="CameraFollow.cs" t="Include" />
+            <e p="Flash.cs" t="Include" />
+            <e p="HoldPlayer.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
+            <e p="KickAtk.cs" t="Include" />
+            <e p="PlayerAttack.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
         </e>
@@ -188,6 +206,9 @@
           <e p="Shader" t="Include">
             <e p="mushroom.shader" t="Include" />
           </e>
+        </e>
+        <e p="TGU Skybox Pack" t="Include">
+          <e p="Readme.txt" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
