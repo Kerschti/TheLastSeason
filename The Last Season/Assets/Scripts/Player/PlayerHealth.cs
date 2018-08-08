@@ -10,12 +10,14 @@ public class PlayerHealth : MonoBehaviour
     private bool damaged;
     private bool dead = false;
     private Animator anim;
+    private PlayerMovement playerMove;
 
     // Use this for initialization
     void Start()
     {
         curHealth = health;
         anim = GetComponent<Animator>();
+        playerMove = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -44,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
     void Death()
     {
         dead = true;
-
+        playerMove.enabled = false;
         anim.SetTrigger("IsDead");
     }
 }

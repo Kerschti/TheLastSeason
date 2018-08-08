@@ -15,6 +15,11 @@ public class PlayerMovement : MonoBehaviour
     private CapsuleCollider col;
     private float smooth = 5f;
     private float animSmooth = 0.1f;
+    private float lastY;
+    private float lastYTravelDistance;
+    private float fallHeight = 0;
+    private float deathHeight = 6;
+    private bool wasFalling = false;
 
     public float jumpForce = 2f;
     public float Speed = 7f;
@@ -46,7 +51,13 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
+
         }
+
+
+        //check if player is falling to death
+        CheckForFall();
+
 
         // Move the player around the scene.
         //prevent moving the player while he's attacking 
@@ -98,34 +109,40 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rotation), 0.15F);
         }
 
-        //rotation = v * rotationSpeed;
-        //rotation *= Time.deltaTime;
+    }
 
-        //rotation = rotation.normalized * Speed * Time.deltaTime;
 
-        //transform.Rotate(0, rotation, 0);
-
-        // Create a ray from the mouse cursor on screen in the direction of the camera.
-        /*Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        // Create a RaycastHit variable to store information about what was hit by the ray.
-        RaycastHit floorHit;
-
-        // Perform the raycast and if it hits something on the floor layer...
-        if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
+    void CheckForFall()
+    {
+        
+        if (!IsGrounded())
         {
-            // Create a vector from the player to the point on the floor the raycast from the mouse hit.
-            playerToMouse = floorHit.point - transform.position;
+            //calculate the distance between our current height and the height we were in the last frame
+            lastYTravelDistance = transform.position.y - lastY;
 
-            // Ensure the vector is entirely along the floor plane.
-            playerToMouse.y = 0f;
+            //if the difference is negative, it means we're descending 
+            fallHeight += lastYTravelDistance < 0 ? lastYTravelDistance : 0;
 
-            // Create a quaternion (rotation) based on looking down the vector from the player to the mouse.
-            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+            //cache our current Y position for comparison in the next frame
+            lastY = transform.position.y;
 
-            // Set the player's rotation to this new rotation.
-            playerRigidbody.MoveRotation(newRotation);
-        }*/
+            //store that a fall happened
+            wasFalling = true;
+        }
+        else if(IsGrounded() && wasFalling)
+        {
+            //we check to see if we passed the allowed falling distance and kill the player if necessary
+            if (fallHeight <= -deathHeight)
+                GetComponent<PlayerHealth>().TakeDamage(100);
+            
+            //reset fall height since we landed (doesn't matter if we're dead or alive)
+            fallHeight = 0;
+
+           
+            //checked if player fell to death now prevent repeating
+            wasFalling = false;
+        }
+
 
     }
 
@@ -154,119 +171,5 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", false);
         }
 
-       /* Vector3 moveDirection, lookDirection;
-        if (IsWalking)
-        {
-            moveDirection = GetDirVec3(h, v);
-            lookDirection = playerToMouse.normalized;
-            float angle = Vector3.Angle(moveDirection, lookDirection);
-
-            if (Vector3.Cross(moveDirection, lookDirection).y < 0) //find angle polarity
-            {
-                angle = -angle;
-            }
-            // Debug.Log("ANGLE:" + angle);
-
-            //animation based on angle starts here:
-
-
-            if (angle <= 0f && angle > -90f)
-            {
-                //Debug.Log("TOP LEFT");
-                SetAnimationCoords(angle, -90f, new Vector2(0f, 1f), new Vector2(1f, -1f));
-
-            }
-            else if (angle <= 90 && angle > 0)
-            {
-                //Debug.Log("TOP RIGHT");
-                SetAnimationCoords(angle, 90f, new Vector2(0f, 1f), new Vector2(-1f, -1f));
-            }
-            else if (angle <= 180 && angle > 90)
-            {
-                //Debug.Log("DOWN RIGHT");
-                SetAnimationCoords(angle, 90f, new Vector2(0f, -1f), new Vector2(-1f, 1f)); //90f correct? check it
-            }
-            else if (angle <= -90 && angle > -180) //seems wrong
-            {
-                //Debug.Log("DOWN LEFT");
-                float projectedAngle = angle + 90f;
-                SetAnimationCoords(projectedAngle, -90f, new Vector2(1f, 0f), new Vector2(-1f, -1f));
-            }
-        }
-        else
-        {
-            //idle animation
-            anim.SetFloat("speedX", 0f, animSmooth, Time.deltaTime);
-            anim.SetFloat("speedZ", 0f, animSmooth, Time.deltaTime);
-        }*/
-    }
-
-    private void SetAnimationCoords(float angle, float angleToProject, Vector2 a, Vector2 b)
-    {
-        float projectedAngle = angle / angleToProject;
-        Vector2 res = a + projectedAngle * b;
-
-        //Debug.Log("X: " + res.x + "Z: " + res.y);
-
-        anim.SetFloat("speedX", res.x, animSmooth, Time.deltaTime);
-        anim.SetFloat("speedZ", res.y, animSmooth, Time.deltaTime);
-    }
-
-    public Vector3 GetDirVec3(float h, float v)
-    {
-        Vector3 moveDir = Vector3.zero;
-
-        if (v == 0f)
-        {
-            if (h < 0f) //-1f
-            {
-                //Debug.Log("LEFT");
-                moveDir.Set(-1f, 0f, 0f);
-
-            }
-            else if (h > 0) //1f
-            {
-                //Debug.Log("RIGHT");
-                moveDir.Set(1f, 0f, 0f);
-            }
-        }
-        else if (h == 0f)
-        {
-            if (v < 0f) //-1f
-            {
-                //Debug.Log("DOWN");
-                moveDir.Set(0f, 0f, -1f);
-            }
-            else if (v > 0) //1f
-            {
-                //Debug.Log("UP");
-                moveDir.Set(0f, 0f, 1f);
-            }
-        }
-        else
-        {
-            if (h < 0 && v > 0f) //h == -1f && v == 1f
-            {
-                //Debug.Log("UP LEFT");
-                moveDir.Set(-1f, 0f, 1f);
-            }
-            else if (h > 0f && v > 0f) //h == 1f && v == 1f
-            {
-                //Debug.Log("UP RIGHT");
-                moveDir.Set(1f, 0f, 1f);
-            }
-            else if (h < 0 && v < 0) //h == -1f && v == -1f
-            {
-                //Debug.Log("DOWN LEFT");
-                moveDir.Set(-1f, 0f, -1f);
-            }
-            else if (h > 0f && v < 0f) //h == 1f && v == -1f
-            {
-                //Debug.Log("DOWN RIGHT");
-                moveDir.Set(1f, 0f, -1f);
-            }
-        }
-
-        return moveDir;
     }
 }
