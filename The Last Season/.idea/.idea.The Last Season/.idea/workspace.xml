@@ -11,47 +11,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FlyingRock.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
-                <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
-                <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
-                <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
-                <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
-                <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoorOpen.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <marker date="1533130373674" expanded="true" signature="6:44" ph="..." />
-                <marker date="1533130373674" expanded="true" signature="84:240" ph="{...}" />
-                <marker date="1533130373674" expanded="true" signature="153:238" ph="{...}" />
-                <marker date="1533130373674" expanded="true" signature="185:235" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomTestScript.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoomTestScript.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="135">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding>
-                <marker date="1533129164646" expanded="true" signature="6:114" ph="..." />
-                <marker date="1533129164646" expanded="true" signature="160:281" ph="{...}" />
-                <marker date="1533129164646" expanded="true" signature="210:217" ph="{...}" />
-                <marker date="1533129164646" expanded="true" signature="272:279" ph="{...}" />
+                <marker date="1533741972507" expanded="true" signature="6:114" ph="..." />
+                <marker date="1533741972507" expanded="true" signature="159:460" ph="{...}" />
+                <marker date="1533741972507" expanded="true" signature="296:340" ph="{...}" />
+                <marker date="1533741972507" expanded="true" signature="389:396" ph="{...}" />
+                <marker date="1533741972507" expanded="true" signature="451:458" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoomGenerator.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <marker date="1533745993758" expanded="true" signature="6:79" ph="..." />
+                <marker date="1533745993758" expanded="true" signature="123:894" ph="{...}" />
+                <marker date="1533745993758" expanded="true" signature="393:677" ph="{...}" />
+                <marker date="1533745993758" expanded="true" signature="454:536" ph="{...}" />
+                <marker date="1533745993758" expanded="true" signature="700:892" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Stylized Mushroom/Shader/mushroom.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -76,6 +63,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
       </list>
     </option>
   </component>
@@ -157,12 +145,12 @@
       <workItem from="1529945065083" duration="2662000" />
       <workItem from="1530548563173" duration="21000" />
       <workItem from="1530548655181" duration="45000" />
-      <workItem from="1533124491033" duration="4584000" />
+      <workItem from="1533124491033" duration="7290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9167000" />
+    <option name="totallyTimeSpent" value="11873000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -179,7 +167,7 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.1539394" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -187,7 +175,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Unity" order="8" sideWeight="0.49928468" visible="true" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Unity" order="8" sideWeight="0.49928468" visible="true" weight="0.1539394" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -214,12 +202,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
-            <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
+            <marker date="1533740849215" expanded="false" signature="6:78" ph="..." />
+            <marker date="1533740849215" expanded="true" signature="119:2288" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="641:1007" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1070:1466" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1096:1460" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1355:1450" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1522:1743" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1591:1737" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1798:1938" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1854:1932" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1945:2285" ph="/* private IEnumerator FlyUp() ... */" />
           </folding>
         </state>
       </provider>
@@ -241,12 +234,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
-            <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
+            <marker date="1533740849215" expanded="false" signature="6:78" ph="..." />
+            <marker date="1533740849215" expanded="true" signature="119:2288" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="641:1007" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1070:1466" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1096:1460" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1355:1450" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1522:1743" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1591:1737" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1798:1938" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1854:1932" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1945:2285" ph="/* private IEnumerator FlyUp() ... */" />
           </folding>
         </state>
       </provider>
@@ -268,12 +266,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
-            <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
+            <marker date="1533740849215" expanded="false" signature="6:78" ph="..." />
+            <marker date="1533740849215" expanded="true" signature="119:2288" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="641:1007" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1070:1466" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1096:1460" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1355:1450" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1522:1743" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1591:1737" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1798:1938" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1854:1932" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1945:2285" ph="/* private IEnumerator FlyUp() ... */" />
           </folding>
         </state>
       </provider>
@@ -295,32 +298,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
-            <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
+            <marker date="1533740849215" expanded="false" signature="6:78" ph="..." />
+            <marker date="1533740849215" expanded="true" signature="119:2288" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="641:1007" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1070:1466" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1096:1460" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1355:1450" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1522:1743" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1591:1737" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1798:1938" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1854:1932" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1945:2285" ph="/* private IEnumerator FlyUp() ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1529935792422" expanded="false" signature="6:78" ph="..." />
-            <marker date="1529935792422" expanded="true" signature="120:556" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="269:331" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="386:393" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="443:552" ph="{...}" />
-            <marker date="1529935792422" expanded="true" signature="485:546" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Stylized Mushroom/Shader/mushroom.shader">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -348,15 +342,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1533740849215" expanded="false" signature="6:78" ph="..." />
+            <marker date="1533740849215" expanded="true" signature="119:2288" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="641:1007" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1070:1466" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1096:1460" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1355:1450" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1522:1743" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1591:1737" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1798:1938" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1854:1932" ph="{...}" />
+            <marker date="1533740849215" expanded="true" signature="1945:2285" ph="/* private IEnumerator FlyUp() ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
-            <marker date="1533129164646" expanded="true" signature="6:114" ph="..." />
-            <marker date="1533129164646" expanded="true" signature="160:281" ph="{...}" />
-            <marker date="1533129164646" expanded="true" signature="210:217" ph="{...}" />
-            <marker date="1533129164646" expanded="true" signature="272:279" ph="{...}" />
+            <marker date="1533741972507" expanded="true" signature="6:114" ph="..." />
+            <marker date="1533741972507" expanded="true" signature="159:460" ph="{...}" />
+            <marker date="1533741972507" expanded="true" signature="296:340" ph="{...}" />
+            <marker date="1533741972507" expanded="true" signature="389:396" ph="{...}" />
+            <marker date="1533741972507" expanded="true" signature="451:458" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <marker date="1533745993758" expanded="true" signature="6:79" ph="..." />
+            <marker date="1533745993758" expanded="true" signature="123:894" ph="{...}" />
+            <marker date="1533745993758" expanded="true" signature="393:677" ph="{...}" />
+            <marker date="1533745993758" expanded="true" signature="454:536" ph="{...}" />
+            <marker date="1533745993758" expanded="true" signature="700:892" ph="{...}" />
           </folding>
         </state>
       </provider>
