@@ -8,11 +8,21 @@ public class FlyingRock : MonoBehaviour
 
     //public GameObject rock;
     public GameObject player;
-    public Vector3 height;
+    public float height;
     public float speed;
+    public Vector3 velocity;
+    public GameObject _groundParticles;
 
     private Collider playerCollider;
     private PlayerMovement playerMove;
+    private Transform firstRock;
+    private Vector3 startingPos;
+    private Vector3 newPos;
+    private ParticleSystem groundParticles;
+
+
+    private bool hasMoved = false;
+    private bool moving = false;
 
 
 
@@ -21,33 +31,54 @@ public class FlyingRock : MonoBehaviour
     {
         playerCollider = player.GetComponent<Collider>();
         playerMove = player.GetComponent<PlayerMovement>();
+        groundParticles = _groundParticles.GetComponent<ParticleSystem>();
+        firstRock = this.transform;
+        startingPos = firstRock.position;
+        newPos = new Vector3(firstRock.position.x, height, firstRock.position.z);
 
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
-    }
-
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other == playerCollider)
+        if (moving)
         {
-            Debug.Log("entered");
-            StartCoroutine(FlyUp());
-
+            //firstRock.position = Vector3.Lerp(firstRock.position, newPos, speed * Time.deltaTime);
+            firstRock.position = Vector3.SmoothDamp(firstRock.position, newPos, ref velocity, speed);
+            if (firstRock.position == newPos)
+            {
+                moving = false;
+                Debug.Log("done");
+            }
         }
     }
 
-    private IEnumerator FlyUp()
+    private void OnCollisionEnter(Collision collision)
     {
-        yield return new WaitForSeconds(1f);
-        transform.Translate(height * speed * Time.deltaTime, Space.World);
-        playerMove.enabled = false;
-        yield return new WaitForSeconds(1f);
-        playerMove.enabled = true;
+        if (collision.collider == playerCollider && !hasMoved)
+        {
+            collision.collider.transform.SetParent(transform);
+            moving = true;
+            groundParticles.Play();
+        }
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider == playerCollider)
+        {
+            collision.collider.transform.SetParent(null);
+        }
+    }
+
+     /*private IEnumerator FlyUp()
+     {
+         //yield return new WaitForSeconds(1f);
+         firstRock.position = Vector3.Lerp(firstRock.position, height, speed * Time.deltaTime);
+         hasMoved = true;
+         //playerMove.enabled = false;
+         yield return new WaitForSeconds(0.5f);
+         //playerMove.enabled = true;
+     }*/
 
 }
