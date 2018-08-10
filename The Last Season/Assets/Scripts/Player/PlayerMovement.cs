@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private float fallHeight = 0;
     private float deathHeight = 6;
     private bool wasFalling = false;
+    private Quaternion targetRotation;
 
     public float jumpForce = 2f;
     public float Speed = 7f;
@@ -89,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         // Normalise the movement vector and make it proportional to the speed per second.
-       // movement = movement.normalized * Speed * Time.deltaTime;
+        //movement = movement.normalized * Speed * Time.deltaTime;
 
         // Move the player to it's current position plus the movement.
         //playerRigidbody.MovePosition(transform.position + movement);
@@ -108,6 +109,8 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rotation), 0.15F);
         }
+
+
 
     }
 

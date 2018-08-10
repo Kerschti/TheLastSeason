@@ -7,7 +7,7 @@ public class RoomGenerator : MonoBehaviour
 {
 	Vector2 roomSize = new Vector2(4, 4);
 
-	Room[,] rooms;
+	/*Room[,] rooms;
 
 	System.Collections.Generic.List<Vector2> takenPositions = new List<Vector2>();
 
@@ -35,5 +35,5 @@ public class RoomGenerator : MonoBehaviour
 		rooms[gridSizeX, gridSizeY] = new Room(Vector2.zero, 1);
 		takenPositions.Insert(0, Vector2.zero);
 		Vector2 checkPos = Vector2.zero;
-	}
+	}*/
 }
