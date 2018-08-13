@@ -9,26 +9,31 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;                      // Reference to the animator component.
     private Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
     private int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
-    private float camRayLength = 100f;          // The length of the ray from the camera into the scene.    
-    private Vector3 playerToMouse;
-    private Vector3 rotation;
-    private CapsuleCollider col;
-    private float smooth = 5f;
-    private float animSmooth = 0.1f;
-    private float lastY;
-    private float lastYTravelDistance;
-    private float fallHeight = 0;
-    private float deathHeight = 6;
-    private bool wasFalling = false;
-    private Quaternion targetRotation;
+    //?private float camRayLength = 100f;          // The length of the ray from the camera into the scene.    
+    private Vector3 rotation;                   // Vector to store the direction in wich the player should turn.
+    private CapsuleCollider col;                // Reference to the Players CapsuleCollider.
+    private float lastY;                        // Float that stores last Position of player when falling
+    private float lastYTravelDistance;          // Float that stores the calculated distance traveled beween last frame of falling and now
+    private float fallHeight = 0;               // Float to determine if falling.
+    private float deathHeight = 6;              // Float of max Height you can fall before dieing.
+    private bool wasFalling = false;            // Determine if player fell in last frame.
+    private Quaternion targetRotation;          // not used jet might be used for camera rotation.
+    private float h;                            // Stores horizontal input
+    private float v;                            // Stores vertical input.
 
-    public float jumpForce = 2f;
-    public float Speed = 7f;
-    public float rotationSpeed = 75f;
+    public float jumpForce = 2f;                // Upward force for jumping.
+    public float Speed = 7f;                    // moving speed.
+    public float rotationSpeed = 75f;           // rotation speed.
+
+    public Quaternion TargetRotation {
+        //making TargetRotation Readable.
+        get { return targetRotation; }
+    }
 
     void Awake()
     {
         // Create a layer mask for the floor layer.
+        targetRotation = transform.rotation;
         floorMask = LayerMask.GetMask("Floor");
         col = GetComponent<CapsuleCollider>();
         playerRigidbody = GetComponent<Rigidbody>();
@@ -36,14 +41,27 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void GetInput(){
+        // Store the input axes.
+        h = Input.GetAxis("Horizontal");
+        v = Input.GetAxis("Vertical");
+    }
+
+    private void Update()
+    {
+        // Get InputAxis.
+        GetInput();
+
+        //transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0);
+        // Turn the player.
+        Turning();
+    }
+
+
 
     void FixedUpdate()
     {
-        // Store the input axes.
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-
-
+       
         //anim.SetFloat("speedX", Mathf.Abs(h));
         //anim.SetFloat("speedY", Mathf.Abs(v));
        
@@ -61,15 +79,11 @@ public class PlayerMovement : MonoBehaviour
 
 
         // Move the player around the scene.
-        //prevent moving the player while he's attacking 
-
-        Move(h, v);
-
-        // Turn the player to face the mouse cursor.
-        Turning(h, v);
+        //TODO: prevent moving the player while he's attacking 
+        Move();
 
         // Animate the player.
-        Animating(h, v);
+        Animating();
 
 
     }
@@ -82,35 +96,32 @@ public class PlayerMovement : MonoBehaviour
                                     col.radius * 1.2f, floorMask);
     }
 
-    void Move(float h, float v)
+    void Move()
     {
         // Set the movement vector based on the axis input.
         movement.Set(h, 0f, v);
 
-
-
         // Normalise the movement vector and make it proportional to the speed per second.
-        //movement = movement.normalized * Speed * Time.deltaTime;
+        movement = movement.normalized * Speed * Time.deltaTime;
 
         // Move the player to it's current position plus the movement.
-        //playerRigidbody.MovePosition(transform.position + movement);
-        transform.Translate(movement * Speed * Time.deltaTime, Space.World);
+        playerRigidbody.MovePosition(transform.position + movement);
+
 
     }
 
 
 
-    void Turning(float h, float v)
+    void Turning()
     {
 
         rotation.Set(h, 0f, v);
 
         if (rotation != Vector3.zero)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rotation), 0.15F);
+            targetRotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rotation), 0.15F);
+            transform.rotation = targetRotation;
         }
-
-
 
     }
 
@@ -149,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void Animating(float h, float v)
+    void Animating()
     {
         bool IsWalking = h != 0f || v != 0f;
 
