@@ -5358,7 +5358,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 367814436}
-  smoothing: 5
+  smoothing: 1.2
+  mouseSensitivity: 10
+  distFromTarget: 5
+  PitchMinMax: {x: -40, y: 85}
   rotate: 1
   rotationSpeed: 5
 --- !u!1 &469874006

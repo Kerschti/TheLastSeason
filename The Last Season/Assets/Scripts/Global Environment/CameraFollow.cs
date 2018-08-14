@@ -7,7 +7,12 @@ public class CameraFollow : MonoBehaviour
 
     public Transform target;            // The position that that camera will be following.
     public float smoothing = 5f;        // The speed with which the camera will be following.
+    public float mouseSensitivity;
+    public float distFromTarget;
+    public Vector2 PitchMinMax = new Vector2(-40, 85);
 
+    Vector3 rotationSmoothVel;
+    Vector3 currentRotation;
 
     Vector3 offset;                     // The initial offset from the target.
     Vector3 destination = Vector3.zero;
@@ -19,6 +24,7 @@ public class CameraFollow : MonoBehaviour
     public float rotationSpeed = 5f;
 
     float currentYaw = 0f;
+    float pitch;
 
 
     void Start()
@@ -29,10 +35,16 @@ public class CameraFollow : MonoBehaviour
         //playerMove = target.GetComponent<PlayerMovement>();
     }
 
-    void Update()
+    /*void LateUpdate()
     {
-        currentYaw -= Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
-    }
+        //currentYaw -= Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+        currentYaw += Input.GetAxis("Mouse X") * mouseSensitivity;
+
+        currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(0, currentYaw), ref rotationSmoothVel, smoothing);
+        transform.eulerAngles = currentRotation;
+        transform.position = target.position + offset;
+        transform.LookAt(target);
+    }*/
 
     void LateUpdate()
     {
