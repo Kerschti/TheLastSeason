@@ -113,7 +113,8 @@ public class PlayerMovement : MonoBehaviour
 
         float movement = Speed * dir.magnitude;
 
-        transform.Translate(transform.forward * movement * Time.deltaTime, Space.World);
+        //transform.Translate(transform.forward * movement * Time.deltaTime, Space.World);
+        playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Force);
         //playerRigidbody.velocity = transform.forward * movement * Time.deltaTime;
 
 
