@@ -1,19 +1,22 @@
-﻿/**using System.Collections;
-using Boo.Lang;
-using UnityEditor;
+﻿/**
+using System.Collections; 
 using UnityEngine;
+
+	//Einen Raum generieren
 
 public class RoomGenerator : MonoBehaviour
 {
+	// Vier GameObjekte 2*a 2*b
+	
 	Vector2 roomSize = new Vector2(4, 4);
 
-	/*Room[,] rooms;
+	private int Room;
+	private int rooms;
 
-	System.Collections.Generic.List<Vector2> takenPositions = new List<Vector2>();
-
-	int gridSizeX, gridSizeY, numberOfRooms = 5;
+	int wallSizeX, wallSizeY, numberOfRooms = 1;
 
 	public GameObject roomWithObject;
+	
 	// Use this for initialization
 	void Start () {
 		if (numberOfRooms >= (roomSize.x * 2) * (roomSize.y * 2))
@@ -21,20 +24,16 @@ public class RoomGenerator : MonoBehaviour
 			numberOfRooms = Mathf.RoundToInt((roomSize.x * 2) * (roomSize.y * 2));
 		}
 
-		gridSizeX = Mathf.RoundToInt(roomSize.x);
-		gridSizeY = Mathf.RoundToInt(roomSize.y);
+		wallSizeX = Mathf.RoundToInt(roomSize.x);
+		wallSizeY = Mathf.RoundToInt(roomSize.y);
 
 		CreateRooms();
-		SetRoomDoors();
+		//SetRoomDoors();
 	}
 	
 	void CreateRooms ()
 	{
-		rooms = new Room[gridSizeX * 2, gridSizeY * 2];
-		rooms[gridSizeX, gridSizeY] = new Room(Vector2.zero, 1);
-		takenPositions.Insert(0, Vector2.zero);
-		Vector2 checkPos = Vector2.zero;
+		rooms = new Room[wallSizeX * 2, wallSizeY * 2];
 	}
 }
-
 */
