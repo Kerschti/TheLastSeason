@@ -449,7 +449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &367814436
 Transform:
   m_ObjectHideFlags: 0
@@ -552,6 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65f8358d2ad54ef5b1dacfff04a48ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeUntilRuns: 5
   jumpForce: 5
   Speed: 3
   rotationSpeed: 75
@@ -5385,8 +5386,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 457550681}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22, y: 1, z: 99.11}
+  m_LocalRotation: {x: 0.20525116, y: -0, z: -0, w: 0.9787094}
+  m_LocalPosition: {x: 22, y: 2.07, z: 99.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1584913679}
@@ -5394,7 +5395,7 @@ Transform:
   - {fileID: 2030575469}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 23.688002, y: 0, z: 0}
 --- !u!114 &457550687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5408,7 +5409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 367814436}
   smoothing: 1.2
-  mouseSensitivity: 10
+  mouseSensitivity: 5
   distFromTarget: 5
   PitchMinMax: {x: -40, y: 85}
   rotate: 1
@@ -11078,7 +11079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1103093377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16091,13 +16092,13 @@ GameObject:
   - component: {fileID: 1248099698}
   - component: {fileID: 1248099697}
   - component: {fileID: 1248099701}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: pond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1248099697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16109,7 +16110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6a6df342b52d24092cf6bbb590c535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveHeight: 0.5
+  waveHeight: 0.05
   waveFrequency: 0.5
   waveLength: 0.75
   waveOriginPosition: {x: 0, y: 0, z: 0}
@@ -16162,7 +16163,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1248099696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: 0.6, z: 32}
+  m_LocalPosition: {x: 100, y: 1.3, z: 32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16179,7 +16180,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 200, y: 0.98187584, z: 70}
-  m_Center: {x: 0, y: 0.31, z: 0}
+  m_Center: {x: 0, y: -1.3, z: 0}
 --- !u!1 &1276446276
 GameObject:
   m_ObjectHideFlags: 0
