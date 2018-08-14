@@ -1,24 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Unity.Collections;
+﻿/*using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine.SceneManagement;
 
 using UnityEngine;
+using UnityEngine.WSA;
 
 public class RoomTestScript : MonoBehaviour
 {
 
-	public Vector2 gridPos;
+	public int left, right, top, bot;
 
-	public int type;
-
-	public bool left, right, top, bot;
-
-	public RoomTestScript(Vector2 _gridPos, int _type)
+	public RoomTestScript(T)
 	{
-		gridPos = _gridPos;
-		type = _type;
+		
 	}
 
 	// Use this for initialization
@@ -31,3 +25,4 @@ public class RoomTestScript : MonoBehaviour
 		
 	}
 }
+*/
