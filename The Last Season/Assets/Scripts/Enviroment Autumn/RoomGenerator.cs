@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/**using System.Collections;
 using Boo.Lang;
 using UnityEditor;
 using UnityEngine;
@@ -26,7 +26,6 @@ public class RoomGenerator : MonoBehaviour
 
 		CreateRooms();
 		SetRoomDoors();
-		DrawMap();
 	}
 	
 	void CreateRooms ()
@@ -35,5 +34,7 @@ public class RoomGenerator : MonoBehaviour
 		rooms[gridSizeX, gridSizeY] = new Room(Vector2.zero, 1);
 		takenPositions.Insert(0, Vector2.zero);
 		Vector2 checkPos = Vector2.zero;
-	}*/
+	}
 }
+
+*/
