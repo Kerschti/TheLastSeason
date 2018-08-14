@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using Unity.Collections;
 using UnityEngine.SceneManagement;
 
@@ -17,35 +17,36 @@ public class RoomTestScript : MonoBehaviour
 	{
 
 		// Wand links
-		GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		cube.transform.localScale = new Vector3(0.5F, 2.5F, 10);
+		GameObject cube = new  GameObject.CreatePrimitive(PrimitiveType.Cube);
+		cube.transform.localScale(0.5F, 2.5F, 10);
 
-		cube.transform.position = new Vector3(3, 1.6F, 3);
+		cube.transform.position(3, 1.6F, 3);
 
 		// Wand rechts
-		GameObject cube2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		cube2.transform.localScale = new Vector3(0.5F, 2.5F, 10);
+		GameObject cube2 =  GameObject.CreatePrimitive(PrimitiveType.Cube);
+		cube2.transform.localScale(0.5F, 2.5F, 10);
 
-		cube2.transform.position = new Vector3(7.44F, 1.6F, 3);
-/*
+		cube2.transform.position(7.44F, 1.6F, 3);
+
 		
 		// Wand Eingang
-		GameObject cube3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		cube.transform.position = new Vector3(5, 1.16F, 8);
-		cube.transform.localRotation = new Vector3(0, 90F, 0);
-		cube.transform.localScale = new Vector3(0.5F, 2.5F, 10);
+		GameObject cube3 =  GameObject.CreatePrimitive(PrimitiveType.Cube);
+		cube3 = transform.position(5, 1.16F, 8);
+		//cube.transform.localRotation(0, 90F, 0);
+		cube.transform.localScale(0.5F, 2.5F, 10);
 		
 		// Wand Ausgang
-		GameObject cube4 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		cube.transform.position = new Vector3(5,  1.16F, -1.78F);
-		cube.transform.rotation = new Vector3(0, 90F, 0);
-		cube.transform.localScale = new Vector3(0.5F, 2.5F, 10);
-	}*/
-
-		// Update is called once per frame
-		/*void Update()
-		{
-
-		}*/
+		GameObject cube4 =  GameObject.CreatePrimitive(PrimitiveType.Cube);
+		cube.transform.position(Vector3(5,  1.16F, -1.78F));
+		cube.transform.rotation(Vector3(0, 90F, 0));
+		cube.transform.localScale(0.5F, 2.5F, 10);
 	}
+
+	// Update is called once per frame
+	void Update()
+	{
+		transform.Rotate(0, 90F, 0);
+	}
+
 }
+*/
