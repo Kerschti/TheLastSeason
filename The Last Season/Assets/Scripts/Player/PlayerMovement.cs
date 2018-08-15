@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;                      // Reference to the animator component.
     private Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
     private int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
+    private int waterMask;
     //?private float camRayLength = 100f;          // The length of the ray from the camera into the scene.    
     private Vector2 rotation;                   // Vector to store the direction in wich the player should turn.
     private CapsuleCollider col;                // Reference to the Players CapsuleCollider.
@@ -17,31 +18,34 @@ public class PlayerMovement : MonoBehaviour
     private float fallHeight = 0;               // Float to determine if falling.
     private float deathHeight = 6;              // Float of max Height you can fall before dieing.
     private bool wasFalling = false;            // Determine if player fell in last frame.
-    private Quaternion targetRotation;          // not used jet might be used for camera rotation.
+    private bool isSwimming = false;
     private float h;                            // Stores horizontal input
     private float v;                            // Stores vertical input.
+    private float initTime;
+    private float initSpeed;
 
+    public float timeUntilRuns = 20;
     public float jumpForce = 2f;                // Upward force for jumping.
     public float Speed = 7f;                    // moving speed.
+    public float runSpeed = 5f;
     public float rotationSpeed = 75f;           // rotation speed.
     Transform cameraTrans;
 
     Vector2 dir;
 
-    public Quaternion TargetRotation {
-        //making TargetRotation Readable.
-        get { return targetRotation; }
-    }
 
     void Awake()
     {
         // Create a layer mask for the floor layer.
-        targetRotation = transform.rotation;
+
         floorMask = LayerMask.GetMask("Floor");
+        waterMask = LayerMask.GetMask("Water");
         col = GetComponent<CapsuleCollider>();
         playerRigidbody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         cameraTrans = Camera.main.transform;
+        initTime = timeUntilRuns;
+        initSpeed = Speed;
 
     }
 
@@ -73,8 +77,6 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-
-
         }
 
 
@@ -89,7 +91,23 @@ public class PlayerMovement : MonoBehaviour
         // Animate the player.
         Animating();
 
+        TimeUntilRun();
 
+    }
+
+    void TimeUntilRun()
+    {
+        bool IsWalking = h != 0f || v != 0f && !IsInWater();
+
+        if(IsWalking && timeUntilRuns >= 0)
+        {
+            timeUntilRuns -= Time.deltaTime;
+
+        }
+        else if(!IsWalking)
+        {
+            timeUntilRuns = initTime;
+        }
     }
 
     private bool IsGrounded()
@@ -100,16 +118,27 @@ public class PlayerMovement : MonoBehaviour
                                     col.radius * 1.2f, floorMask);
     }
 
+    private bool IsInWater()
+    {
+        return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
+                                                                  col.bounds.min.y,
+                                                                  col.bounds.center.z),
+                                    col.radius * 1.2f, waterMask);
+    }
+
     void Move()
     {
         // Set the movement vector based on the axis input.
-         /* movement.Set(h, 0f, v);
+        /* movement.Set(h, 0f, v);
 
-          // Normalise the movement vector and make it proportional to the speed per second.
-        movement = (movement.normalized) * Speed * Time.deltaTime;
+         // Normalise the movement vector and make it proportional to the speed per second.
+       movement = (movement.normalized) * Speed * Time.deltaTime;
 
-          // Move the player to it's current position plus the movement.
-         playerRigidbody.MovePosition(transform.position + movement);*/
+         // Move the player to it's current position plus the movement.
+        playerRigidbody.MovePosition(transform.position + movement);*/
+
+        Speed = timeUntilRuns <= 0 ? runSpeed : initSpeed;
+
 
         float movement = Speed * dir.magnitude;
         //Debug.Log(transform.forward * movement) ;
@@ -179,9 +208,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Animating()
     {
-        bool IsWalking = h != 0f || v != 0f;
+        bool IsWalking = h != 0f || v != 0f && !IsInWater();
+        float running = timeUntilRuns <= 0 ? 1f : 0.5f;
 
+        //bool isInWater = !IsWalking && !IsGrounded();
         //anim.SetBool("IsWalking", IsWalking);
+        anim.SetBool("IsInWater", IsInWater());
+
 
         if (!IsGrounded())
         {
@@ -193,14 +226,20 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+
         if (IsWalking)
         {
-            anim.SetBool("IsWalking", true);
+            
+            anim.SetFloat("SpeedPerc", running);
+
         }
-        else
+      
+        else if (!IsWalking)
         {
-            anim.SetBool("IsWalking", false);
+            anim.SetFloat("SpeedPerc", 0);
         }
+
+
 
     }
 }
