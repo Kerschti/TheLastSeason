@@ -43,7 +43,7 @@ public class CameraFollow : MonoBehaviour
         currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(0, currentYaw), ref rotationSmoothVel, smoothing);
         transform.eulerAngles = currentRotation;
         transform.position = target.position + offset;
-        transform.LookAt(target);
+        //transform.LookAt(target);
     }*/
 
     void LateUpdate()
