@@ -236,15 +236,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c99599b849928364a9b9d61b2623dbe4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.600002
+      value: 18.15
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c99599b849928364a9b9d61b2623dbe4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7253728
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c99599b849928364a9b9d61b2623dbe4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.599991
+      value: 9.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c99599b849928364a9b9d61b2623dbe4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 230164960}
   m_Layer: 9
   m_Name: PlayerHolder
-  m_TagString: Untagged
+  m_TagString: Holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5325,6 +5325,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 524293200}
+  - component: {fileID: 524293201}
   m_Layer: 0
   m_Name: FlyingIsland
   m_TagString: Untagged
@@ -5348,6 +5349,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524293201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524293199}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b68c359292f84b72b46f00cda33e3bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  ThirdIsland: {fileID: 204245028}
+  height: 5
 --- !u!1001 &550181011
 Prefab:
   m_ObjectHideFlags: 0
@@ -15727,6 +15742,55 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1217889646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1217889647}
+  - component: {fileID: 1217889649}
+  - component: {fileID: 1217889648}
+  m_Layer: 9
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1217889647
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217889646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: -0.00101}
+  m_LocalScale: {x: 0.006381023, y: 0.011328552, z: 0.0016727528}
+  m_Children: []
+  m_Father: {fileID: 1906502191}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1217889648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217889646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1217889649
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217889646}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1248099696
 GameObject:
   m_ObjectHideFlags: 0
@@ -25774,6 +25838,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114274663898336558, guid: 3f769196e23754bab901de9bb087b9ee,
+        type: 2}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1217889647}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
   m_IsPrefabParent: 0
@@ -25900,6 +25969,7 @@ MonoBehaviour:
   speed: 1.5
   velocity: {x: 0, y: 0, z: 0}
   _groundParticles: {fileID: 1432261232}
+  holder: {fileID: 524293199}
 --- !u!54 &1906502187
 Rigidbody:
   m_ObjectHideFlags: 0
