@@ -9,6 +9,7 @@ public class TrunkBullet : MonoBehaviour {
 	public float BulletSpeed;
 
 	void Start () {
+		
 		rb = GetComponent<Rigidbody> ();
 		rb.AddRelativeForce (0,0,BulletSpeed, ForceMode.Impulse);
 	}

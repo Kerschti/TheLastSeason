@@ -17,13 +17,14 @@ public class HellephantShoot : MonoBehaviour {
 		transform.LookAt (player);
 	}
 
-	void onTriggerEnter(Collider other){
+	void OnTriggerEnter(Collider other){
+		
 		if (other.gameObject.tag == "Player") {
 			StartCoroutine ("Shooting");
 		}
 	}
 
-	void onTriggerExit(Collider other){
+	void OnTriggerExit(Collider other){
 		if (other.gameObject.tag == "Player") {
 			StopCoroutine ("Shooting");
 		}
