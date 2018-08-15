@@ -196,6 +196,7 @@
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemyMovement.cs" t="Include" />
             <e p="HellephantShoot.cs" t="Include" />
+            <e p="TrunkBullet.cs" t="Include" />
           </e>
           <e p="Enviroment Autumn" t="Include">
             <e p="DoorOpen.cs" t="Include" />
@@ -204,6 +205,7 @@
           </e>
           <e p="Environment Winter" t="Include">
             <e p="FlyingRock.cs" t="Include" />
+            <e p="IslandFly.cs" t="Include" />
           </e>
           <e p="Global Environment" t="Include">
             <e p="CameraFollow.cs" t="Include" />
