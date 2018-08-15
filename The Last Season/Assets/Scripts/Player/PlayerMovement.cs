@@ -102,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
         if(IsWalking && timeUntilRuns >= 0)
         {
             timeUntilRuns -= Time.deltaTime;
-            Debug.Log(timeUntilRuns);
+
         }
         else if(!IsWalking)
         {
