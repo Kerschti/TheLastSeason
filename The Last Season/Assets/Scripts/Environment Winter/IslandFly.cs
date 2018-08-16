@@ -6,10 +6,20 @@ public class IslandFly : MonoBehaviour {
 
     public float speed;
     public Transform ThirdIsland;
+    public float height;
+
+    private Vector3 newPosThirdI;
+    private Vector3 oldPosThirdI;
+    private bool firstPos = true;
+
+    public Vector3 velocity;
+
+
 
 	// Use this for initialization
 	void Start () {
-		
+        newPosThirdI = new Vector3(ThirdIsland.position.x, height, ThirdIsland.position.z);
+        oldPosThirdI = ThirdIsland.position;
 	}
 	
 	// Update is called once per frame
@@ -20,6 +30,27 @@ public class IslandFly : MonoBehaviour {
 
     void AnimateThirdIsland()
     {
-        ThirdIsland.RotateAround(transform.position, new Vector3(1, 0, 0), speed * Time.deltaTime);
+        
+        if(firstPos)
+        {
+            Debug.Log("First Pos");
+            ThirdIsland.position = Vector3.SmoothDamp(ThirdIsland.position, newPosThirdI, ref velocity, speed);
+            if(ThirdIsland.position == newPosThirdI)
+            {
+                firstPos = false;
+            }
+        } else if (!firstPos)
+        {
+            Debug.Log("Sec Pos");
+            ThirdIsland.position = Vector3.SmoothDamp(ThirdIsland.position, oldPosThirdI, ref velocity, speed);
+            if(ThirdIsland.position == oldPosThirdI)
+            {
+                firstPos = true;
+            }
+        }
+           
+      
     }
+
+
 }

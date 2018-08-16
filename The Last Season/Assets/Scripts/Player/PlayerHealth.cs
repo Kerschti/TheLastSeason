@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 
     public int health = 100;
     public int curHealth;
+    public Transform spawnPoint;
     private bool damaged;
     private bool dead = false;
     private Animator anim;
@@ -48,5 +49,19 @@ public class PlayerHealth : MonoBehaviour
         dead = true;
         playerMove.enabled = false;
         anim.SetTrigger("IsDead");
+        StartCoroutine(SpawnAfterSec());
+
+    }
+
+    private IEnumerator SpawnAfterSec()
+    {
+        yield return new WaitForSeconds(5f);
+        transform.position = spawnPoint.position;
+
+        curHealth = health;
+        playerMove.enabled = true;
+        dead = false;
+
+        anim.SetTrigger("Respawned");
     }
 }
