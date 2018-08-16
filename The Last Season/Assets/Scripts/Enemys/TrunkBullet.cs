@@ -12,6 +12,7 @@ public class TrunkBullet : MonoBehaviour {
 		
 		rb = GetComponent<Rigidbody> ();
 		rb.AddRelativeForce (0,0,BulletSpeed, ForceMode.Impulse);
+        Destroy(this.gameObject, 3.0f);
 	}
 	
 
