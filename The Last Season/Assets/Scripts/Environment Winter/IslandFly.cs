@@ -49,7 +49,7 @@ public class IslandFly : MonoBehaviour {
             }
         }
            
-        //ThirdIsland.Translate();
+      
     }
 
 

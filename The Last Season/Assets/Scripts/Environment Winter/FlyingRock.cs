@@ -21,6 +21,7 @@ public class FlyingRock : MonoBehaviour
     private Vector3 newPos;
     private ParticleSystem groundParticles;
     private Animation animSecIsle;
+    private Animation animCloud;
     private IslandFly animScript;
 
 
@@ -38,6 +39,7 @@ public class FlyingRock : MonoBehaviour
         playerMove = player.GetComponent<PlayerMovement>();
         groundParticles = _groundParticles.GetComponent<ParticleSystem>();
         animSecIsle = GameObject.Find("SecondIsland").GetComponent<Animation>();
+        animCloud = GameObject.Find("WalkCloud").GetComponent<Animation>();
         firstRock = this.transform;
         startingPos = firstRock.position;
         newPos = new Vector3(firstRock.position.x, height, firstRock.position.z);
@@ -56,6 +58,7 @@ public class FlyingRock : MonoBehaviour
             {
                 animScript.enabled = true;
                 animSecIsle.Play();
+                animCloud.Play();
                 animationPlays = true;
 
             }
