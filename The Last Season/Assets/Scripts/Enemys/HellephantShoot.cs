@@ -18,7 +18,7 @@ public class HellephantShoot : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		
+        
 		if (other.gameObject.tag == "Player") {
 			StartCoroutine ("Shooting");
 		}
@@ -31,7 +31,9 @@ public class HellephantShoot : MonoBehaviour {
 	}
 
 	IEnumerator Shooting(){
+        Debug.Log("Hallo");
 		while (true) {
+            
 			Instantiate (bullet, trunk.position, trunk.rotation);
 			yield return new WaitForSeconds (1);
 

@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 135006623244644444}
   - component: {fileID: 23832637977749720}
   - component: {fileID: 114858664604036482}
-  - component: {fileID: 114383734389464432}
   - component: {fileID: 54722100570173472}
   m_Layer: 0
   m_Name: TrunkBullet
@@ -102,17 +101,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114383734389464432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1094361104881548}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3f6686e4ef9e4cdd8047f87c51617a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114858664604036482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67de29fef09c442d0902b7aa8d9d4711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletSpeed: 1
+  BulletSpeed: 5
 --- !u!135 &135006623244644444
 SphereCollider:
   m_ObjectHideFlags: 1
