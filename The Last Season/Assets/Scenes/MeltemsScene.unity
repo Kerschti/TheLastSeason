@@ -113,6 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 6032539edfe284044a6ac73612488ecd, type: 2}
+<<<<<<< HEAD
 --- !u!1 &17509582 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d519f175be9939146acf5b2ceec0d1e2, type: 3}
@@ -161,6 +162,8 @@ Transform:
   m_Father: {fileID: 883573175}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> IslandAnimation
 --- !u!1 &97448731
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +277,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &204245027
 Prefab:
   m_ObjectHideFlags: 0
@@ -452,6 +456,9 @@ MeshFilter:
   m_GameObject: {fileID: 230164958}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &263693393
+=======
+--- !u!1 &367814435 stripped
+>>>>>>> IslandAnimation
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5436,6 +5443,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1 &524293199
 GameObject:
   m_ObjectHideFlags: 0
@@ -5572,6 +5580,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2cf7e34ba2f34c43a824b226af522a8, type: 3}
   m_IsPrefabParent: 0
+=======
+>>>>>>> IslandAnimation
 --- !u!1001 &550181011
 Prefab:
   m_ObjectHideFlags: 0
@@ -5626,6 +5636,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da274ad5e1210224ea49f5087b83827c, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!4 &557684932 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4516825660832868, guid: 3f769196e23754bab901de9bb087b9ee,
@@ -5640,6 +5651,8 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 27ef79e95405752498de28cebae80e78, type: 3}
   m_PrefabInternal: {fileID: 1010519905}
+=======
+>>>>>>> IslandAnimation
 --- !u!1 &676089357
 GameObject:
   m_ObjectHideFlags: 0
@@ -10257,6 +10270,7 @@ Transform:
   m_Father: {fileID: 457550686}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &703407382
 GameObject:
   m_ObjectHideFlags: 0
@@ -10342,6 +10356,8 @@ Transform:
   m_Father: {fileID: 524293200}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> IslandAnimation
 --- !u!1001 &704407024
 Prefab:
   m_ObjectHideFlags: 0
@@ -10409,6 +10425,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 704407024}
+<<<<<<< HEAD
   m_GameObject: {fileID: 791704209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -10492,6 +10509,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
+=======
+>>>>>>> IslandAnimation
 --- !u!1 &791598421
 GameObject:
   m_ObjectHideFlags: 0
@@ -10590,6 +10609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: MeltemsRoom
+<<<<<<< HEAD
 --- !u!1 &791704209
 GameObject:
   m_ObjectHideFlags: 0
@@ -10618,6 +10638,13 @@ Transform:
   m_Father: {fileID: 1614332222}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+--- !u!4 &829456739 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4836978321984202, guid: 3dfabecee5d404544a56dc2d38a81093,
+    type: 2}
+  m_PrefabInternal: {fileID: 2027136327}
+>>>>>>> IslandAnimation
 --- !u!1 &862467184
 GameObject:
   m_ObjectHideFlags: 0
@@ -11027,6 +11054,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cdac07e55a0338249b60f9f60e4b9d09, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1001 &982469302
 Prefab:
   m_ObjectHideFlags: 0
@@ -11102,10 +11130,14 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d519f175be9939146acf5b2ceec0d1e2, type: 3}
   m_PrefabInternal: {fileID: 982469302}
 --- !u!4 &996463956
+=======
+--- !u!4 &996463956 stripped
+>>>>>>> IslandAnimation
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 510267648}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1373569777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -11180,6 +11212,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27ef79e95405752498de28cebae80e78, type: 3}
   m_IsPrefabParent: 0
+=======
+>>>>>>> IslandAnimation
 --- !u!1 &1047758064
 GameObject:
   m_ObjectHideFlags: 0
@@ -16181,6 +16215,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+<<<<<<< HEAD
 --- !u!1 &1194518900
 GameObject:
   m_ObjectHideFlags: 0
@@ -16304,6 +16339,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+=======
+--- !u!4 &1217889647 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4537308213481866, guid: c42ddb3907dc5472fa842548dfb13f96,
+    type: 2}
+  m_PrefabInternal: {fileID: 1412938275}
+>>>>>>> IslandAnimation
 --- !u!1 &1248099696
 GameObject:
   m_ObjectHideFlags: 0
@@ -16322,7 +16364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1248099697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16404,8 +16446,13 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 200, y: 0.98187584, z: 70}
+<<<<<<< HEAD
   m_Center: {x: 0, y: 0.31, z: 0}
 --- !u!1 &1262272876
+=======
+  m_Center: {x: 0, y: -1.65, z: 0}
+--- !u!1 &1272654876
+>>>>>>> IslandAnimation
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -16542,6 +16589,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1313639363}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -16567,6 +16615,10 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1313639363}
   m_Enabled: 0
+=======
+  m_GameObject: {fileID: 1301347562}
+  m_Enabled: 1
+>>>>>>> IslandAnimation
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -16575,7 +16627,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  - {fileID: 2100000, guid: 1c0a98d3002cf4fe8bc2edcb3aa9c7f7, type: 2}
+>>>>>>> IslandAnimation
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16595,6 +16651,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
 --- !u!33 &1313639368
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16606,6 +16663,46 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
+=======
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 4b2f1e8bc475a4aa8864b66286613787, type: 3}
+  m_Bones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: 0.00019966438, y: -0.013669267, z: -0.00079083536}
+    m_Extent: {x: 0.0973341, y: 0.09180656, z: 0.031021193}
+  m_DirtyAABB: 0
+--- !u!1 &1352765236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 148330, guid: 548c56f4bcf4db24b8aa057e9846a005, type: 2}
+>>>>>>> IslandAnimation
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
@@ -16667,6 +16764,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< HEAD
 --- !u!1 &1370297651
 GameObject:
   m_ObjectHideFlags: 0
@@ -21425,6 +21523,60 @@ Transform:
   m_Father: {fileID: 2125689143}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+--- !u!4 &1376016199 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4373663522717162, guid: da274ad5e1210224ea49f5087b83827c,
+    type: 2}
+  m_PrefabInternal: {fileID: 550181011}
+--- !u!1001 &1412938275
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 34.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.1746273
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 129.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322026254414778, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583643750343998, guid: c42ddb3907dc5472fa842548dfb13f96,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 367814435}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c42ddb3907dc5472fa842548dfb13f96, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> IslandAnimation
 --- !u!1 &1446981514
 GameObject:
   m_ObjectHideFlags: 0
@@ -21577,6 +21729,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 1557139439}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1128336906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -21589,6 +21742,8 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e245e14856688a445af1b17ab32c395d, type: 3}
   m_PrefabInternal: {fileID: 1868995978}
+=======
+>>>>>>> IslandAnimation
 --- !u!1 &1571805175
 GameObject:
   m_ObjectHideFlags: 0
@@ -26364,6 +26519,7 @@ Transform:
   m_Father: {fileID: 457550686}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1594168144
 GameObject:
   m_ObjectHideFlags: 0
@@ -26674,6 +26830,8 @@ Transform:
   m_Father: {fileID: 2125689143}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> IslandAnimation
 --- !u!1001 &1775965143
 Prefab:
   m_ObjectHideFlags: 0
@@ -27583,6 +27741,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27ef79e95405752498de28cebae80e78, type: 3}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1001 &1868995978
 Prefab:
   m_ObjectHideFlags: 0
@@ -27657,6 +27816,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e245e14856688a445af1b17ab32c395d, type: 3}
   m_IsPrefabParent: 0
+=======
+>>>>>>> IslandAnimation
 --- !u!1 &1882670221
 GameObject:
   m_ObjectHideFlags: 0
@@ -27705,6 +27866,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -66.366005, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1906502185
 GameObject:
   m_ObjectHideFlags: 0
@@ -27782,6 +27944,8 @@ Transform:
   m_Father: {fileID: 1198700768}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> IslandAnimation
 --- !u!1 &1922641647
 GameObject:
   m_ObjectHideFlags: 0
@@ -28218,6 +28382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trunk: {fileID: 877937035}
   bullet: {fileID: 1094361104881548, guid: 07223867896864eedb45a4167131c62c, type: 2}
+<<<<<<< HEAD
 --- !u!1 &2056961600
 GameObject:
   m_ObjectHideFlags: 0
@@ -28305,6 +28470,13 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9435f51ff516c14a8d749d0bfa2c73f, type: 3}
   m_IsPrefabParent: 0
+=======
+--- !u!4 &2102626148 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4933981238565168, guid: cdac07e55a0338249b60f9f60e4b9d09,
+    type: 2}
+  m_PrefabInternal: {fileID: 980320168}
+>>>>>>> IslandAnimation
 --- !u!1 &2125689142
 GameObject:
   m_ObjectHideFlags: 0
