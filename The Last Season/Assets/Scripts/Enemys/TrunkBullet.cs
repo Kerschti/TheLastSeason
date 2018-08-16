@@ -13,7 +13,6 @@ public class TrunkBullet : MonoBehaviour {
 
 	void Start () {
 		
-	
         beginP = GameObject.FindWithTag("TrunkEnd").transform.position;
         targetP = GameObject.FindWithTag("Player").transform.position;
         Destroy(this.gameObject, 8.0f);
@@ -23,7 +22,7 @@ public class TrunkBullet : MonoBehaviour {
     {
         Debug.Log("Jetzt sollte die Parabel kommen");
         Animation += Time.deltaTime;
-        Animation = Animation % 5f;
+        Animation = Animation % 5;
         transform.position = Parabola.Parabola1(beginP, targetP, 5f, Animation / 5f);
         Debug.Log("Parabel ist fertig aufgebaut");
     }

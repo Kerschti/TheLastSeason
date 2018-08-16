@@ -21008,6 +21008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trunk: {fileID: 877937035}
   bullet: {fileID: 1094361104881548, guid: 07223867896864eedb45a4167131c62c, type: 2}
+  maxTime: 5
 --- !u!1 &1584913676
 GameObject:
   m_ObjectHideFlags: 0
