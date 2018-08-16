@@ -5,7 +5,6 @@ using UnityEngine;
 public class TrunkBullet : MonoBehaviour {
 
 	// Use this for initialization
-	
 	public float BulletSpeed;
     protected float Animation;
 
@@ -14,9 +13,9 @@ public class TrunkBullet : MonoBehaviour {
 
 	void Start () {
 		
+	
         beginP = GameObject.FindWithTag("TrunkEnd").transform.position;
         targetP = GameObject.FindWithTag("Player").transform.position;
-
         Destroy(this.gameObject, 8.0f);
 	}
 
