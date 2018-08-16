@@ -17,23 +17,29 @@ public class HellephantShoot : MonoBehaviour {
 		transform.LookAt (player);
 	}
 
-	void onTriggerEnter(Collider other){
+	void OnTriggerEnter(Collider other){
+        
 		if (other.gameObject.tag == "Player") {
 			StartCoroutine ("Shooting");
 		}
 	}
 
-	void onTriggerExit(Collider other){
+	void OnTriggerExit(Collider other){
 		if (other.gameObject.tag == "Player") {
 			StopCoroutine ("Shooting");
 		}
 	}
 
 	IEnumerator Shooting(){
+        Debug.Log("Hallo");
 		while (true) {
+            
 			Instantiate (bullet, trunk.position, trunk.rotation);
 			yield return new WaitForSeconds (1);
+
 		}
+
+
 	}
 		
 
