@@ -10,7 +10,9 @@ public class IslandFly : MonoBehaviour {
 
     private Vector3 newPosThirdI;
     private Vector3 oldPosThirdI;
-    private Vector3 velocity;
+    private bool firstPos = true;
+
+    public Vector3 velocity;
 
 
 
@@ -29,13 +31,22 @@ public class IslandFly : MonoBehaviour {
     void AnimateThirdIsland()
     {
         
-        if(ThirdIsland.position == oldPosThirdI)
+        if(firstPos)
         {
-            Debug.Log("Plays");
+            Debug.Log("First Pos");
             ThirdIsland.position = Vector3.SmoothDamp(ThirdIsland.position, newPosThirdI, ref velocity, speed);
-        } else if (ThirdIsland.position == newPosThirdI)
+            if(ThirdIsland.position == newPosThirdI)
+            {
+                firstPos = false;
+            }
+        } else if (!firstPos)
         {
+            Debug.Log("Sec Pos");
             ThirdIsland.position = Vector3.SmoothDamp(ThirdIsland.position, oldPosThirdI, ref velocity, speed);
+            if(ThirdIsland.position == oldPosThirdI)
+            {
+                firstPos = true;
+            }
         }
            
         //ThirdIsland.Translate();
