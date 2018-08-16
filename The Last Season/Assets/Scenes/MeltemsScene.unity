@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 370596483}
   - component: {fileID: 370596485}
   - component: {fileID: 370596484}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: HitParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10140,9 +10140,9 @@ GameObject:
   - component: {fileID: 877937038}
   - component: {fileID: 877937037}
   - component: {fileID: 877937036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrunkEnd
-  m_TagString: Untagged
+  m_TagString: TrunkEnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10254,7 +10254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950173477}
   - component: {fileID: 950173478}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Zombunny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10436,7 +10436,7 @@ GameObject:
   - component: {fileID: 1103093377}
   - component: {fileID: 1103093383}
   - component: {fileID: 1103093385}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: ZomBunny
   m_TagString: Bunny
   m_Icon: {fileID: 0}
@@ -10647,7 +10647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1135071846}
   - component: {fileID: 1135071847}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10714,7 +10714,7 @@ GameObject:
   - component: {fileID: 1141951031}
   - component: {fileID: 1141951033}
   - component: {fileID: 1141951032}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: DeathParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15476,7 +15476,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1288221629}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trunk1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15507,7 +15507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301347563}
   - component: {fileID: 1301347564}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15607,7 +15607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1352765237}
   - component: {fileID: 1352765238}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15880,7 +15880,7 @@ GameObject:
   - component: {fileID: 1571805182}
   - component: {fileID: 1571805184}
   - component: {fileID: 1571805185}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Hellephant (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21035,6 +21035,122 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 0.98291373
       objectReference: {fileID: 0}
+    - target: {fileID: 1678925419324286, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852927233559920, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372993652405542, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129331543996654, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232705587202640, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923376564665770, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358097837780728, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155940674428852, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414199845400758, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687618654053666, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574898147081084, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211306997862840, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325313399871428, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054618480269046, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028249746129152, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156326620114744, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287821175653162, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485061470940974, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750779843829446, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700468511731048, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553489038044306, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512984978673134, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445644255509242, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1214949114486296, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498421263527830, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202779612405826, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741828139201724, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620687908059818, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959109419926450, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
   m_IsPrefabParent: 0
@@ -21486,7 +21602,7 @@ GameObject:
   - component: {fileID: 2050214581}
   - component: {fileID: 2050214582}
   - component: {fileID: 2050214583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hellephant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
