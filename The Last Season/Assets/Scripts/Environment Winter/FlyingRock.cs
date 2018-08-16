@@ -12,6 +12,7 @@ public class FlyingRock : MonoBehaviour
     public float speed;
     public Vector3 velocity;
     public GameObject _groundParticles;
+    public GameObject holder;
 
     private Collider playerCollider;
     private PlayerMovement playerMove;
@@ -20,6 +21,9 @@ public class FlyingRock : MonoBehaviour
     private Vector3 newPos;
     private ParticleSystem groundParticles;
     private Animation animSecIsle;
+    private Animation animCloud;
+    private IslandFly animScript;
+
 
 
     private bool hasMoved = false;
@@ -35,9 +39,11 @@ public class FlyingRock : MonoBehaviour
         playerMove = player.GetComponent<PlayerMovement>();
         groundParticles = _groundParticles.GetComponent<ParticleSystem>();
         animSecIsle = GameObject.Find("SecondIsland").GetComponent<Animation>();
+        animCloud = GameObject.Find("WalkCloud").GetComponent<Animation>();
         firstRock = this.transform;
         startingPos = firstRock.position;
         newPos = new Vector3(firstRock.position.x, height, firstRock.position.z);
+        animScript = holder.GetComponent<IslandFly>();
 
     }
 
@@ -50,7 +56,9 @@ public class FlyingRock : MonoBehaviour
             firstRock.position = Vector3.SmoothDamp(firstRock.position, newPos, ref velocity, speed);
             if(!animationPlays)
             {
+                animScript.enabled = true;
                 animSecIsle.Play();
+                animCloud.Play();
                 animationPlays = true;
 
             }

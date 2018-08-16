@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Bunny
+  - Holder
   - TrunkEnd
+  - Bunny
   layers:
   - Default
   - TransparentFX
@@ -15,10 +16,10 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
   - Floor
-  - Player
-  - Fightable
+  - 
+  - 
+  - 
   - 
   - 
   - 
