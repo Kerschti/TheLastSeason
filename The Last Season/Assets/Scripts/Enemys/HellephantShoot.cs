@@ -33,9 +33,8 @@ public class HellephantShoot : MonoBehaviour {
 	IEnumerator Shooting(){
 		while (true) {
 			Instantiate (bullet, trunk.position, trunk.rotation);
-            Debug.Log("Hallo");
 			yield return new WaitForSeconds (1);
-            Destroy(bullet, 3.0f);
+
 		}
 
 
