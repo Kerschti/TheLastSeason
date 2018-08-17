@@ -17,26 +17,27 @@ public class HellephantShoot : MonoBehaviour {
 		transform.LookAt (player);
 	}
 
+    //if player in trigger start shooting
 	void OnTriggerEnter(Collider other){
-        
 		if (other.gameObject.tag == "Player") {
 			StartCoroutine ("Shooting");
 		}
 	}
 
+    //If player not in trigger stop shooting
 	void OnTriggerExit(Collider other){
 		if (other.gameObject.tag == "Player") {
 			StopCoroutine ("Shooting");
 		}
 	}
 
-	IEnumerator Shooting(){
-        Debug.Log("Hallo");
-		while (true) {
-            
-			Instantiate (bullet, trunk.position, trunk.rotation);
-			yield return new WaitForSeconds (1);
 
+    //Create new bullet every one second
+	IEnumerator Shooting(){
+        
+		while (true) {
+			Instantiate (bullet, trunk.position, trunk.rotation);
+            yield return new WaitForSeconds(1);
 		}
 
 

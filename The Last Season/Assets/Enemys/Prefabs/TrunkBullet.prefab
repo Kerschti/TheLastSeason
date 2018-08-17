@@ -23,7 +23,9 @@ GameObject:
   - component: {fileID: 135006623244644444}
   - component: {fileID: 23832637977749720}
   - component: {fileID: 114858664604036482}
+  - component: {fileID: 114683730229736372}
   - component: {fileID: 54722100570173472}
+  - component: {fileID: 135108809554584264}
   m_Layer: 0
   m_Name: TrunkBullet
   m_TagString: Untagged
@@ -101,6 +103,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114683730229736372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1094361104881548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09757fb2e18c7441b8250b1355694791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.2
+  atkDamage: 5
 --- !u!114 &114858664604036482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67de29fef09c442d0902b7aa8d9d4711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletSpeed: 5
+  BulletSpeed: 10
 --- !u!135 &135006623244644444
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -124,4 +139,16 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &135108809554584264
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1094361104881548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
