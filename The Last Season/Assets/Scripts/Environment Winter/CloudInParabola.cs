@@ -16,7 +16,7 @@ public class CloudInParabola : MonoBehaviour {
     private void Start()
     {
         startPos = transform.position;
-        endPos = end.position;
+        endPos = new Vector3(transform.position.x + 10, 0, transform.position.z);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,13 +27,14 @@ public class CloudInParabola : MonoBehaviour {
         }
     }
 
-    private void OnTriggerExit(Collider other)
+   /* private void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-            startAnim = true;
+            startAnim = false;
+            Destroy(this.gameObject);
         }
-    }
+    }*/
 
 
     private void Update()
@@ -41,8 +42,13 @@ public class CloudInParabola : MonoBehaviour {
         if(startAnim)
         {
             animTimer += Time.deltaTime;
-            //animTimer = animTimer % 7;
             transform.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
+
+            if(transform.position.y <= 0)
+            {
+                startAnim = false;
+            }
+
         }
     }
 }
