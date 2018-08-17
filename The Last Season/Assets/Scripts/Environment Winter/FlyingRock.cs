@@ -94,14 +94,4 @@ public class FlyingRock : MonoBehaviour
         }
     }
 
-     /*private IEnumerator FlyUp()
-     {
-         //yield return new WaitForSeconds(1f);
-         firstRock.position = Vector3.Lerp(firstRock.position, height, speed * Time.deltaTime);
-         hasMoved = true;
-         //playerMove.enabled = false;
-         yield return new WaitForSeconds(0.5f);
-         //playerMove.enabled = true;
-     }*/
-
 }

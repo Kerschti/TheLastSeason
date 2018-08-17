@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private float lastY;                        // Float that stores last Position of player when falling
     private float lastYTravelDistance;          // Float that stores the calculated distance traveled beween last frame of falling and now
     private float fallHeight = 0;               // Float to determine if falling.
-    private float deathHeight = 6;              // Float of max Height you can fall before dieing.
+    private float deathHeight = 8;              // Float of max Height you can fall before dieing.
     private bool wasFalling = false;            // Determine if player fell in last frame.
     private bool isSwimming = false;
     private float h;                            // Stores horizontal input
@@ -144,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log(transform.forward * movement) ;
         transform.Translate(transform.forward * movement * Time.deltaTime, Space.World);
         //playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse);
+        //Debug.Log(movement);
         //playerRigidbody.velocity = transform.forward * movement * Time.deltaTime;
 
 
@@ -177,20 +178,26 @@ public class PlayerMovement : MonoBehaviour
         
         if (!IsGrounded())
         {
+            //Debug.Log("Last Y: " + lastY);
             //calculate the distance between our current height and the height we were in the last frame
             lastYTravelDistance = transform.position.y - lastY;
 
             //if the difference is negative, it means we're descending 
             fallHeight += lastYTravelDistance < 0 ? lastYTravelDistance : 0;
 
+            //Debug.Log("FALL HEIGHT: " + fallHeight);
+
             //cache our current Y position for comparison in the next frame
             lastY = transform.position.y;
 
             //store that a fall happened
-            wasFalling = true;
+            //wasFalling = true;
+
+            //Debug.Log("Travel Distance: "+ lastYTravelDistance);
         }
-        else if(IsGrounded() && wasFalling)
+        else if(IsGrounded()/* && wasFalling*/)
         {
+            //Debug.Log("################# Final FALL HEIGHT: " + fallHeight);
             //we check to see if we passed the allowed falling distance and kill the player if necessary
             if (fallHeight <= -deathHeight)
                 GetComponent<PlayerHealth>().TakeDamage(100);
@@ -198,9 +205,10 @@ public class PlayerMovement : MonoBehaviour
             //reset fall height since we landed (doesn't matter if we're dead or alive)
             fallHeight = 0;
 
-           
+            //rest lastY
+            //lastY = transform.position.y;
             //checked if player fell to death now prevent repeating
-            wasFalling = false;
+            //wasFalling = false;
         }
 
 
