@@ -33,7 +33,7 @@ public class IslandFly : MonoBehaviour {
         
         if(firstPos)
         {
-            Debug.Log("First Pos");
+            
             ThirdIsland.position = Vector3.SmoothDamp(ThirdIsland.position, newPosThirdI, ref velocity, speed);
             if(ThirdIsland.position == newPosThirdI)
             {
@@ -41,7 +41,7 @@ public class IslandFly : MonoBehaviour {
             }
         } else if (!firstPos)
         {
-            Debug.Log("Sec Pos");
+          
             ThirdIsland.position = Vector3.SmoothDamp(ThirdIsland.position, oldPosThirdI, ref velocity, speed);
             if(ThirdIsland.position == oldPosThirdI)
             {

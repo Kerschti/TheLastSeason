@@ -13,6 +13,8 @@ public class FlyingRock : MonoBehaviour
     public Vector3 velocity;
     public GameObject _groundParticles;
     public GameObject holder;
+    public GameObject secIsle;
+    public GameObject firstCloud;
 
     private Collider playerCollider;
     private PlayerMovement playerMove;
@@ -38,8 +40,8 @@ public class FlyingRock : MonoBehaviour
         playerCollider = player.GetComponent<Collider>();
         playerMove = player.GetComponent<PlayerMovement>();
         groundParticles = _groundParticles.GetComponent<ParticleSystem>();
-        animSecIsle = GameObject.Find("SecondIsland").GetComponent<Animation>();
-        animCloud = GameObject.Find("WalkCloud").GetComponent<Animation>();
+        animSecIsle = secIsle.GetComponent<Animation>();
+        animCloud = firstCloud.GetComponent<Animation>();
         firstRock = this.transform;
         startingPos = firstRock.position;
         newPos = new Vector3(firstRock.position.x, height, firstRock.position.z);
