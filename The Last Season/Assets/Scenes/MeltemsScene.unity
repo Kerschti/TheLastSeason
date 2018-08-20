@@ -5023,10 +5023,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 367814436}
-  smoothing: 1
+  smoothing: 0.5
   mouseSensitivity: 3
   distFromTarget: 5
-  PitchMinMax: {x: -40, y: 85}
+  PitchMinMax: {x: 3, y: 60}
   rotate: 1
   rotationSpeed: 3
 --- !u!1001 &502620556
@@ -15032,8 +15032,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numObjects: 10
-  prefab: {fileID: 1922599926531102, guid: cbd085aaa36ad354384d6d6c7cd97364, type: 2}
-  radius: 10
+  trees:
+  - {fileID: 1922599926531102, guid: cbd085aaa36ad354384d6d6c7cd97364, type: 2}
+  - {fileID: 1177254936085422, guid: 2a833842b6c988d428fd2333fca4a340, type: 2}
+  - {fileID: 1122118298053718, guid: 8bbc2b0061c1ca0478abae4ec6917c6a, type: 2}
 --- !u!4 &980394293
 Transform:
   m_ObjectHideFlags: 0

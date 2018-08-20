@@ -15,14 +15,11 @@ public class IslandFly : MonoBehaviour {
     public Vector3 velocity;
 
 
-
-	// Use this for initialization
 	void Start () {
         newPosThirdI = new Vector3(ThirdIsland.position.x, height, ThirdIsland.position.z);
         oldPosThirdI = ThirdIsland.position;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
         AnimateThirdIsland();
 
