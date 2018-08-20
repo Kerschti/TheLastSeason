@@ -5027,8 +5027,6 @@ MonoBehaviour:
   mouseSensitivity: 3
   distFromTarget: 5
   PitchMinMax: {x: 3, y: 60}
-  rotate: 1
-  rotationSpeed: 3
 --- !u!1001 &502620556
 Prefab:
   m_ObjectHideFlags: 0
@@ -25971,6 +25969,16 @@ Prefab:
     - target: {fileID: 4692667767085906, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114748267492024674, guid: 3f769196e23754bab901de9bb087b9ee,
+        type: 2}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114748267492024674, guid: 3f769196e23754bab901de9bb087b9ee,
+        type: 2}
+      propertyPath: downAccel
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}

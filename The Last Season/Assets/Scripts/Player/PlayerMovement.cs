@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private float initSpeed;                    // Stores initial value for Speed;
     private float SpeedVelocity;                // Obligatory Velocity value (0) for speedcalculation.
     private float curSpeed;                     // Stores current Speed of player.
+    private float verticalVelocity;             // Setting of upward velocity.
 
     public float smoothTime = 0.1f;             // Smoothtime for smoothing playermovement.
     public float timeUntilRuns = 20;            // Timer until the player runs.
@@ -30,9 +30,12 @@ public class PlayerMovement : MonoBehaviour
     public float Speed = 7f;                    // moving speed.
     public float runSpeed = 5f;                 // run speed.
     public float rotationSpeed = 75f;           // rotation speed.
-
+    public float downwardAccel = 0.3f;          // Acceleration at which player falls downwards.
     Transform cameraTrans;                      // camera transform.
     Vector2 dir;                                // Vector2 for calculating movement & rotation of player.
+
+
+
 
 
     void Awake()
@@ -70,13 +73,6 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
-        {
-            //if jumpKey was pressed, jump upwards with relative force.
-            playerRigidbody.AddRelativeForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
-
-
         // Check if player is falling to death.
         CheckForFall();
 
@@ -84,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
         // Move the player around the scene.
         //TODO: prevent moving the player while he's attacking 
         Move();
+
+        Jump();
 
         // Animate the player.
         Animating();
@@ -161,6 +159,27 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void Jump()
+    {
+
+        if(IsGrounded())
+        {
+            verticalVelocity = 0;
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                verticalVelocity = jumpForce;
+            }                                    
+        }
+        else
+        {
+            verticalVelocity -= downwardAccel;
+        }
+
+        Vector3 jumpVector = new Vector3(0, verticalVelocity, 0);
+        //Debug.Log(jumpVector);
+        playerRigidbody.velocity = transform.TransformDirection(jumpVector);
+    }
+
 
     void CheckForFall()
     {
@@ -206,8 +225,6 @@ public class PlayerMovement : MonoBehaviour
         bool IsWalking = h != 0f || v != 0f && !IsInWater();
         float running = timeUntilRuns <= 0 ? 1f : 0.5f;
 
-        //bool isInWater = !IsWalking && !IsGrounded();
-        //anim.SetBool("IsWalking", IsWalking);
         anim.SetBool("IsInWater", IsInWater());
 
 
