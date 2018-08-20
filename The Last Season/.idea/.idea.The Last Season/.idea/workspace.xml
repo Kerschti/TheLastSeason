@@ -25,71 +25,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomTestScript.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RoomTestScript.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="513">
+              <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding>
-                <marker date="1534440237171" expanded="true" signature="6:126" ph="..." />
-                <marker date="1534440237171" expanded="true" signature="171:2518" ph="{...}" />
-                <marker date="1534440237171" expanded="true" signature="175:235" ph="/* public RoomTestScript(){} ... */" />
-                <marker date="1534440237171" expanded="true" signature="394:549" ph="{...}" />
-                <marker date="1534440237171" expanded="true" signature="429:471" ph="{...}" />
-                <marker date="1534440237171" expanded="true" signature="504:546" ph="{...}" />
-                <marker date="1534440237171" expanded="true" signature="605:665" ph="{...}" />
-                <marker date="1534440237171" expanded="true" signature="681:2516" ph="{...}" />
-                <marker date="1534440237171" expanded="true" signature="715:812" ph="{...}" />
-                <marker date="1534440237171" expanded="true" signature="816:942" ph="/* rotieren Urspung ... */" />
-                <marker date="1534440237171" expanded="false" signature="943:1227" ph="/* GameObject cube1 = GameObject.CreatePrimitive(PrimitiveType.Cube); ... */" />
-                <marker date="1534440237171" expanded="false" signature="1228:2445" ph="/* Vector3 links = new Vector3(Random.Range(5.0f, 12.0f), 0, Random.Range(5.0f, 12.0f)); ... */" />
-                <marker date="1534440237171" expanded="true" signature="2449:2513" ph="/* Update is called once per frame ... */" />
+                <marker date="1534779944427" expanded="false" signature="6:126" ph="..." />
+                <marker date="1534779944427" expanded="true" signature="171:577" ph="{...}" />
+                <marker date="1534779944427" expanded="true" signature="279:434" ph="{...}" />
+                <marker date="1534779944427" expanded="true" signature="314:356" ph="{...}" />
+                <marker date="1534779944427" expanded="true" signature="389:431" ph="{...}" />
+                <marker date="1534779944427" expanded="true" signature="490:550" ph="{...}" />
+                <marker date="1534779944427" expanded="true" signature="566:575" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomGenerator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="40" selection-start-line="40" selection-end-line="144" selection-end-column="2" />
-              <folding>
-                <marker date="1534371148952" expanded="false" signature="7:46" ph="..." />
-                <marker date="1534371148952" expanded="true" signature="47:722" ph="/* Einen Raum generieren ... */" />
-                <marker date="1534371148952" expanded="true" signature="724:3460" ph="/* using System.Collections; ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bla.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <marker date="1534518359105" expanded="true" signature="6:78" ph="..." />
-                <marker date="1534518359105" expanded="true" signature="198:2729" ph="{...}" />
-                <marker date="1534518359105" expanded="true" signature="568:1036" ph="{...}" />
-                <marker date="1534518359105" expanded="true" signature="1072:1130" ph="{...}" />
-                <marker date="1534518359105" expanded="true" signature="1178:1526" ph="{...}" />
-                <marker date="1534518359105" expanded="true" signature="1208:1254" ph="{...}" />
-                <marker date="1534518359105" expanded="true" signature="1267:1519" ph="{...}" />
-                <marker date="1534518359105" expanded="true" signature="1563:2727" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Generate.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Generate.cs" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="4" selection-end-line="135" selection-end-column="1" />
+            <state>
+              <caret selection-end-line="135" selection-end-column="1" />
               <folding>
                 <marker date="1534776326928" expanded="true" signature="6:78" ph="..." />
-                <marker date="1534776326928" expanded="true" signature="118:4037" ph="{...}" />
                 <marker date="1534776326928" expanded="true" signature="234:471" ph="/* Weite (x) wird mittels random ermittelt (hierdurch entsteht aber ein ... */" />
                 <marker date="1534776326928" expanded="true" signature="590:716" ph="/* Bei (10, 13, 1) wäre das Offset = (5, 6.5, 0.5), damit das Wandsegment ... */" />
                 <marker date="1534776326928" expanded="true" signature="1089:1826" ph="{...}" />
@@ -104,13 +64,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generate.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174" />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -121,15 +74,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Stylized Mushroom/Shader/mushroom.shader" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/New Unity Project (2)/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/bla.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/bla.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -137,10 +89,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
         <option value="$PROJECT_DIR$/Assets/bla.cs" />
         <option value="$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs" />
         <option value="$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
       </list>
     </option>
   </component>
@@ -154,10 +106,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1455" />
-    <option name="y" value="67" />
-    <option name="width" value="1468" />
-    <option name="height" value="877" />
+    <option name="x" value="-726" />
+    <option name="y" value="23" />
+    <option name="width" value="752" />
+    <option name="height" value="997" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -177,11 +129,11 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,13 +180,15 @@
       <workItem from="1534106637485" duration="12425000" />
       <workItem from="1534332327169" duration="2917000" />
       <workItem from="1534343602721" duration="20409000" />
+      <workItem from="1534777689362" duration="120000" />
+      <workItem from="1534779297147" duration="2843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48050000" />
+    <option name="totallyTimeSpent" value="51013000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -244,10 +198,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1455" y="67" width="1468" height="877" extended-state="0" />
+    <frame x="-726" y="23" width="752" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49526516" visible="true" weight="0.31025642" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49526516" visible="true" weight="0.2688889" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32904148" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5047349" side_tool="true" weight="0.32044888" />
       <window_info anchor="bottom" id="Unit Tests" order="7" sideWeight="0.49810606" weight="0.32948717" />
@@ -255,9 +209,9 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4971591" weight="0.32948717" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13884993" />
-      <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16170213" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -280,98 +234,145 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-end-line="135" selection-end-column="1" />
+          <folding>
+            <marker date="1534776326928" expanded="true" signature="6:78" ph="..." />
+            <marker date="1534776326928" expanded="true" signature="234:471" ph="/* Weite (x) wird mittels random ermittelt (hierdurch entsteht aber ein ... */" />
+            <marker date="1534776326928" expanded="true" signature="590:716" ph="/* Bei (10, 13, 1) wäre das Offset = (5, 6.5, 0.5), damit das Wandsegment ... */" />
+            <marker date="1534776326928" expanded="true" signature="1089:1826" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="1881:1888" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="1913:3443" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="2065:2230" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="2240:2525" ph="/* Das erste Segment muss um die Hälfte aller Raumkoordinaten verschoben werden, damit das ... */" />
+            <marker date="1534776326928" expanded="true" signature="3449:3620" ph="/* Damit die Wandecken auf Grund der Wandtiefe auch korrekt angeordnet sind, ... */" />
+            <marker date="1534776326928" expanded="true" signature="3655:4035" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <marker date="1534779944427" expanded="false" signature="6:126" ph="..." />
+            <marker date="1534779944427" expanded="true" signature="171:577" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="279:434" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="314:356" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="389:431" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="490:550" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="566:575" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <marker date="1534779944427" expanded="false" signature="6:126" ph="..." />
+            <marker date="1534779944427" expanded="true" signature="171:577" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="279:434" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="314:356" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="389:431" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="490:550" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="566:575" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-end-line="135" selection-end-column="1" />
+          <folding>
+            <marker date="1534776326928" expanded="true" signature="6:78" ph="..." />
+            <marker date="1534776326928" expanded="true" signature="234:471" ph="/* Weite (x) wird mittels random ermittelt (hierdurch entsteht aber ein ... */" />
+            <marker date="1534776326928" expanded="true" signature="590:716" ph="/* Bei (10, 13, 1) wäre das Offset = (5, 6.5, 0.5), damit das Wandsegment ... */" />
+            <marker date="1534776326928" expanded="true" signature="1089:1826" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="1881:1888" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="1913:3443" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="2065:2230" ph="{...}" />
+            <marker date="1534776326928" expanded="true" signature="2240:2525" ph="/* Das erste Segment muss um die Hälfte aller Raumkoordinaten verschoben werden, damit das ... */" />
+            <marker date="1534776326928" expanded="true" signature="3449:3620" ph="/* Damit die Wandecken auf Grund der Wandtiefe auch korrekt angeordnet sind, ... */" />
+            <marker date="1534776326928" expanded="true" signature="3655:4035" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding>
-            <marker date="1534440237171" expanded="true" signature="6:126" ph="..." />
-            <marker date="1534440237171" expanded="true" signature="171:2518" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="175:235" ph="/* public RoomTestScript(){} ... */" />
-            <marker date="1534440237171" expanded="true" signature="394:549" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="429:471" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="504:546" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="605:665" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="681:2516" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="715:812" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="816:942" ph="/* rotieren Urspung ... */" />
-            <marker date="1534440237171" expanded="false" signature="943:1227" ph="/* GameObject cube1 = GameObject.CreatePrimitive(PrimitiveType.Cube); ... */" />
-            <marker date="1534440237171" expanded="false" signature="1228:2445" ph="/* Vector3 links = new Vector3(Random.Range(5.0f, 12.0f), 0, Random.Range(5.0f, 12.0f)); ... */" />
-            <marker date="1534440237171" expanded="true" signature="2449:2513" ph="/* Update is called once per frame ... */" />
+            <marker date="1534779944427" expanded="false" signature="6:126" ph="..." />
+            <marker date="1534779944427" expanded="true" signature="171:577" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="279:434" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="314:356" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="389:431" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="490:550" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="566:575" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-          <folding>
-            <marker date="1534371148952" expanded="false" signature="7:46" ph="..." />
-            <marker date="1534371148952" expanded="true" signature="47:722" ph="/* Einen Raum generieren ... */" />
-            <marker date="1534371148952" expanded="true" signature="724:3460" ph="/* using System.Collections; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
           <folding>
-            <marker date="1534440237171" expanded="true" signature="6:126" ph="..." />
-            <marker date="1534440237171" expanded="true" signature="171:2518" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="175:235" ph="/* public RoomTestScript(){} ... */" />
-            <marker date="1534440237171" expanded="true" signature="394:549" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="429:471" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="504:546" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="605:665" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="681:2516" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="715:812" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="816:942" ph="/* rotieren Urspung ... */" />
-            <marker date="1534440237171" expanded="false" signature="943:1227" ph="/* GameObject cube1 = GameObject.CreatePrimitive(PrimitiveType.Cube); ... */" />
-            <marker date="1534440237171" expanded="false" signature="1228:2445" ph="/* Vector3 links = new Vector3(Random.Range(5.0f, 12.0f), 0, Random.Range(5.0f, 12.0f)); ... */" />
-            <marker date="1534440237171" expanded="true" signature="2449:2513" ph="/* Update is called once per frame ... */" />
+            <marker date="1534779944427" expanded="false" signature="6:126" ph="..." />
+            <marker date="1534779944427" expanded="true" signature="171:577" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="279:434" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="314:356" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="389:431" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="490:550" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="566:575" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
-            <marker date="1534440237171" expanded="true" signature="6:126" ph="..." />
-            <marker date="1534440237171" expanded="true" signature="171:2518" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="175:235" ph="/* public RoomTestScript(){} ... */" />
-            <marker date="1534440237171" expanded="true" signature="394:549" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="429:471" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="504:546" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="605:665" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="681:2516" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="715:812" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="816:942" ph="/* rotieren Urspung ... */" />
-            <marker date="1534440237171" expanded="false" signature="943:1227" ph="/* GameObject cube1 = GameObject.CreatePrimitive(PrimitiveType.Cube); ... */" />
-            <marker date="1534440237171" expanded="false" signature="1228:2445" ph="/* Vector3 links = new Vector3(Random.Range(5.0f, 12.0f), 0, Random.Range(5.0f, 12.0f)); ... */" />
-            <marker date="1534440237171" expanded="true" signature="2449:2513" ph="/* Update is called once per frame ... */" />
+            <marker date="1534779944427" expanded="false" signature="6:126" ph="..." />
+            <marker date="1534779944427" expanded="true" signature="171:577" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="279:434" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="314:356" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="389:431" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="490:550" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="566:575" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -432,117 +433,24 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Utility/AutoMoveAndRotate.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/Ground.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/Ground.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1728">
-          <folding>
-            <marker date="1534425058462" expanded="false" signature="6:108" ph="..." />
-            <marker date="1534425058462" expanded="true" signature="153:7759" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="2020:2429" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="2450:2570" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="2597:2793" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="2659:2768" ph="/* transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0); ... */" />
-            <marker date="1534425058462" expanded="true" signature="2819:3386" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="2842:2931" ph="/* anim.SetFloat(&quot;speedX&quot;, Mathf.Abs(h)); ... */" />
-            <marker date="1534425058462" expanded="true" signature="3001:3102" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="3185:3285" ph="/* Move the player around the scene. ... */" />
-            <marker date="1534425058462" expanded="true" signature="3411:3681" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="3523:3589" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="3617:3675" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="3712:4053" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="4083:4422" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="4439:5288" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="4514:4843" ph="/* movement.Set(h, 0f, v); ... */" />
-            <marker date="1534425058462" expanded="true" signature="5103:5280" ph="/* playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse); ... */" />
-            <marker date="1534425058462" expanded="true" signature="5310:5927" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="5412:5667" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="5676:5920" ph="/* rotation.Set(h, 0f, v); ... */" />
-            <marker date="1534425058462" expanded="true" signature="5953:7051" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="5995:6526" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="6570:7043" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="7073:7757" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="7206:7301" ph="/* bool isInWater = !IsWalking &amp;&amp; !IsGrounded(); ... */" />
-            <marker date="1534425058462" expanded="true" signature="7378:7443" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="7474:7540" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="7566:7649" ph="{...}" />
-            <marker date="1534425058462" expanded="true" signature="7685:7748" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="40" selection-start-line="40" selection-end-line="144" selection-end-column="2" />
-          <folding>
-            <marker date="1534371148952" expanded="false" signature="7:46" ph="..." />
-            <marker date="1534371148952" expanded="true" signature="47:722" ph="/* Einen Raum generieren ... */" />
-            <marker date="1534371148952" expanded="true" signature="724:3460" ph="/* using System.Collections; ... */" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1728" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/New Unity Project (2)/Assets/Scripts/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <marker date="1534440237171" expanded="true" signature="6:126" ph="..." />
-            <marker date="1534440237171" expanded="true" signature="171:2518" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="175:235" ph="/* public RoomTestScript(){} ... */" />
-            <marker date="1534440237171" expanded="true" signature="394:549" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="429:471" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="504:546" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="605:665" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="681:2516" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="715:812" ph="{...}" />
-            <marker date="1534440237171" expanded="true" signature="816:942" ph="/* rotieren Urspung ... */" />
-            <marker date="1534440237171" expanded="false" signature="943:1227" ph="/* GameObject cube1 = GameObject.CreatePrimitive(PrimitiveType.Cube); ... */" />
-            <marker date="1534440237171" expanded="false" signature="1228:2445" ph="/* Vector3 links = new Vector3(Random.Range(5.0f, 12.0f), 0, Random.Range(5.0f, 12.0f)); ... */" />
-            <marker date="1534440237171" expanded="true" signature="2449:2513" ph="/* Update is called once per frame ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <marker date="1534518359105" expanded="true" signature="6:78" ph="..." />
-            <marker date="1534518359105" expanded="true" signature="198:2729" ph="{...}" />
-            <marker date="1534518359105" expanded="true" signature="568:1036" ph="{...}" />
-            <marker date="1534518359105" expanded="true" signature="1072:1130" ph="{...}" />
-            <marker date="1534518359105" expanded="true" signature="1178:1526" ph="{...}" />
-            <marker date="1534518359105" expanded="true" signature="1208:1254" ph="{...}" />
-            <marker date="1534518359105" expanded="true" signature="1267:1519" ph="{...}" />
-            <marker date="1534518359105" expanded="true" signature="1563:2727" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-end-line="135" selection-end-column="1" />
+        <state>
+          <caret selection-end-line="135" selection-end-column="1" />
           <folding>
             <marker date="1534776326928" expanded="true" signature="6:78" ph="..." />
-            <marker date="1534776326928" expanded="true" signature="118:4037" ph="{...}" />
             <marker date="1534776326928" expanded="true" signature="234:471" ph="/* Weite (x) wird mittels random ermittelt (hierdurch entsteht aber ein ... */" />
             <marker date="1534776326928" expanded="true" signature="590:716" ph="/* Bei (10, 13, 1) wäre das Offset = (5, 6.5, 0.5), damit das Wandsegment ... */" />
             <marker date="1534776326928" expanded="true" signature="1089:1826" ph="{...}" />
@@ -556,5 +464,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding>
+            <marker date="1534779944427" expanded="false" signature="6:126" ph="..." />
+            <marker date="1534779944427" expanded="true" signature="171:577" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="279:434" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="314:356" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="389:431" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="490:550" ph="{...}" />
+            <marker date="1534779944427" expanded="true" signature="566:575" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-657">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
   </component>
 </project>
