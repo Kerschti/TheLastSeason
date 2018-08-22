@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25714806, g: 0.2499319, b: 0.3417317, a: 1}
+  m_IndirectSpecularColor: {r: 0.25768745, g: 0.2498925, b: 0.34177604, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21008,6 +21008,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trunk: {fileID: 877937035}
   bullet: {fileID: 1094361104881548, guid: 07223867896864eedb45a4167131c62c, type: 2}
+  atkDamage: 10
+  timeBetweenAttacks: 0.5
 --- !u!1 &1584913676
 GameObject:
   m_ObjectHideFlags: 0
