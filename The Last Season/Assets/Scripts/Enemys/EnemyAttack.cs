@@ -24,10 +24,9 @@ public class EnemyAttack : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        //
-        if ( timer >= timeBetweenAttacks && playerInRange)
+
+        if (timer >= timeBetweenAttacks && playerInRange)
         {
-            Debug.Log("Attack!!");
             Attack();
         }
     }
@@ -36,7 +35,7 @@ public class EnemyAttack : MonoBehaviour
     {
         timer = 0f;
 
-        if(playerHealth.curHealth > 0)
+        if (playerHealth.curHealth > 0)
         {
             playerHealth.TakeDamage(atkDamage);
         }
