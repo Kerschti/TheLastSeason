@@ -23,13 +23,14 @@ public class PlayerAttack : MonoBehaviour
         //Debug.Log(anim.GetBool("IsFighting"));
         timer += Time.deltaTime;
 
-        if(Input.GetKeyDown(KeyCode.F) && timer >= timeBetweenAttacks)
+        if (Input.GetKeyDown(KeyCode.F) && timer >= timeBetweenAttacks)
         {
             Fight();
         }
-        if(timer >= timeBetweenAttacks * animTime)
+        if (timer >= timeBetweenAttacks * animTime)
         {
             anim.SetBool("IsFighting", false);
+
         }
     }
 

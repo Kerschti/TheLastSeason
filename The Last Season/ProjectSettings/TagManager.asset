@@ -7,6 +7,7 @@ TagManager:
   - Bunny
   - Holder
   - TrunkEnd
+  - Floor
   layers:
   - Default
   - TransparentFX

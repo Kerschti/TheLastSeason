@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4226122974021628}
   - component: {fileID: 33765810419977624}
   - component: {fileID: 23680060095345026}
+  - component: {fileID: 65475280207422546}
   m_Layer: 0
   m_Name: fir_tree_poly_4
   m_TagString: Untagged
@@ -84,3 +85,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1177254936085422}
   m_Mesh: {fileID: 4300000, guid: ba796a25c638ec740ad11cc9f1c0b87f, type: 3}
+--- !u!65 &65475280207422546
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177254936085422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6873505, y: 4.6952114, z: 2.9098945}
+  m_Center: {x: 0.00000011920929, y: 2.3445392, z: 0.036113262}

@@ -13,6 +13,9 @@ public class FlyingRock : MonoBehaviour
     public Vector3 velocity;
     public GameObject _groundParticles;
     public GameObject holder;
+    public GameObject secIsle;
+    public GameObject firstCloud;
+    public GameObject flyingIsland;
 
     private Collider playerCollider;
     private PlayerMovement playerMove;
@@ -38,8 +41,8 @@ public class FlyingRock : MonoBehaviour
         playerCollider = player.GetComponent<Collider>();
         playerMove = player.GetComponent<PlayerMovement>();
         groundParticles = _groundParticles.GetComponent<ParticleSystem>();
-        animSecIsle = GameObject.Find("SecondIsland").GetComponent<Animation>();
-        animCloud = GameObject.Find("WalkCloud").GetComponent<Animation>();
+        animSecIsle = secIsle.GetComponent<Animation>();
+        animCloud = firstCloud.GetComponent<Animation>();
         firstRock = this.transform;
         startingPos = firstRock.position;
         newPos = new Vector3(firstRock.position.x, height, firstRock.position.z);
@@ -56,9 +59,11 @@ public class FlyingRock : MonoBehaviour
             firstRock.position = Vector3.SmoothDamp(firstRock.position, newPos, ref velocity, speed);
             if(!animationPlays)
             {
-                animScript.enabled = true;
-                animSecIsle.Play();
-                animCloud.Play();
+                /*  animScript.enabled = true;
+                  animSecIsle.Play();
+                  animCloud.Play();
+                  animationPlays = true;*/
+                Instantiate(flyingIsland, flyingIsland.transform.position, flyingIsland.transform.rotation);
                 animationPlays = true;
 
             }
@@ -88,15 +93,5 @@ public class FlyingRock : MonoBehaviour
             collision.collider.transform.SetParent(null);
         }
     }
-
-     /*private IEnumerator FlyUp()
-     {
-         //yield return new WaitForSeconds(1f);
-         firstRock.position = Vector3.Lerp(firstRock.position, height, speed * Time.deltaTime);
-         hasMoved = true;
-         //playerMove.enabled = false;
-         yield return new WaitForSeconds(0.5f);
-         //playerMove.enabled = true;
-     }*/
 
 }
