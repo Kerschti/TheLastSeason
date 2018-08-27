@@ -9,15 +9,36 @@ public class TrunkBullet : MonoBehaviour
     public float BulletSpeed;
     protected float Animation;
 
+    public int attackDamage = 10;
+    GameObject player;
+    PlayerHealth playerhealth;
+    EnemyHealth enemyhealth;
+    bool playerInRange;
+ 
+
     Vector3 beginP;
     Vector3 targetP;
 
-    void Start()
+    void Awake()
     {
 
         beginP = GameObject.FindWithTag("TrunkEnd").transform.position;
         targetP = GameObject.FindWithTag("Player").transform.position;
         Destroy(this.gameObject, 8.0f);
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerhealth = player.GetComponent<PlayerHealth>();
+        enemyhealth = GetComponent<EnemyHealth>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject == player)
+        {
+            playerInRange = true;
+
+            Attack();
+        }
     }
 
     void Update()
@@ -28,5 +49,15 @@ public class TrunkBullet : MonoBehaviour
         Debug.Log("Parabel ist fertig aufgebaut");
     }
 
+    void Attack()
+    {
+
+        if(playerhealth.curHealth > 0)
+        {
+            playerhealth.TakeDamage(attackDamage);
+            Debug.Log(playerhealth);
+        }
+       
+    }
 
 }
