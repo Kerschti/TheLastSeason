@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class HellephantAppear : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+
+    GameObject killerhellephant;
+
+
+	void Awake () {
+        killerhellephant = GameObject.FindGameObjectWithTag("Killerhellephant");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            
+
+        }
+    }
 }
