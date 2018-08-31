@@ -16,11 +16,10 @@ public class HellephantAppear : MonoBehaviour {
 
 	void Awake () {
         killerhellephant = GameObject.FindGameObjectWithTag("KillerHellephant");
-        position = new Vector3(x, y, z);
+        
         c = 0;
-        x = 15;
-        y = 3;
-        z = 16;
+        x = 33;
+        z = 52;
 	}
 
     void OnTriggerEnter(Collider other)
@@ -29,11 +28,15 @@ public class HellephantAppear : MonoBehaviour {
         {
             timer += Time.deltaTime;
 
-            while (timer == timer % 5f && c < 6)
+            while (timer == timer % 5f && c < 3)
             {
+                position = new Vector3(x, 3, z);
                 Debug.Log("Hellephant Appear");
                 Instantiate(killerhellephant, position, Quaternion.identity);
                 c++;
+                x = x + 10;
+                
+
             }
         }
 
