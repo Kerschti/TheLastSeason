@@ -5,8 +5,13 @@ using UnityEngine;
 public class TrunkBullet : MonoBehaviour
 {
 
+<<<<<<< HEAD
     // Use this for initialization
     public float BulletSpeed;
+=======
+	// Use this for initialization
+	public float BulletSpeed;
+>>>>>>> master
     protected float Animation;
 
     public int attackDamage = 10;
@@ -45,6 +50,10 @@ public class TrunkBullet : MonoBehaviour
     {
         Debug.Log("Jetzt sollte die Parabel kommen");
         Animation += Time.deltaTime;
+<<<<<<< HEAD
+=======
+        Animation = Animation % 5;
+>>>>>>> master
         transform.position = Parabola.Parabola1(beginP, targetP, 5f, Animation / 5f);
         Debug.Log("Parabel ist fertig aufgebaut");
     }
