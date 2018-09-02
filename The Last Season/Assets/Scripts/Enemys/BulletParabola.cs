@@ -7,12 +7,6 @@ public class BulletParabola : MonoBehaviour
 
     protected float Animation;
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
