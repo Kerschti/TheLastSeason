@@ -35,3 +35,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 The Last Season/Assets/Low Poly Water/Plane Meshes/Plane10x5W200H70.asset
+The Last Season/Assets/Scenes/MeltemsScene.unity
+The Last Season/Assets/Scripts/Enemys/HellephantAppear.cs
