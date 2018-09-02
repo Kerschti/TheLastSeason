@@ -5,22 +5,17 @@ using UnityEngine;
 public class HellephantAppear : MonoBehaviour {
 
 
-    //create timer and next hellephant should appear every 5 secs in diffrent positions
     private float timer;
     GameObject killerhellephant;
-    int x;
-    int y;
-    int z;
+    int x = 25;
+    int y = 10;
+    int z = 55;
     Vector3 position;
-    int c;
+    private int c = 0;
 
 	void Awake () {
         killerhellephant = GameObject.FindGameObjectWithTag("KillerHellephant");
-        position = new Vector3(x, y, z);
-        c = 0;
-        x = 15;
-        y = 3;
-        z = 16;
+        position = new Vector3(x,y,z);
 	}
 
     void OnTriggerEnter(Collider other)
@@ -34,6 +29,8 @@ public class HellephantAppear : MonoBehaviour {
                 Debug.Log("Hellephant Appear");
                 Instantiate(killerhellephant, position, Quaternion.identity);
                 c++;
+                x = x + 25;
+                Debug.Log("Jetzzt kommt ein neuer Elefant");
             }
         }
 
