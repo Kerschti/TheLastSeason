@@ -5,7 +5,6 @@ using UnityEngine;
 public class HoldPlayer : MonoBehaviour {
 
 
-
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

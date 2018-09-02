@@ -19,7 +19,7 @@ public class RoomGenerator : MonoBehaviour
 	
 	// Use this for initialization
 	void Start () {
-		if (numberOfRooms >= (roomSize.x * 2) * (roomSize.y * 2))
+		if (numberOfRooms >= (roomSize.x * 2) * (roomSize.y * 2))	
 		{
 			numberOfRooms = Mathf.RoundToInt((roomSize.x * 2) * (roomSize.y * 2));
 		}

@@ -12,6 +12,10 @@ public class FlyingRock : MonoBehaviour
     public float speed;
     public Vector3 velocity;
     public GameObject _groundParticles;
+    public GameObject holder;
+    public GameObject secIsle;
+    public GameObject firstCloud;
+    public GameObject flyingIsland;
 
     private Collider playerCollider;
     private PlayerMovement playerMove;
@@ -20,6 +24,9 @@ public class FlyingRock : MonoBehaviour
     private Vector3 newPos;
     private ParticleSystem groundParticles;
     private Animation animSecIsle;
+    private Animation animCloud;
+    private IslandFly animScript;
+
 
 
     private bool hasMoved = false;
@@ -34,10 +41,12 @@ public class FlyingRock : MonoBehaviour
         playerCollider = player.GetComponent<Collider>();
         playerMove = player.GetComponent<PlayerMovement>();
         groundParticles = _groundParticles.GetComponent<ParticleSystem>();
-        animSecIsle = GameObject.Find("SecondIsland").GetComponent<Animation>();
+        animSecIsle = secIsle.GetComponent<Animation>();
+        animCloud = firstCloud.GetComponent<Animation>();
         firstRock = this.transform;
         startingPos = firstRock.position;
         newPos = new Vector3(firstRock.position.x, height, firstRock.position.z);
+        animScript = holder.GetComponent<IslandFly>();
 
     }
 
@@ -50,7 +59,11 @@ public class FlyingRock : MonoBehaviour
             firstRock.position = Vector3.SmoothDamp(firstRock.position, newPos, ref velocity, speed);
             if(!animationPlays)
             {
-                animSecIsle.Play();
+                /*  animScript.enabled = true;
+                  animSecIsle.Play();
+                  animCloud.Play();
+                  animationPlays = true;*/
+                Instantiate(flyingIsland, flyingIsland.transform.position, flyingIsland.transform.rotation);
                 animationPlays = true;
 
             }
@@ -80,15 +93,5 @@ public class FlyingRock : MonoBehaviour
             collision.collider.transform.SetParent(null);
         }
     }
-
-     /*private IEnumerator FlyUp()
-     {
-         //yield return new WaitForSeconds(1f);
-         firstRock.position = Vector3.Lerp(firstRock.position, height, speed * Time.deltaTime);
-         hasMoved = true;
-         //playerMove.enabled = false;
-         yield return new WaitForSeconds(0.5f);
-         //playerMove.enabled = true;
-     }*/
 
 }
