@@ -70,20 +70,16 @@ public class PlayerMovement : MonoBehaviour
         // Get InputAxis.
         GetInput();
 
-<<<<<<< HEAD
+
         // Turn the player.
         Turning();
-=======
-        //transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0);
-        // Turn the player.
-        Turning();
->>>>>>> RraumGenerator
+
     }
 
 
 
     void FixedUpdate()
-<<<<<<< HEAD
+
     {
 
         // Move the player around the scene.
@@ -99,33 +95,6 @@ public class PlayerMovement : MonoBehaviour
         // Calculate Time.
         TimeUntilRun();
 
-=======
-    {
-       
-        //anim.SetFloat("speedX", Mathf.Abs(h));
-        //anim.SetFloat("speedY", Mathf.Abs(v));
-       
-
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
-        {
-            playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
-
-
-        //check if player is falling to death
-        CheckForFall();
-
-
-        // Move the player around the scene.
-        //TODO: prevent moving the player while he's attacking 
-        Move();
-
-        // Animate the player.
-        Animating();
-
-        TimeUntilRun();
-
->>>>>>> RraumGenerator
     }
 
     void TimeUntilRun()
@@ -162,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Move()
-<<<<<<< HEAD
+
     {
 
         // Set speed based on direction & run or walkspeed, based on how long he moved.
@@ -173,24 +142,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Translate Player forward by speed. 
         transform.Translate(transform.forward * curSpeed * Time.deltaTime, Space.World);
-=======
-    {
-        // Set the movement vector based on the axis input.
-        /* movement.Set(h, 0f, v);
 
-         // Normalise the movement vector and make it proportional to the speed per second.
-       movement = (movement.normalized) * Speed * Time.deltaTime;
-
-         // Move the player to it's current position plus the movement.
-        playerRigidbody.MovePosition(transform.position + movement);*/
-
-        Speed = timeUntilRuns <= 0 ? runSpeed : initSpeed;
-
-
-        float movement = Speed * dir.magnitude;
-        //Debug.Log(transform.forward * movement) ;
-        transform.Translate(transform.forward * movement * Time.deltaTime, Space.World);
->>>>>>> RraumGenerator
         //playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse);
         //Debug.Log(movement);
         //playerRigidbody.velocity = transform.forward * movement * Time.deltaTime;
@@ -211,16 +163,6 @@ public class PlayerMovement : MonoBehaviour
             // Set transforms rotation smoothly.
             transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRot, ref speedSetting.rotationSpeed, 0.15f);
         }
-<<<<<<< HEAD
-=======
-        /*rotation.Set(h, 0f, v);
-
-        if (rotation != Vector3.zero)
-        {
-            targetRotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rotation), 0.15F);
-            transform.rotation = targetRotation;
-        }*/
->>>>>>> RraumGenerator
 
     }
 
