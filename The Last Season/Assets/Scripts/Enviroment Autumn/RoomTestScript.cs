@@ -1,50 +1,112 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using Unity.Collections;
-using UnityEngine.SceneManagement;
 
 public class RoomTestScript : MonoBehaviour
 {
-	//private GameObject wall;
-	//public int left, right, top, bot;
 
-	public RoomTestScript()
+	private float a, b; // xy
+
+	float segHoehe = 4.0f; //height
+	float segTiefe = 0.25f;  //depth
+	float segBreite = 0.0f;
+	
+	private bool fixSegmentBreite = true;
+
+	float fixedSegBreite = 5.0f; // Seg width
+
+	
+	private Vector3 erstesSeg = Vector3.zero;
+	
+	//private Vector3 erstesSeg = erstesSeg.(new Vector3(-5, 0, -5));
+
+
+	Transform pfad; //path
+
+	public GameObject wallSegPref; //Pfad
+
+	private List<GameObject> wallSegList = new List<GameObject>();
+
+	private bool ersteSeg = true; //firstSegment
+	
+	
+	public void Zufall()
 	{
+		for (int i = 1; i <= 10; i++)
+		{
+			a = Random.Range(5.0f, 12.0f);
+		}
 
+		for (int i = 1; i <= 10; i++)
+		{
+			b = Random.Range(5.0f, 12.0f);
+		}
 	}
 
-	// Use this for initialization
 	void Start()
 	{
+		pfad = new GameObject().transform;
 
-		// Wand links
-		GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		// cube.transform.localScale = new Vector3(x, y, 10);
-		cube.transform.localScale = new Vector3(0.5F, 2.5F, 10);
-		cube.transform.position = new Vector3(3, 1.6F, 3);
-
-		// Wand rechts
-		GameObject cube2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		cube2.transform.localScale = new Vector3(0.5F, 2.5F, 10);
-		cube2.transform.position = new Vector3(7.44F, 1.6F, 3);
-		
-		// Wand Eingang
-		GameObject cube3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		cube3.transform.position = new Vector3(5, 1.16F, 8);
-		//cube.transform.localRotation = new Vector3(0, 90F, 0);
-		cube3.transform.localScale = new Vector3(0.5F, 2.5F, 10);
-		cube3.transform.Rotate( new Vector3(0, 90F, 0));
-/**		
-		// Wand Ausgang
-		GameObject cube4 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-		cube.transform.position = new Vector3(5,  1.16F, -1.78F);
-		cube.transform.rotation = new Vector3(0, 90F, 0);
-		cube.transform.localScale = new Vector3(0.5F, 2.5F, 10);
-	}*/
-
-		// Update is called once per frame
-		/*void Update()
+		if (fixSegmentBreite)
 		{
+			segBreite = fixedSegBreite;
+		}
+	
+		CreateWall();
+		CreateWall();
+		Turn(-90.0f);
+		CreateWall();		
+		CreateWall();
+		CreateWall();
+		Turn(-90.0f);
+		CreateWall();
+		CreateWall();
+		Turn(-90.0f);
+		CreateWall();		
+		CreateWall();	
+		CreateWall();		
+
+
+	}
+	
+		public void CreateWall()
+	{
+		GameObject wallSeg;
+
+		if (!fixSegmentBreite)
+		{
+			int segWidth = Random.Range(7, 12);
+			segBreite = (float)segWidth;
+			Debug.Log("SegmentWidth = " + segWidth);
+		}
+
+		if (ersteSeg)
+		{
+			//pfad.Translate(new Vector3(segBreite / 2, segHoehe / 2, segTiefe / 2));
+			pfad.Translate(new Vector3(-5.0f, 0.0f, -5.0f));
+		}
+		else
+		{
+			pfad.Translate(new Vector3(segBreite / 2, 0, 0));
+		}
+			
+		ersteSeg = false;
+
+		Debug.Log("PathPos = " + pfad.position);
+		Debug.Log("PathRot = " + pfad.rotation);
+
+		wallSeg = (GameObject)Instantiate(wallSegPref, pfad.transform.position, pfad.transform.rotation);
+		wallSeg.transform.localScale += new Vector3(segBreite, segHoehe, segTiefe);
+		wallSegList.Add(wallSeg);
+		pfad.Translate(new Vector3(segBreite / 2, 0, 0));
 		
-		}*/
+	}
+
+	private void Turn(float angle)
+	{
+		pfad.transform.Translate(new Vector3(0, 0, segTiefe / 2));
+		pfad.transform.Rotate(0.0f, angle, 0.0f);
+		pfad.transform.Translate(new Vector3(0, 0, segTiefe / 2));
+
 	}
 }

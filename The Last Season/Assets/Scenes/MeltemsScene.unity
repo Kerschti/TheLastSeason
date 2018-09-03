@@ -9834,8 +9834,13 @@ GameObject:
   - component: {fileID: 676089359}
   - component: {fileID: 676089358}
   m_Layer: 0
+<<<<<<< HEAD
   m_Name: Dust
   m_TagString: Untagged
+=======
+  m_Name: CubeDoor
+  m_TagString: Player
+>>>>>>> RraumGenerator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9877,6 +9882,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -9898,6 +9904,34 @@ ParticleSystemRenderer:
   m_MaskInteraction: 0
 --- !u!198 &676089359
 ParticleSystem:
+=======
+--- !u!33 &791598425
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791598421}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &791598426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791598421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587b6742d5b9d40e3af291fdf279b06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Room
+--- !u!4 &829456739 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4836978321984202, guid: 3dfabecee5d404544a56dc2d38a81093,
+    type: 2}
+  m_PrefabInternal: {fileID: 2027136327}
+--- !u!1 &830730408
+GameObject:
+>>>>>>> RraumGenerator
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}

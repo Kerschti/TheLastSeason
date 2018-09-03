@@ -7,7 +7,12 @@ TagManager:
   - Floor
   - TrunkEnd
   - Bunny
+<<<<<<< HEAD
   - Holder
+=======
+  - wallSeg
+  - wall
+>>>>>>> RraumGenerator
   layers:
   - Default
   - TransparentFX

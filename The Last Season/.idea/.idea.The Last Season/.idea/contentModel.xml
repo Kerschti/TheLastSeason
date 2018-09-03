@@ -5,6 +5,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="bla.cs" t="Include" />
         <e p="Enemys" t="Include">
           <e p="Rhino" t="Include">
             <e p="Sheder" t="Include">
@@ -200,8 +201,10 @@
           </e>
           <e p="Enviroment Autumn" t="Include">
             <e p="DoorOpen.cs" t="Include" />
-            <e p="RoomGenerator.cs" t="Include" />
+            <e p="LoadRoomTrigger.cs" t="Include" />
+            <e p="RoomObjecte.cs" t="Include" />
             <e p="RoomTestScript.cs" t="Include" />
+            <e p="TexturenChance.cs" t="Include" />
           </e>
           <e p="Environment Winter" t="Include">
             <e p="FlyingRock.cs" t="Include" />
