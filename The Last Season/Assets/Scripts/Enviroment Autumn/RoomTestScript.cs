@@ -7,8 +7,8 @@ public class RoomTestScript : MonoBehaviour
 
 	private float a, b; // xy
 
-	float segHoehe = 2.0f; //height
-	float segTiefe = 1.0f;  //depth
+	float segHoehe = 4.0f; //height
+	float segTiefe = 0.25f;  //depth
 	float segBreite = 0.0f;
 	
 	private bool fixSegmentBreite = true;
@@ -51,7 +51,7 @@ public class RoomTestScript : MonoBehaviour
 		{
 			segBreite = fixedSegBreite;
 		}
-		
+	
 		CreateWall();
 		CreateWall();
 		Turn(-90.0f);
@@ -64,7 +64,6 @@ public class RoomTestScript : MonoBehaviour
 		Turn(-90.0f);
 		CreateWall();		
 		CreateWall();	
-		CreateWall();		
 		CreateWall();		
 
 
