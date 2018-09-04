@@ -15,7 +15,7 @@ public class HellephantAppear : MonoBehaviour {
 
 	void Awake () {
         killerhellephant = GameObject.FindGameObjectWithTag("KillerHellephant");
-        position = new Vector3(x,y,z);
+        
 	}
 
     void OnTriggerEnter(Collider other)
@@ -26,6 +26,7 @@ public class HellephantAppear : MonoBehaviour {
 
             while (timer == timer % 5f && c < 6)
             {
+                position = new Vector3(x, y, z);
                 Debug.Log("Hellephant Appear");
                 Instantiate(killerhellephant, position, Quaternion.identity);
                 c++;
