@@ -5,7 +5,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="bla.cs" t="Include" />
         <e p="Enemys" t="Include">
           <e p="Rhino" t="Include">
             <e p="Sheder" t="Include">
@@ -193,27 +192,21 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Enemys" t="Include">
-            <e p="BulletParabola.cs" t="Include" />
             <e p="EnemyAttack.cs" t="Include" />
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemyMovement.cs" t="Include" />
-            <e p="HellephantAppear.cs" t="Include" />
             <e p="HellephantShoot.cs" t="Include" />
-            <e p="Parabola.cs" t="Include" />
             <e p="TrunkBullet.cs" t="Include" />
           </e>
           <e p="Enviroment Autumn" t="Include">
             <e p="DoorOpen.cs" t="Include" />
-            <e p="LoadRoomTrigger.cs" t="Include" />
             <e p="RoomObjecte.cs" t="Include" />
             <e p="RoomTestScript.cs" t="Include" />
             <e p="TexturenChance.cs" t="Include" />
           </e>
           <e p="Environment Winter" t="Include">
-            <e p="CloudInParabola.cs" t="Include" />
             <e p="FlyingRock.cs" t="Include" />
             <e p="IslandFly.cs" t="Include" />
-            <e p="TreeManager.cs" t="Include" />
           </e>
           <e p="Global Environment" t="Include">
             <e p="CameraFollow.cs" t="Include" />
@@ -226,6 +219,7 @@
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
+          <e p="Rotator.cs" t="Include" />
         </e>
         <e p="Stylized Mushroom" t="Include">
           <e p="Shader" t="Include">
