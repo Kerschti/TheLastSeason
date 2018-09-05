@@ -224,4 +224,14 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+    
+    
+    //Aufnehmen eines Objectes
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PickUp")
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
