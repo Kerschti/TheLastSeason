@@ -10,6 +10,7 @@ TagManager:
   - Holder
   - wallSeg
   - wall
+  - PickUp
   layers:
   - Default
   - TransparentFX
