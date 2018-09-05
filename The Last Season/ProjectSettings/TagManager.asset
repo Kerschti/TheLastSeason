@@ -7,6 +7,7 @@ TagManager:
   - Bunny
   - wallSeg
   - wall
+  - PickUp
   layers:
   - Default
   - TransparentFX

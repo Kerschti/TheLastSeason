@@ -10253,7 +10253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587b6742d5b9d40e3af291fdf279b06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Room
 --- !u!4 &829456739 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4836978321984202, guid: 3dfabecee5d404544a56dc2d38a81093,
@@ -25773,6 +25772,11 @@ Prefab:
     - target: {fileID: 4516825660832868, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114748267492024674, guid: 3f769196e23754bab901de9bb087b9ee,
+        type: 2}
+      propertyPath: Speed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f769196e23754bab901de9bb087b9ee, type: 2}
