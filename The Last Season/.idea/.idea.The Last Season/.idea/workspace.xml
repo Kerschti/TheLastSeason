@@ -25,57 +25,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3555">
-              <caret line="240" selection-start-line="240" selection-end-line="240" />
+            <state relative-caret-position="290">
+              <caret line="242" column="2" selection-start-line="242" selection-start-column="2" selection-end-line="249" selection-end-column="5" />
               <folding>
-                <marker date="1536131003882" expanded="false" signature="6:108" ph="..." />
-                <marker date="1536131003882" expanded="true" signature="153:7954" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="2020:2429" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="2450:2570" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="2597:2793" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="2659:2768" ph="/* transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0); ... */" />
-                <marker date="1536131003882" expanded="true" signature="2819:3386" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="2842:2931" ph="/* anim.SetFloat(&quot;speedX&quot;, Mathf.Abs(h)); ... */" />
-                <marker date="1536131003882" expanded="true" signature="3001:3102" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="3185:3285" ph="/* Move the player around the scene. ... */" />
-                <marker date="1536131003882" expanded="true" signature="3411:3681" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="3523:3589" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="3617:3675" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="3712:4053" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="4083:4422" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="4439:5288" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="4514:4843" ph="/* movement.Set(h, 0f, v); ... */" />
-                <marker date="1536131003882" expanded="true" signature="5103:5280" ph="/* playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse); ... */" />
-                <marker date="1536131003882" expanded="true" signature="5310:5927" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="5412:5667" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="5676:5920" ph="/* rotation.Set(h, 0f, v); ... */" />
-                <marker date="1536131003882" expanded="true" signature="5953:7051" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="5995:6526" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="6570:7043" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="7073:7755" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="7206:7301" ph="/* bool isInWater = !IsWalking &amp;&amp; !IsGrounded(); ... */" />
-                <marker date="1536131003882" expanded="true" signature="7378:7443" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="7474:7540" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="7566:7649" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="7685:7748" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="7826:7951" ph="{...}" />
-                <marker date="1536131003882" expanded="true" signature="7878:7945" ph="{...}" />
+                <marker date="1536144967942" expanded="false" signature="6:108" ph="..." />
+                <marker date="1536144967942" expanded="true" signature="153:7954" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="2020:2429" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="2450:2570" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="2597:2793" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="2659:2768" ph="/* transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0); ... */" />
+                <marker date="1536144967942" expanded="true" signature="2819:3386" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="2842:2931" ph="/* anim.SetFloat(&quot;speedX&quot;, Mathf.Abs(h)); ... */" />
+                <marker date="1536144967942" expanded="true" signature="3001:3102" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="3185:3285" ph="/* Move the player around the scene. ... */" />
+                <marker date="1536144967942" expanded="true" signature="3411:3681" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="3523:3589" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="3617:3675" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="3712:4053" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="4083:4422" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="4439:5288" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="4514:4843" ph="/* movement.Set(h, 0f, v); ... */" />
+                <marker date="1536144967942" expanded="true" signature="5103:5280" ph="/* playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse); ... */" />
+                <marker date="1536144967942" expanded="true" signature="5310:5927" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="5412:5667" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="5676:5920" ph="/* rotation.Set(h, 0f, v); ... */" />
+                <marker date="1536144967942" expanded="true" signature="5953:7051" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="5995:6526" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="6570:7043" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="7073:7755" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="7206:7301" ph="/* bool isInWater = !IsWalking &amp;&amp; !IsGrounded(); ... */" />
+                <marker date="1536144967942" expanded="true" signature="7378:7443" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="7474:7540" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="7566:7649" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="7685:7748" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="7826:7951" ph="{...}" />
+                <marker date="1536144967942" expanded="true" signature="7878:7945" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoorOpen.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoorOpen.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
               <folding>
-                <marker date="1536143605931" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
-                <marker date="1536143605931" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
+                <marker date="1536144967937" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
+                <marker date="1536144967937" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
               </folding>
             </state>
           </provider>
@@ -91,11 +91,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Stylized Mushroom/Shader/mushroom.shader" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/New Unity Project (2)/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -126,9 +126,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="427" />
+    <option name="x" value="351" />
     <option name="y" value="23" />
-    <option name="width" value="769" />
+    <option name="width" value="942" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -137,11 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -158,6 +153,11 @@
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
       </pane>
     </panes>
   </component>
@@ -211,12 +211,13 @@
       <workItem from="1535998323191" duration="503000" />
       <workItem from="1536086631040" duration="9728000" />
       <workItem from="1536143066651" duration="106000" />
-      <workItem from="1536143246714" duration="353000" />
+      <workItem from="1536143246714" duration="947000" />
+      <workItem from="1536144979915" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76568000" />
+    <option name="totallyTimeSpent" value="77185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -228,20 +229,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="427" y="23" width="769" height="877" extended-state="0" />
+    <frame x="351" y="23" width="942" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4883081" visible="true" weight="0.27051282" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48666668" visible="true" weight="0.27051282" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32825112" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51169187" side_tool="true" visible="true" weight="0.27051282" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5133333" side_tool="true" visible="true" weight="0.27051282" />
       <window_info anchor="bottom" id="Unit Tests" order="7" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4971591" weight="0.32948717" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3562586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29555556" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -250,6 +250,7 @@
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -274,8 +275,8 @@
         <state relative-caret-position="120">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
-            <marker date="1536143605931" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
-            <marker date="1536143605931" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
+            <marker date="1536144967937" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
+            <marker date="1536144967937" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
           </folding>
         </state>
       </provider>
@@ -294,8 +295,8 @@
         <state relative-caret-position="120">
           <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
-            <marker date="1536143605931" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
-            <marker date="1536143605931" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
+            <marker date="1536144967937" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
+            <marker date="1536144967937" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
           </folding>
         </state>
       </provider>
@@ -329,13 +330,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/bla.cs" />
     <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -431,13 +426,7 @@
     <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-657">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/bla.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
     <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -462,61 +451,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3555">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
-          <folding>
-            <marker date="1536131003882" expanded="false" signature="6:108" ph="..." />
-            <marker date="1536131003882" expanded="true" signature="153:7954" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="2020:2429" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="2450:2570" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="2597:2793" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="2659:2768" ph="/* transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0); ... */" />
-            <marker date="1536131003882" expanded="true" signature="2819:3386" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="2842:2931" ph="/* anim.SetFloat(&quot;speedX&quot;, Mathf.Abs(h)); ... */" />
-            <marker date="1536131003882" expanded="true" signature="3001:3102" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="3185:3285" ph="/* Move the player around the scene. ... */" />
-            <marker date="1536131003882" expanded="true" signature="3411:3681" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="3523:3589" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="3617:3675" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="3712:4053" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="4083:4422" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="4439:5288" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="4514:4843" ph="/* movement.Set(h, 0f, v); ... */" />
-            <marker date="1536131003882" expanded="true" signature="5103:5280" ph="/* playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse); ... */" />
-            <marker date="1536131003882" expanded="true" signature="5310:5927" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="5412:5667" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="5676:5920" ph="/* rotation.Set(h, 0f, v); ... */" />
-            <marker date="1536131003882" expanded="true" signature="5953:7051" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="5995:6526" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="6570:7043" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="7073:7755" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="7206:7301" ph="/* bool isInWater = !IsWalking &amp;&amp; !IsGrounded(); ... */" />
-            <marker date="1536131003882" expanded="true" signature="7378:7443" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="7474:7540" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="7566:7649" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="7685:7748" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="7826:7951" ph="{...}" />
-            <marker date="1536131003882" expanded="true" signature="7878:7945" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
-            <marker date="1536143605931" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
-            <marker date="1536143605931" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
+            <marker date="1536144967937" expanded="true" signature="0:245" ph="/* using System.Collections; ... */" />
+            <marker date="1536144967937" expanded="true" signature="247:524" ph="/* using UnityEngine; ... */" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/DoorOpen.cs">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Assets/DoorOpen.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="242" column="2" selection-start-line="242" selection-start-column="2" selection-end-line="249" selection-end-column="5" />
+          <folding>
+            <marker date="1536144967942" expanded="false" signature="6:108" ph="..." />
+            <marker date="1536144967942" expanded="true" signature="153:7954" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="2020:2429" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="2450:2570" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="2597:2793" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="2659:2768" ph="/* transform.eulerAngles = new Vector3(0, Camera.main.transform.eulerAngles.y, 0); ... */" />
+            <marker date="1536144967942" expanded="true" signature="2819:3386" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="2842:2931" ph="/* anim.SetFloat(&quot;speedX&quot;, Mathf.Abs(h)); ... */" />
+            <marker date="1536144967942" expanded="true" signature="3001:3102" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="3185:3285" ph="/* Move the player around the scene. ... */" />
+            <marker date="1536144967942" expanded="true" signature="3411:3681" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="3523:3589" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="3617:3675" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="3712:4053" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="4083:4422" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="4439:5288" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="4514:4843" ph="/* movement.Set(h, 0f, v); ... */" />
+            <marker date="1536144967942" expanded="true" signature="5103:5280" ph="/* playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse); ... */" />
+            <marker date="1536144967942" expanded="true" signature="5310:5927" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="5412:5667" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="5676:5920" ph="/* rotation.Set(h, 0f, v); ... */" />
+            <marker date="1536144967942" expanded="true" signature="5953:7051" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="5995:6526" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="6570:7043" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="7073:7755" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="7206:7301" ph="/* bool isInWater = !IsWalking &amp;&amp; !IsGrounded(); ... */" />
+            <marker date="1536144967942" expanded="true" signature="7378:7443" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="7474:7540" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="7566:7649" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="7685:7748" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="7826:7951" ph="{...}" />
+            <marker date="1536144967942" expanded="true" signature="7878:7945" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
