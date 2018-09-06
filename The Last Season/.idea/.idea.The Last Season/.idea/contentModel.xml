@@ -197,6 +197,8 @@
             <e p="EnemyAttack.cs" t="Include" />
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemyMovement.cs" t="Include" />
+            <e p="HealthBarFunction.cs" t="Include" />
+            <e p="HealthBarTester.cs" t="Include" />
             <e p="HellephantAppear.cs" t="Include" />
             <e p="HellephantShoot.cs" t="Include" />
             <e p="Parabola.cs" t="Include" />

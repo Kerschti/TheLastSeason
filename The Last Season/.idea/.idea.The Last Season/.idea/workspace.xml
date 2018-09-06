@@ -28,7 +28,7 @@
       <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="3525">
               <caret line="237" selection-start-line="237" selection-end-line="237" />
               <folding>
                 <marker date="1536174503845" expanded="false" signature="6:78" ph="..." />
@@ -70,20 +70,50 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bla.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
               <folding>
-                <marker date="1536184272923" expanded="true" signature="0:273" ph="/* using UnityEngine.SceneManagement; ... */" />
+                <marker date="1536184290261" expanded="true" signature="0:2734" ph="/* using System.Collections; ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bla.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
+      <file leaf-file-name="HealthBarFunction.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarFunction.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+            <state relative-caret-position="390">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding>
-                <marker date="1536184290261" expanded="true" signature="0:2734" ph="/* using System.Collections; ... */" />
+                <marker date="1536231510817" expanded="true" signature="6:66" ph="..." />
+                <marker date="1536231510817" expanded="true" signature="115:479" ph="{...}" />
+                <marker date="1536231510817" expanded="true" signature="240:364" ph="{...}" />
+                <marker date="1536231510817" expanded="true" signature="382:419" ph="{...}" />
+                <marker date="1536231510817" expanded="true" signature="451:477" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HealthBarTester.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarTester.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <folding>
+                <marker date="1536230923825" expanded="true" signature="6:44" ph="..." />
+                <marker date="1536230923825" expanded="true" signature="90:403" ph="{...}" />
+                <marker date="1536230923825" expanded="true" signature="146:231" ph="{...}" />
+                <marker date="1536230923825" expanded="true" signature="249:401" ph="{...}" />
+                <marker date="1536230923825" expanded="true" signature="289:323" ph="{...}" />
+                <marker date="1536230923825" expanded="true" signature="363:398" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,8 +142,8 @@
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/bla.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs" root0="FORCE_HIGHLIGHTING" />
@@ -122,6 +152,8 @@
     <setting file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/New Unity Project (2)/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarTester.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarFunction.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -135,6 +167,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
         <option value="$PROJECT_DIR$/Assets/bla.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/Health Bar Tester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarTester.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarFunction.cs" />
       </list>
     </option>
   </component>
@@ -148,8 +183,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="436" />
-    <option name="y" value="29" />
+    <option name="x" value="615" />
+    <option name="y" value="23" />
     <option name="width" value="942" />
     <option name="height" value="877" />
   </component>
@@ -159,6 +194,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -176,11 +216,6 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,11 +267,12 @@
       <workItem from="1534859320260" duration="9666000" />
       <workItem from="1535998323191" duration="503000" />
       <workItem from="1536145125783" duration="463000" />
+      <workItem from="1536220816598" duration="5853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68044000" />
+    <option name="totallyTimeSpent" value="73897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,48 +284,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="436" y="29" width="942" height="877" extended-state="0" />
+    <frame x="484" y="23" width="942" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48555556" visible="true" weight="0.27051282" />
-      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32825112" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5144445" side_tool="true" visible="true" weight="0.27051282" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4911111" visible="true" weight="0.11282051" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32904148" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5088889" side_tool="true" visible="true" weight="0.11282051" />
       <window_info anchor="bottom" id="Unit Tests" order="7" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4971591" weight="0.32948717" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30222222" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.094444446" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09298999" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49213162" visible="true" weight="0.1139394" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49810606" weight="0.32948717" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Unit Tests" order="7" sideWeight="0.49810606" weight="0.32948717" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32904148" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5078684" side_tool="true" visible="true" weight="0.1139394" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4971591" weight="0.32948717" />
-      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,43 +327,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <marker date="1536184272923" expanded="true" signature="0:273" ph="/* using UnityEngine.SceneManagement; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <marker date="1536174797170" expanded="true" signature="6:78" ph="..." />
-            <marker date="1536174797170" expanded="true" signature="117:231" ph="{...}" />
-            <marker date="1536174797170" expanded="true" signature="159:227" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" column="4" lean-forward="true" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -388,9 +377,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -537,9 +524,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
@@ -549,7 +534,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="3525">
           <caret line="237" selection-start-line="237" selection-end-line="237" />
           <folding>
             <marker date="1536174503845" expanded="false" signature="6:78" ph="..." />
@@ -589,18 +574,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <marker date="1536184272923" expanded="true" signature="0:273" ph="/* using UnityEngine.SceneManagement; ... */" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Health Bar Tester.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="577">
           <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
           <folding>
             <marker date="1536184290261" expanded="true" signature="0:2734" ph="/* using System.Collections; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarTester.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <marker date="1536230923825" expanded="true" signature="6:44" ph="..." />
+            <marker date="1536230923825" expanded="true" signature="90:403" ph="{...}" />
+            <marker date="1536230923825" expanded="true" signature="146:231" ph="{...}" />
+            <marker date="1536230923825" expanded="true" signature="249:401" ph="{...}" />
+            <marker date="1536230923825" expanded="true" signature="289:323" ph="{...}" />
+            <marker date="1536230923825" expanded="true" signature="363:398" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarFunction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <marker date="1536231510817" expanded="true" signature="6:66" ph="..." />
+            <marker date="1536231510817" expanded="true" signature="115:479" ph="{...}" />
+            <marker date="1536231510817" expanded="true" signature="240:364" ph="{...}" />
+            <marker date="1536231510817" expanded="true" signature="382:419" ph="{...}" />
+            <marker date="1536231510817" expanded="true" signature="451:477" ph="{...}" />
           </folding>
         </state>
       </provider>
