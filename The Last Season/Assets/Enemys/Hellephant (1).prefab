@@ -92,7 +92,6 @@ GameObject:
   - component: {fileID: 136251040237723048}
   - component: {fileID: 114576749705495356}
   - component: {fileID: 114592531418301266}
-  - component: {fileID: 114674676352966636}
   m_Layer: 10
   m_Name: Hellephant (1)
   m_TagString: Untagged
@@ -323,19 +322,6 @@ MonoBehaviour:
   trunk: {fileID: 4448337226601934}
   bullet: {fileID: 1094361104881548, guid: 07223867896864eedb45a4167131c62c, type: 2}
   player: {fileID: 0}
---- !u!114 &114674676352966636
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1998324275121894}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09757fb2e18c7441b8250b1355694791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  atkDamage: 0
 --- !u!135 &135204167466525206
 SphereCollider:
   m_ObjectHideFlags: 1
