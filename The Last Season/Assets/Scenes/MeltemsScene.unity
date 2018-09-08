@@ -14707,7 +14707,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587b6742d5b9d40e3af291fdf279b06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: MeltemsRoom
 --- !u!4 &829456739 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4836978321984202, guid: 3dfabecee5d404544a56dc2d38a81093,
@@ -20113,37 +20112,45 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_LocalPosition.x
       value: 30.072865
       objectReference: {fileID: 0}
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_LocalPosition.y
       value: -0.00000023841858
       objectReference: {fileID: 0}
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_LocalPosition.z
       value: 107.2102
       objectReference: {fileID: 0}
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4155239329818682, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+    - target: {fileID: 4250470847553826, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894522807343388, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894522807343388, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
+      propertyPath: m_TagString
+      value: KillerHellephant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af7b6e240384804f8d8f81091aa56fe, type: 2}
