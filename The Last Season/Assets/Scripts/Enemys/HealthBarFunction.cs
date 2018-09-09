@@ -5,7 +5,10 @@ using System.Collections;
 
 public class HealthBarFunction : MonoBehaviour
 {
+	// Script für die Gesundheitsanzeige
 
+	//private HealthBarFunction healthBar1;
+	
 	private Slider healthBar;
 	private int currentHP = 100;
 

@@ -4,23 +4,23 @@ using System.Collections;
 public class HealthBarTester : MonoBehaviour
 {
 
-	private HealthBarFunction healthBar;
+	private HealthBarFunction healthbar;
 
 	void Awake()
 	{
-		healthBar = GameObject.Find("Health Bar").GetComponent<HealthBarFunction>();
+		healthbar = GameObject.Find("HealthBar").GetComponent<HealthBarFunction>();
 	}
 	
 	void Update ()
 	{
-		if (Input.GetKey(KeyCode.UpArrow))
+		if (Input.GetKey(KeyCode.A))
 		{
-			healthBar.changeHP(1);
+			healthbar.changeHP(10);
 		}
 
-		if (Input.GetKey(KeyCode.DownArrow))
+		if (Input.GetKey(KeyCode.A))
 		{
-			healthBar.changeHP(-1);
+			healthbar.changeHP(-10);
 		}
 	}
 }
