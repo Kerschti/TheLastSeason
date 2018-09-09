@@ -14785,7 +14785,6 @@ GameObject:
   m_Component:
   - component: {fileID: 803152226}
   - component: {fileID: 803152228}
-  - component: {fileID: 803152227}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -14813,17 +14812,6 @@ RectTransform:
   m_AnchoredPosition: {x: 120.86, y: -50}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &803152227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 803152225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e6c4ba05db9e4b519ec95ce2397a112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &803152228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15511,7 +15499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09757fb2e18c7441b8250b1355694791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
+  timeBetweenAttacks: 1.5
   atkDamage: 10
 --- !u!195 &1103093378
 NavMeshAgent:
