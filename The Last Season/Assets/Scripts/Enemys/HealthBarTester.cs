@@ -13,12 +13,12 @@ public class HealthBarTester : MonoBehaviour
 	
 	void Update ()
 	{
-		if (Input.GetKey(KeyCode.A))
+		if (Input.GetKeyDown(KeyCode.Q))
 		{
 			healthbar.changeHP(10);
 		}
 
-		if (Input.GetKey(KeyCode.A))
+		if (Input.GetKeyDown(KeyCode.W))
 		{
 			healthbar.changeHP(-10);
 		}

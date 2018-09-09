@@ -9,8 +9,8 @@ public class HealthBarFunction : MonoBehaviour
 
 	//private HealthBarFunction healthBar1;
 	
-	private Slider healthBar;
-	private int currentHP = 100;
+	private Slider healthBar; //hab
+	private int currentHP = 100; //hab
 
 	//private HealthBarFunction healthBar;
 	

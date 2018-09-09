@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -19,11 +20,20 @@ public class PlayerHealth : MonoBehaviour
     private bool wasFalling = false;            // Determine if player fell in last frame.
 
     // Use this for initialization
+    
+    
+    //@Meltem
+    public Slider HealthBar;
+    
     void Start()
     {
         curHealth = health;
         anim = GetComponent<Animator>();
         playerMove = GetComponent<PlayerMovement>();
+        
+        // @Mel
+        //HealthBar = GetComponent<Slider>();
+
     }
 
 
@@ -40,6 +50,8 @@ public class PlayerHealth : MonoBehaviour
         damaged = true;
 
         curHealth -= amount;
+        HealthBar.value = curHealth;
+
 
         Debug.Log("Health of Player: " + curHealth);
 
@@ -47,7 +59,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Death();
         }
-
+        
 
     }
 
@@ -96,7 +108,6 @@ public class PlayerHealth : MonoBehaviour
             //wasFalling = false;
         }
 
-
     }
 
     private IEnumerator SpawnAfterSec()
@@ -109,5 +120,5 @@ public class PlayerHealth : MonoBehaviour
 
         anim.SetTrigger("Respawned");
     }
- 
+   
 }
