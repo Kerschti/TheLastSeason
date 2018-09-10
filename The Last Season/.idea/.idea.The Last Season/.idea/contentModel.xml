@@ -205,12 +205,6 @@
             <e p="Rotator.cs" t="Include" />
             <e p="TrunkBullet.cs" t="Include" />
           </e>
-          <e p="Enviroment Autumn" t="Include">
-            <e p="DoorOpen.cs" t="Include" />
-            <e p="RoomObjecte.cs" t="Include" />
-            <e p="RoomTestScript.cs" t="Include" />
-            <e p="TexturenChance.cs" t="Include" />
-          </e>
           <e p="Environment Winter" t="Include">
             <e p="CloudInParabola.cs" t="Include" />
             <e p="FlyingRock.cs" t="Include" />
@@ -227,6 +221,12 @@
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="RaumScipts" t="Include">
+            <e p="DoorOpen.cs" t="Include" />
+            <e p="RoomObjecte.cs" t="Include" />
+            <e p="RoomTestScript.cs" t="Include" />
+            <e p="TexturenChance.cs" t="Include" />
           </e>
         </e>
         <e p="Stylized Mushroom" t="Include">
