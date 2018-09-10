@@ -502,7 +502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &988095936
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1626,7 +1626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1658904526}
-  smoothing: 5
-  mouseSensitivity: 0
-  distFromTarget: 0
-  PitchMinMax: {x: -40, y: 85}
+  smoothing: 0.5
+  mouseSensitivity: 1
+  distFromTarget: 5
+  PitchMinMax: {x: 4, y: 60}
