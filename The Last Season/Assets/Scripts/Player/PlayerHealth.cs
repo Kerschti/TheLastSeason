@@ -22,8 +22,7 @@ public class PlayerHealth : MonoBehaviour
     // Use this for initialization
     
     
-    //@Meltem
-    public Slider HealthBar;
+    public Slider HealthBar;     //@Meltem
     
     void Start()
     {
@@ -31,8 +30,6 @@ public class PlayerHealth : MonoBehaviour
         anim = GetComponent<Animator>();
         playerMove = GetComponent<PlayerMovement>();
         
-        // @Mel
-        //HealthBar = GetComponent<Slider>();
 
     }
 
@@ -49,8 +46,10 @@ public class PlayerHealth : MonoBehaviour
 
         damaged = true;
 
-        curHealth -= amount;
-        HealthBar.value = curHealth;
+        curHealth -= amount;     //@Meltem
+
+        HealthBar.value = curHealth;     //@Meltem
+
 
 
         Debug.Log("Health of Player: " + curHealth);

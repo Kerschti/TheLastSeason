@@ -6,6 +6,13 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="bla.cs" t="Include" />
+        <e p="Downloads" t="Include">
+          <e p="RoomMobel" t="Include">
+            <e p="Retro Cabinet" t="Include">
+              <e p="Readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Enemys" t="Include">
           <e p="Rhino" t="Include">
             <e p="Sheder" t="Include">

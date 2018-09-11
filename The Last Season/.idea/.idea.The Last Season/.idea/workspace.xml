@@ -25,121 +25,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Compiled-Standard.shader" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Temp/Compiled-Standard.shader">
+      <file leaf-file-name="DoorOpen.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/DoorOpen.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="225">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
-                <marker date="1536611147368" expanded="true" signature="0:419" ph="/* Compiled shader for PC, Mac &amp; Linux Standalone ... */" />
-                <marker date="1536611147368" expanded="true" signature="452:2079" ph="{...}" />
-                <marker date="1536611147368" expanded="true" signature="2350:2587" ph="/* Compiled programs ... */" />
-                <marker date="1536611147368" expanded="true" signature="33426:33539" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="73433:73546" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="110507:110620" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="146912:147025" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="180284:180397" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="222620:222733" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="262019:262132" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="276608:276721" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="281624:281762" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="296653:296791" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="300789:300927" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="314502:314640" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="321930:322068" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="341293:341431" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="347864:348002" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="365957:366095" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="371271:371409" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="387300:387438" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="391689:391827" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="406388:406526" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="414089:414227" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="434396:434534" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="441240:441378" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="460277:460415" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="465303:465441" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="480583:480820" ph="/* Compiled programs ... */" />
-                <marker date="1536611147368" expanded="true" signature="503727:503840" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="527004:527117" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="547222:547335" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="573975:574088" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="597679:597792" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="624226:624339" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="647724:647837" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="673376:673489" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="695979:696092" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="726488:726601" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="753948:754061" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="789752:789865" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="822503:822616" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="848898:849011" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="872244:872357" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="901106:901219" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="926919:927032" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="957011:957124" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="984054:984167" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1016011:1016124" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1044915:1045028" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1075500:1075613" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1103036:1103149" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1135486:1135599" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1164883:1164996" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1191157:1191394" ph="/* Compiled programs ... */" />
-                <marker date="1536611147368" expanded="true" signature="1198255:1198368" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1205071:1205308" ph="/* Compiled programs ... */" />
-                <marker date="1536611147368" expanded="true" signature="1216126:1216239" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1237353:1237466" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1255577:1255690" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1276750:1276863" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1294920:1295033" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1309330:1309567" ph="/* Compiled programs ... */" />
-                <marker date="1536611147368" expanded="true" signature="1328631:1328744" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1353193:1353306" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1375279:1375392" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1411684:1411797" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1445056:1445169" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1487392:1487505" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1526791:1526904" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1534882:1534995" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1540046:1540184" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1549229:1549367" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1553508:1553646" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1561579:1561717" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1569705:1569843" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1581425:1581563" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1588694:1588832" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1599351:1599489" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1604665:1604803" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1620694:1620832" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1625083:1625221" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1639782:1639920" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1647483:1647621" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1667790:1667928" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1674634:1674772" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1693671:1693809" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1698845:1698983" ph="/* No shader variant for this keyword set. The closest match will be used instead. ... */" />
-                <marker date="1536611147368" expanded="true" signature="1708279:1708516" ph="/* Compiled programs ... */" />
-                <marker date="1536611147368" expanded="true" signature="1727536:1727649" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1746519:1746632" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1762852:1762965" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1785332:1785445" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1805199:1805312" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1827440:1827553" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1847068:1847181" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1868426:1868539" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1887167:1887280" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1907829:1907942" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1925920:1926033" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1952315:1952428" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="1975661:1975774" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="2004523:2004636" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="2030336:2030449" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="2050631:2050744" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="2068206:2068319" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="2088861:2088974" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="2106945:2107058" ph="/* All GLSL source is contained within the vertex program ... */" />
-                <marker date="1536611147368" expanded="true" signature="2128896:2129133" ph="/* Compiled programs ... */" />
-                <marker date="1536611147368" expanded="true" signature="2135994:2136107" ph="/* All GLSL source is contained within the vertex program ... */" />
+                <marker date="1536644578573" expanded="true" signature="0:273" ph="/* using UnityEngine.SceneManagement; ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoomTestScript.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/RoomTestScript.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+              <folding>
+                <marker date="1536644578574" expanded="false" signature="6:77" ph="..." />
+                <marker date="1536644578574" expanded="true" signature="122:2154" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="649:804" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="684:726" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="759:801" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="819:1145" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="884:923" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="1174:1946" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="1225:1348" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="1365:1502" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="1509:1570" ph="{...}" />
+                <marker date="1536644578574" expanded="true" signature="1979:2152" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rotator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <marker date="1536644578560" expanded="false" signature="6:78" ph="..." />
+                <marker date="1536644578560" expanded="true" signature="117:231" ph="{...}" />
+                <marker date="1536644578560" expanded="true" signature="159:227" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2863">
+              <folding>
+                <marker date="1536644578572" expanded="false" signature="6:78" ph="..." />
+                <marker date="1536644578572" expanded="true" signature="123:7375" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="182:584" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="640:832" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="2440:2874" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="2895:3020" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="3047:3155" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="3182:3470" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="3198:3298" ph="/* Move the player around the scene. ... */" />
+                <marker date="1536644578572" expanded="true" signature="3495:3997" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="3681:3892" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="3921:3991" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="4027:4368" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="4398:4737" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="4755:5479" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="5264:5472" ph="/* playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse); ... */" />
+                <marker date="1536644578572" expanded="true" signature="5501:6056" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="5604:6049" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6073:6570" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6106:6326" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6212:6316" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6339:6419" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6593:7167" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6806:6871" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6902:6968" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="6994:7065" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="7095:7158" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="7248:7373" ph="{...}" />
+                <marker date="1536644578572" expanded="true" signature="7300:7367" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -154,11 +122,12 @@
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Temp/Compiled-Standard.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/RoomTestScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/bla.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/DoorOpen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Stylized Mushroom/Shader/mushroom.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HellephantAppear.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HellephantShoot.cs" root0="SKIP_HIGHLIGHTING" />
@@ -199,7 +168,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="570" />
+    <option name="x" value="260" />
     <option name="y" value="23" />
     <option name="width" value="1001" />
     <option name="height" value="877" />
@@ -210,10 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -232,6 +197,10 @@
         <option name="show-hidden-items" value="false" />
       </pane>
       <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,11 +258,12 @@
       <workItem from="1536507234455" duration="4371000" />
       <workItem from="1536522401584" duration="550000" />
       <workItem from="1536611169294" duration="266000" />
+      <workItem from="1536668877041" duration="271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84394000" />
+    <option name="totallyTimeSpent" value="84665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -305,23 +275,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="570" y="23" width="1001" height="877" extended-state="0" />
+    <frame x="260" y="23" width="1001" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48939928" weight="0.11282051" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32904148" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5106007" side_tool="true" weight="0.11282051" />
       <window_info anchor="bottom" id="Unit Tests" order="7" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49810606" weight="0.32948717" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4971591" weight="0.32948717" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41188738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4202294" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,24 +308,24 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Unity" order="14" sideWeight="0.4971591" weight="0.15384616" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40433213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48939928" weight="0.11282051" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Unit Tests" order="10" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32904148" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4971591" weight="0.32948717" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5106007" side_tool="true" weight="0.11282051" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49810606" weight="0.32948717" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,28 +341,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-end-line="135" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -399,71 +349,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-end-line="135" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs" />
+    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment Winter/FlyingRock.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -491,33 +397,12 @@
     <entry file="file://$USER_HOME$/New Unity Project (2)/Assets/Scripts/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest/WallSegmentTest/Assets/Walls/Generate.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomGenerator.cs" />
-    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/WallSegmentTest 2/WallSegmentTest/Assets/Walls/Generate.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/LoadRoomTrigger.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/RoomTestScript.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Health Bar Tester.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/bla.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -535,11 +420,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/HellephantShoot.cs">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2018" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/EnemyHealth.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -576,10 +456,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
+    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Standard.shader">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/DoorOpen.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1536644578573" expanded="true" signature="0:273" ph="/* using UnityEngine.SceneManagement; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/RoomTestScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+          <folding>
+            <marker date="1536644578574" expanded="false" signature="6:77" ph="..." />
+            <marker date="1536644578574" expanded="true" signature="122:2154" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="649:804" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="684:726" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="759:801" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="819:1145" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="884:923" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1174:1946" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1225:1348" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1365:1502" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1509:1570" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1979:2152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1536644578560" expanded="false" signature="6:78" ph="..." />
+            <marker date="1536644578560" expanded="true" signature="117:231" ph="{...}" />
+            <marker date="1536644578560" expanded="true" signature="159:227" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2863">
+          <folding>
+            <marker date="1536644578572" expanded="false" signature="6:78" ph="..." />
+            <marker date="1536644578572" expanded="true" signature="123:7375" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="182:584" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="640:832" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="2440:2874" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="2895:3020" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="3047:3155" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="3182:3470" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="3198:3298" ph="/* Move the player around the scene. ... */" />
+            <marker date="1536644578572" expanded="true" signature="3495:3997" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="3681:3892" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="3921:3991" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="4027:4368" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="4398:4737" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="4755:5479" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="5264:5472" ph="/* playerRigidbody.AddForce(transform.forward * movement * Time.deltaTime, ForceMode.Impulse); ... */" />
+            <marker date="1536644578572" expanded="true" signature="5501:6056" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="5604:6049" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6073:6570" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6106:6326" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6212:6316" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6339:6419" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6593:7167" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6806:6871" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6902:6968" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="6994:7065" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="7095:7158" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="7248:7373" ph="{...}" />
+            <marker date="1536644578572" expanded="true" signature="7300:7367" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
