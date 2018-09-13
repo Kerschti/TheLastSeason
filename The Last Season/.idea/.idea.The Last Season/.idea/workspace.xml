@@ -25,13 +25,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DoorOpen.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DoorOpen.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/DoorOpen.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
-                <marker date="1536644578573" expanded="true" signature="0:273" ph="/* using UnityEngine.SceneManagement; ... */" />
+                <marker date="1536831369003" expanded="true" signature="6:53" ph="..." />
+                <marker date="1536831369003" expanded="true" signature="93:267" ph="{...}" />
+                <marker date="1536831369003" expanded="true" signature="162:265" ph="{...}" />
+                <marker date="1536831369003" expanded="true" signature="194:262" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -64,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <marker date="1536644578560" expanded="false" signature="6:78" ph="..." />
                 <marker date="1536644578560" expanded="true" signature="117:231" ph="{...}" />
@@ -74,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerMovement.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2863">
@@ -108,6 +111,30 @@
                 <marker date="1536644578572" expanded="true" signature="7095:7158" ph="{...}" />
                 <marker date="1536644578572" expanded="true" signature="7248:7373" ph="{...}" />
                 <marker date="1536644578572" expanded="true" signature="7300:7367" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerHealth.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <marker date="1536669201075" expanded="false" signature="6:100" ph="..." />
+                <marker date="1536669201075" expanded="true" signature="143:3192" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="985:1129" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="1154:1190" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="1232:1510" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="1453:1494" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="1528:1674" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="1699:2914" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="1744:2352" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="2213:2342" ph="/* store that a fall happened ... */" />
+                <marker date="1536669201075" expanded="true" signature="2412:2907" ph="{...}" />
+                <marker date="1536669201075" expanded="true" signature="2739:2897" ph="/* rest lastY ... */" />
+                <marker date="1536669201075" expanded="true" signature="2955:3186" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -155,6 +182,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarTester.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/HealthBarFunction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RaumScipts/DoorOpen.cs" />
       </list>
     </option>
   </component>
@@ -167,8 +195,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="260" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="390" />
     <option name="y" value="23" />
     <option name="width" value="1001" />
     <option name="height" value="877" />
@@ -263,7 +291,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84665000" />
+    <option name="totallyTimeSpent" value="86077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -275,7 +303,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="23" width="1001" height="877" extended-state="0" />
+    <frame x="390" y="23" width="1001" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48939928" weight="0.11282051" />
@@ -295,12 +323,27 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Unity" order="8" sideWeight="0.4971591" weight="0.15384616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4202294" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48939928" weight="0.11282051" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49810606" weight="0.32948717" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" sideWeight="0.49810606" weight="0.32948717" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32904148" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5106007" side_tool="true" weight="0.11282051" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4971591" weight="0.32948717" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="NuGet" order="7" />
@@ -308,24 +351,24 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Unity" order="14" sideWeight="0.4971591" weight="0.15384616" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40433213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.48939928" weight="0.11282051" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Unit Tests" order="10" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32904148" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4971591" weight="0.32948717" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5106007" side_tool="true" weight="0.11282051" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49810606" weight="0.32948717" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,8 +487,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="690">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <marker date="1536669201075" expanded="false" signature="6:100" ph="..." />
+            <marker date="1536669201075" expanded="true" signature="143:3192" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="985:1129" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="1154:1190" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="1232:1510" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="1453:1494" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="1528:1674" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="1699:2914" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="1744:2352" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="2213:2342" ph="/* store that a fall happened ... */" />
+            <marker date="1536669201075" expanded="true" signature="2412:2907" ph="{...}" />
+            <marker date="1536669201075" expanded="true" signature="2739:2897" ph="/* rest lastY ... */" />
+            <marker date="1536669201075" expanded="true" signature="2955:3186" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -457,44 +515,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment Autumn/DoorOpen.cs" />
-    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Standard.shader">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/DoorOpen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <marker date="1536644578573" expanded="true" signature="0:273" ph="/* using UnityEngine.SceneManagement; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/RoomTestScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
-          <folding>
-            <marker date="1536644578574" expanded="false" signature="6:77" ph="..." />
-            <marker date="1536644578574" expanded="true" signature="122:2154" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="649:804" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="684:726" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="759:801" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="819:1145" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="884:923" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="1174:1946" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="1225:1348" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="1365:1502" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="1509:1570" ph="{...}" />
-            <marker date="1536644578574" expanded="true" signature="1979:2152" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Temp/Compiled-Standard.shader" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemys/Rotator.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <marker date="1536644578560" expanded="false" signature="6:78" ph="..." />
             <marker date="1536644578560" expanded="true" signature="117:231" ph="{...}" />
@@ -536,6 +561,40 @@
             <marker date="1536644578572" expanded="true" signature="7095:7158" ph="{...}" />
             <marker date="1536644578572" expanded="true" signature="7248:7373" ph="{...}" />
             <marker date="1536644578572" expanded="true" signature="7300:7367" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/RoomTestScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+          <folding>
+            <marker date="1536644578574" expanded="false" signature="6:77" ph="..." />
+            <marker date="1536644578574" expanded="true" signature="122:2154" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="649:804" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="684:726" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="759:801" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="819:1145" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="884:923" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1174:1946" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1225:1348" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1365:1502" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1509:1570" ph="{...}" />
+            <marker date="1536644578574" expanded="true" signature="1979:2152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaumScipts/DoorOpen.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1536831369003" expanded="true" signature="6:53" ph="..." />
+            <marker date="1536831369003" expanded="true" signature="93:267" ph="{...}" />
+            <marker date="1536831369003" expanded="true" signature="162:265" ph="{...}" />
+            <marker date="1536831369003" expanded="true" signature="194:262" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,4 @@
-﻿/*using UnityEngine.SceneManagement;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class DoorOpen : MonoBehaviour {	
@@ -9,9 +9,8 @@ public class DoorOpen : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			SceneManager.LoadScene ("Room", LoadSceneMode.Single);
-		
+			SceneManager.LoadScene ("Room1", LoadSceneMode.Single);
+
 		}
 	}
 }
-*/
