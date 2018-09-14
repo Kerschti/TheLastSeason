@@ -4,22 +4,21 @@ using Unity.Collections;
 
 public class RoomTestScript : MonoBehaviour
 {
-
 	private float a, b; // xy
 
 	float segHoehe = 5.0f; //height
+
 	float segTiefe = 0.25f;  //depth
+
 	float segBreite = 0.0f;
 	
 	private bool fixSegmentBreite = true;
 
 	float fixedSegBreite = 5.0f; // Seg width
 
-	
 	private Vector3 erstesSeg = Vector3.zero;
 	
 	//private Vector3 erstesSeg = erstesSeg.(new Vector3(-5, 0, -5));
-
 
 	Transform pfad; //path
 
@@ -27,6 +26,10 @@ public class RoomTestScript : MonoBehaviour
 
 	public GameObject CoffeePrefab;
 
+	public GameObject CouchPrefab;
+
+	public GameObject TvPrefab;
+	
 	private List<GameObject> wallSegList = new List<GameObject>();
 
 	private bool ersteSeg = true; //firstSegment
@@ -67,16 +70,33 @@ public class RoomTestScript : MonoBehaviour
 		CreateWall();		
 		CreateWall();	
 		CreateWall();
-
-
-		Vector3 tmpPos = wallSegList[4].transform.position;
-		tmpPos = tmpPos - new Vector3(8.0f, 0f, 10f);
-
-		Quaternion tmpQuat = CoffeePrefab.transform.rotation;
-		tmpQuat = tmpQuat * Quaternion.Euler(0f, 0f, 0f);
 		
-		GameObject tmpCoffee = (GameObject)Instantiate(CoffeePrefab, tmpPos, tmpQuat);
-
+		Vector3 tmpCofPos = wallSegList[4].transform.position;
+		tmpCofPos = tmpCofPos + new Vector3(-5.44f - tmpCofPos.x, 0f, -1.18f - tmpCofPos.z);
+		
+		//Coffee Table
+		Quaternion tmpCofRot = CoffeePrefab.transform.rotation;
+		tmpCofRot = tmpCofRot * Quaternion.Euler(0f, 0f, 0f);
+		
+		GameObject tmpCoffee = (GameObject)Instantiate(CoffeePrefab, tmpCofPos, tmpCofRot);
+		
+		//Couch 
+		Vector3 tmpCouPos = wallSegList[7].transform.position;
+		tmpCouPos = tmpCouPos + new Vector3(2f, 0f, 0f);
+		
+		Quaternion tmpCouRot = CouchPrefab.transform.rotation;
+		tmpCouRot = tmpCouRot * Quaternion.Euler(0f, 95f, 0f);
+		
+		GameObject tmpCou = (GameObject)Instantiate(CouchPrefab, tmpCouPos, tmpCouRot);
+		
+		//Tv 
+		Vector3 tmpTvPos = wallSegList[2].transform.position;
+		tmpTvPos = tmpTvPos + new Vector3(2f, 0f, 0f);
+		
+		Quaternion tmpTvRot = TvPrefab.transform.rotation;
+		tmpTvRot = tmpTvRot * Quaternion.Euler(0f, 95f, 0f);
+		
+		GameObject tmpTv = (GameObject)Instantiate(TvPrefab, tmpTvPos, tmpTvRot);
 	}
 	
 		public void CreateWall()
@@ -117,6 +137,5 @@ public class RoomTestScript : MonoBehaviour
 		pfad.transform.Translate(new Vector3(0, 0, segTiefe / 2));
 		pfad.transform.Rotate(0.0f, angle, 0.0f);
 		pfad.transform.Translate(new Vector3(0, 0, segTiefe / 2));
-
 	}
 }
