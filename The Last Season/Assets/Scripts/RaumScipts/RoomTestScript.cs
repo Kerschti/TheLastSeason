@@ -81,17 +81,17 @@ public class RoomTestScript : MonoBehaviour
 		GameObject tmpCoffee = (GameObject)Instantiate(CoffeePrefab, tmpCofPos, tmpCofRot);
 		
 		//Couch 
-		Vector3 tmpCouPos = wallSegList[7].transform.position;
-		tmpCouPos = tmpCouPos + new Vector3(2f, 0f, 0f);
+		Vector3 tmpCouPos = wallSegList[8].transform.position;
+		tmpCouPos = tmpCouPos + new Vector3(2.3f, 0.0f, 0f);
 		
 		Quaternion tmpCouRot = CouchPrefab.transform.rotation;
-		tmpCouRot = tmpCouRot * Quaternion.Euler(0f, 95f, 0f);
+		tmpCouRot = tmpCouRot * Quaternion.Euler(1f, 85f, 3f);
 		
 		GameObject tmpCou = (GameObject)Instantiate(CouchPrefab, tmpCouPos, tmpCouRot);
 		
 		//Tv 
 		Vector3 tmpTvPos = wallSegList[2].transform.position;
-		tmpTvPos = tmpTvPos + new Vector3(2f, 0f, 0f);
+		tmpTvPos = tmpTvPos + new Vector3(-10.3f, 0f, 7f);
 		
 		Quaternion tmpTvRot = TvPrefab.transform.rotation;
 		tmpTvRot = tmpTvRot * Quaternion.Euler(0f, 95f, 0f);
