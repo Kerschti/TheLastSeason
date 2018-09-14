@@ -7,7 +7,7 @@ public class RoomTestScript : MonoBehaviour
 
 	private float a, b; // xy
 
-	float segHoehe = 4.0f; //height
+	float segHoehe = 5.0f; //height
 	float segTiefe = 0.25f;  //depth
 	float segBreite = 0.0f;
 	

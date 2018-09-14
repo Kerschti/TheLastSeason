@@ -8,13 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MeltemsScene.unity
     guid: bcae0dd1455e445759658177591f0d64
   - enabled: 0
-    path: Assets/Scenes/MeltemsRoom.unity
-    guid: def5fbd7d2b954e5e9573ba86adaaee8
-  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
     path: Assets/Scenes/Room.unity
     guid: 3bd3ad74282b24158a33c7768d765dc4
+  - enabled: 1
+    path: Assets/Scenes/Room1.unity
+    guid: ce3e1126441464a8e87f3eef333cab24
+  - enabled: 1
+    path: Assets/Scenes/Room2.unity
+    guid: acf67ee7f082d48c6a1041743e632e30
   m_configObjects: {}
