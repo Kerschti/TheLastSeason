@@ -25,6 +25,8 @@ public class RoomTestScript : MonoBehaviour
 
 	public GameObject wallSegPref; //Pfad
 
+	public GameObject CoffeePrefab;
+
 	private List<GameObject> wallSegList = new List<GameObject>();
 
 	private bool ersteSeg = true; //firstSegment
@@ -64,8 +66,16 @@ public class RoomTestScript : MonoBehaviour
 		Turn(-90.0f);
 		CreateWall();		
 		CreateWall();	
-		CreateWall();		
+		CreateWall();
 
+
+		Vector3 tmpPos = wallSegList[4].transform.position;
+		tmpPos = tmpPos - new Vector3(8.0f, 0f, 10f);
+
+		Quaternion tmpQuat = CoffeePrefab.transform.rotation;
+		tmpQuat = tmpQuat * Quaternion.Euler(0f, 0f, 0f);
+		
+		GameObject tmpCoffee = (GameObject)Instantiate(CoffeePrefab, tmpPos, tmpQuat);
 
 	}
 	
