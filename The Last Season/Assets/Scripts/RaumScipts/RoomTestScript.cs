@@ -29,6 +29,10 @@ public class RoomTestScript : MonoBehaviour
 	public GameObject CouchPrefab;
 
 	public GameObject TvPrefab;
+
+	public GameObject CabinetPrefab;
+
+	public GameObject DoorPrefab;
 	
 	private List<GameObject> wallSegList = new List<GameObject>();
 
@@ -71,10 +75,10 @@ public class RoomTestScript : MonoBehaviour
 		CreateWall();	
 		CreateWall();
 		
+		//Coffee Table
 		Vector3 tmpCofPos = wallSegList[4].transform.position;
 		tmpCofPos = tmpCofPos + new Vector3(-5.44f - tmpCofPos.x, 0f, -1.18f - tmpCofPos.z);
 		
-		//Coffee Table
 		Quaternion tmpCofRot = CoffeePrefab.transform.rotation;
 		tmpCofRot = tmpCofRot * Quaternion.Euler(0f, 0f, 0f);
 		
@@ -97,6 +101,25 @@ public class RoomTestScript : MonoBehaviour
 		tmpTvRot = tmpTvRot * Quaternion.Euler(0f, 95f, 0f);
 		
 		GameObject tmpTv = (GameObject)Instantiate(TvPrefab, tmpTvPos, tmpTvRot);
+		
+		//Cabinet
+		Vector3 tmpCabinetPos = wallSegList[6].transform.position;
+		tmpCabinetPos = tmpCabinetPos + new Vector3(0f, 0f, -0.5f);
+		
+		Quaternion tmpCabinetRot = CabinetPrefab.transform.rotation;
+		tmpCabinetRot = tmpCabinetRot * Quaternion.Euler(2f, 90f, 3f);
+		
+		GameObject tmpCabinet = (GameObject)Instantiate(CabinetPrefab, tmpCabinetPos, tmpCabinetRot);
+		
+		//Door
+		Vector3 tmpDoorPrefabPos = wallSegList[5].transform.position;
+		tmpDoorPrefabPos = tmpDoorPrefabPos + new Vector3(0f, 0f, -0.5f);
+		
+		Quaternion tmpDoorPrefabRot = DoorPrefab.transform.rotation;
+		tmpDoorPrefabRot = tmpDoorPrefabRot * Quaternion.Euler(0f, 0f, 0f);
+		
+		GameObject tmpDoorPrefab = (GameObject)Instantiate(DoorPrefab, tmpDoorPrefabPos, tmpDoorPrefabRot);
+		
 	}
 	
 		public void CreateWall()
