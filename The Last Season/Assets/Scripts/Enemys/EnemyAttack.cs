@@ -27,12 +27,15 @@ public class EnemyAttack : MonoBehaviour
 
         if (timer >= timeBetweenAttacks && playerInRange)
         {
+           
             Attack();
         }
     }
 
     void Attack()
     {
+        timer = 0f;
+
         if (playerHealth.curHealth > 0)
         {
             playerHealth.TakeDamage(atkDamage);

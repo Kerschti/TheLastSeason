@@ -6,6 +6,16 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="bla.cs" t="Include" />
+        <e p="Downloads" t="Include">
+          <e p="RoomMobel" t="Include">
+            <e p="HQ Old Books" t="Include">
+              <e p="Readme.txt" t="Include" />
+            </e>
+            <e p="Retro Cabinet" t="Include">
+              <e p="Readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Enemys" t="Include">
           <e p="Rhino" t="Include">
             <e p="Sheder" t="Include">
@@ -205,12 +215,6 @@
             <e p="Rotator.cs" t="Include" />
             <e p="TrunkBullet.cs" t="Include" />
           </e>
-          <e p="Enviroment Autumn" t="Include">
-            <e p="DoorOpen.cs" t="Include" />
-            <e p="RoomObjecte.cs" t="Include" />
-            <e p="RoomTestScript.cs" t="Include" />
-            <e p="TexturenChance.cs" t="Include" />
-          </e>
           <e p="Environment Winter" t="Include">
             <e p="CloudInParabola.cs" t="Include" />
             <e p="FlyingRock.cs" t="Include" />
@@ -227,6 +231,12 @@
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="RaumScipts" t="Include">
+            <e p="DoorOpen.cs" t="Include" />
+            <e p="DoorOpen1.cs" t="Include" />
+            <e p="DoorOpenGarten.cs" t="Include" />
+            <e p="RoomTestScript.cs" t="Include" />
           </e>
         </e>
         <e p="Stylized Mushroom" t="Include">
