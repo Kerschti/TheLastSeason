@@ -4930,15 +4930,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4581465621375376, guid: 726238f932bf6469195d1aff6fc8adcd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14
+      value: 24.11
       objectReference: {fileID: 0}
     - target: {fileID: 4581465621375376, guid: 726238f932bf6469195d1aff6fc8adcd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.93
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 4581465621375376, guid: 726238f932bf6469195d1aff6fc8adcd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 39.65
+      value: 54.17
       objectReference: {fileID: 0}
     - target: {fileID: 4581465621375376, guid: 726238f932bf6469195d1aff6fc8adcd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14776,6 +14776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587b6742d5b9d40e3af291fdf279b06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelToLoad: 
 --- !u!1 &803152225
 GameObject:
   m_ObjectHideFlags: 0
@@ -20671,7 +20672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1248099697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20683,9 +20684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6a6df342b52d24092cf6bbb590c535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveHeight: 0.05
-  waveFrequency: 0.5
-  waveLength: 0.75
+  waveHeight: 1
+  waveFrequency: 2
+  waveLength: 200
   waveOriginPosition: {x: 0, y: 0, z: 0}
 --- !u!23 &1248099698
 MeshRenderer:
