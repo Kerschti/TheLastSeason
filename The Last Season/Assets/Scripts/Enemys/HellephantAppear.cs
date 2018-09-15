@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class HellephantAppear : MonoBehaviour {
 
-
-    private float timer;
     GameObject killerhellephant;
 
-    int x = 52;
-    int y = 3;
-    int z = 55;
+    //first row of elephants
+    float x1 = 52f;
+    float y1 = 3f;
+    float z1 = 55f;
 
-    int x2 = 14;
-    int y2 = 3;
-    int z2 = 17;
+    //second row of elephants
+    float x2 = 14f;
+    float y2 = 3f;
+    float z2 = 17f;
 
     Vector3 position;
+
+    //counter
     private int c = 0;
     private int c2 = 0;
 
@@ -24,37 +26,32 @@ public class HellephantAppear : MonoBehaviour {
         killerhellephant = GameObject.FindGameObjectWithTag("KillerHellephant");
 	}
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            timer += Time.deltaTime;
-
-            while (timer == timer % 5f && c < 4)
+          
+            while ( c < 4)
             {
-                position = new Vector3(x, y, z);
+                position = new Vector3(x1, y1, z1);
                 Instantiate(killerhellephant, position, Quaternion.identity);
                 c++;
-                x = x + 25;
-                y = 3;
-                z = 55;
-                Debug.Log("Jetzt kommt ein neuer Elefant");
+                x1 = x1 + 25;
+               
             }
 
-            while (timer == timer % 10f && c2 < 4)
+            while ( c2 < 4)
             {
                 position = new Vector3(x2, y2, z2);
-                
+                Debug.Log("Position von y2 = " + y2);
                 Instantiate(killerhellephant, position, Quaternion.identity);
                 c2++;
                 x2 = x2 + 25;
-                y2 = 3;
-                z2 = 17;
-                Debug.Log("Jetzt kommt ein neuer Elefant 22");
             }
 
         }
 
-        
+
     }
 }

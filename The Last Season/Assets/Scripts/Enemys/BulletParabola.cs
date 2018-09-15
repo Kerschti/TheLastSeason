@@ -10,9 +10,6 @@ public class BulletParabola : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        Debug.Log("Parbola Jetzt");
-
         Animation += Time.deltaTime;
         Animation = Animation % 5f;
         transform.position = Parabola.Parabola1(Vector3.zero, Vector3.forward * 10f, 5f, Animation / 5f);

@@ -7,7 +7,7 @@ public class HellephantShoot : MonoBehaviour {
 
     public Transform trunk;
     public GameObject bullet;
-    public Transform player;
+    private Transform player;
 
     void Awake()
     {

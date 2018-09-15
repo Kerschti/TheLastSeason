@@ -19,7 +19,7 @@ public class Water : MonoBehaviour
             //new data, calculation was inspired by https://www.youtube.com/watch?v=3MoHJtBnn2U
             vertices[i].y = scale * Mathf.PerlinNoise(Time.time + (vertices[i].x * scale), Time.time + (vertices[i].z * scale));
         }
-        //new potion for vertices 
+        //new postion for vertices 
         mf.mesh.vertices = vertices;
 	}
 }
