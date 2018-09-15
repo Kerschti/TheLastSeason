@@ -36,6 +36,8 @@ public class HellephantAppear : MonoBehaviour {
                 Instantiate(killerhellephant, position, Quaternion.identity);
                 c++;
                 x = x + 25;
+                y = 3;
+                z = 55;
                 Debug.Log("Jetzt kommt ein neuer Elefant");
             }
 
