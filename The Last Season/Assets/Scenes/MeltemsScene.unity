@@ -5130,7 +5130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 367814436}
   smoothing: 0.5
-  mouseSensitivity: 3
+  mouseSensitivity: 2
   distFromTarget: 5
   PitchMinMax: {x: 3, y: 60}
 --- !u!1001 &502620556
@@ -26338,7 +26338,7 @@ Prefab:
     - target: {fileID: 114748267492024674, guid: 3f769196e23754bab901de9bb087b9ee,
         type: 2}
       propertyPath: timeSetting.timeUntilRuns
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114748267492024674, guid: 3f769196e23754bab901de9bb087b9ee,
         type: 2}
