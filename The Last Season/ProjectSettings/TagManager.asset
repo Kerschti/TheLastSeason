@@ -11,6 +11,8 @@ TagManager:
   - wallSeg
   - wall
   - PickUp
+  - KillerHellephant
+  - TemCross
   layers:
   - Default
   - TransparentFX

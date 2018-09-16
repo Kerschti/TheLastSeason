@@ -8,10 +8,12 @@ public class HellephantShoot : MonoBehaviour {
     public Transform trunk;
     public GameObject bullet;
     private Transform player;
+    
 
     void Awake()
     {
         player = GameObject.FindWithTag("Player").transform;
+
     }
 
     void Update()
@@ -26,7 +28,10 @@ public class HellephantShoot : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("Shooting");
-            
+            Debug.Log("Elefant schießt.");
+
+
+
         }
 
     }
