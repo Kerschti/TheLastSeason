@@ -13,6 +13,7 @@ TagManager:
   - PickUp
   - KillerHellephant
   - TemCross
+  - Trunk1
   layers:
   - Default
   - TransparentFX
