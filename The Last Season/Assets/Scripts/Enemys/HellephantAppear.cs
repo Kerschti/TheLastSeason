@@ -12,20 +12,24 @@ public class HellephantAppear : MonoBehaviour {
     {
         if(other.gameObject.tag == "Player")
         {
-            Instantiate(Killerhellephant, Spawnpoint.position, Spawnpoint.rotation );
+           // Instantiate(Killerhellephant, Spawnpoint.position, Spawnpoint.rotation );
 
             position.x = 55;
             position.y = 3;
             position.z = 36;
-            createHellephant();
+
+            Instantiate(Killerhellephant, position, Quaternion.identity);
+
+            // createHellephant();
         }
-       
-    }
-
-    void createHellephant()
-    {
-        Instantiate(Killerhellephant, position, Spawnpoint.rotation);
 
     }
+
+    //void createHellephant()
+    //{
+           
+    //    Instantiate(Killerhellephant, position, Spawnpoint.rotation);
+
+    //}
 
 }
