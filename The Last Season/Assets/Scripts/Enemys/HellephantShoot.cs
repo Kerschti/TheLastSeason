@@ -8,59 +8,68 @@ public class HellephantShoot : MonoBehaviour {
     public Transform trunk;
     public GameObject bullet;
     private Transform player;
-    
+
+    float timer;
+    public float timeBetweenAttacks = 1f;
+
+    public bool InRange = false;
+
+    private Transform trunkend;
 
     void Awake()
     {
         player = GameObject.FindWithTag("Player").transform;
 
-    }
+        trunkend = GameObject.FindWithTag("TrunkEnd").transform;
 
-    void Update()
-    {
-        transform.LookAt(player);
     }
-
 
     //if player in trigger start shooting
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            StartCoroutine("Shooting");
-            Debug.Log("Elefant schießt.");
+            InRange = true;
+        }
+    }
 
+    void Update()
+    {
+        transform.LookAt(player);
 
+        // Add the time since Update was last called to the timer.
+        timer += Time.deltaTime;
 
+        // If the timer exceeds the time between attacks, the player is in range and this enemy is alive...
+        if (timer >= timeBetweenAttacks && InRange )
+        {
+            // ... attack.
+            Shooting();
         }
 
     }
+   
 
-        //If player not in trigger stop shooting
-        void OnTriggerExit(Collider other)
+    //If player not in trigger stop shooting
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
         {
-            if (other.gameObject.tag == "Player")
-            {
-                StopCoroutine("Shooting");
-            }
+            InRange = false;
+            Debug.Log("Der Elefant schießt nicht mehr");
         }
+    }
 
-    //Create new bullet every one second
-    IEnumerator Shooting()
-        {
-
-            Debug.Log("Elefant schießt");
-
-            while (true)
-            {
-                Instantiate(bullet, trunk.position, trunk.rotation);
-                yield return new WaitForSeconds(1);
-            }
-
-
-        }
+    void Shooting()
+    {
+        // Reset the timer.
+        timer = 0f;
+        Instantiate(bullet, trunkend.position, trunkend.rotation);
 
     }
+
+
+}
 
 
 
