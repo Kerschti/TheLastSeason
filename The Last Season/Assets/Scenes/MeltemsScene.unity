@@ -162,7 +162,7 @@ Transform:
   m_Children:
   - {fileID: 1446981515}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 9.288, y: -1.069, z: -4.6780005}
 --- !u!1 &174687419
 GameObject:
@@ -228,7 +228,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &367814435 stripped
 GameObject:
@@ -4936,6 +4936,7 @@ GameObject:
   - component: {fileID: 457550686}
   - component: {fileID: 457550685}
   - component: {fileID: 457550687}
+  - component: {fileID: 457550688}
   - component: {fileID: 457550684}
   - component: {fileID: 457550683}
   - component: {fileID: 457550682}
@@ -5021,7 +5022,7 @@ Transform:
   - {fileID: 676089360}
   - {fileID: 2030575469}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 23.688002, y: 0, z: 0}
 --- !u!114 &457550687
 MonoBehaviour:
@@ -5039,6 +5040,22 @@ MonoBehaviour:
   mouseSensitivity: 2
   distFromTarget: 5
   PitchMinMax: {x: 3, y: 60}
+--- !u!114 &457550688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 457550681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a420e225cb6124146b0f1635b8b59bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1661797258603590, guid: 285b0ba144eb642e8a19fde964423461, type: 2}
+  spawnTime: 4
+  spawnDistance: 30
+  upperSpawnLimit: 2
 --- !u!1001 &502620556
 Prefab:
   m_ObjectHideFlags: 0
@@ -14886,7 +14903,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865454943 stripped
 GameObject:
@@ -15616,7 +15633,7 @@ Transform:
   - {fileID: 950173477}
   - {fileID: 1141951031}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1103093385
 MonoBehaviour:
@@ -26345,7 +26362,7 @@ Transform:
   m_Children:
   - {fileID: 1922641648}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -66.366005, z: 0}
 --- !u!1001 &1911000346
 Prefab:
