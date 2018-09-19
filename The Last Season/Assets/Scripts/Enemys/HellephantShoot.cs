@@ -7,6 +7,9 @@ public class HellephantShoot : MonoBehaviour {
 
     public Transform trunk;
     public GameObject bullet;
+
+    private GameObject bulletin;
+
     private Transform player;
 
     float timer;
@@ -32,10 +35,6 @@ public class HellephantShoot : MonoBehaviour {
     void Awake()
     {
         player = GameObject.FindWithTag("Player").transform;
-        targetP = GameObject.FindWithTag("Player").transform.position;
-
-        temcross = GameObject.FindWithTag("TemCross").transform;
-
 
         trunkend = GameObject.FindWithTag("TrunkEnd").transform;
     }
@@ -64,6 +63,12 @@ public class HellephantShoot : MonoBehaviour {
             Shooting();
         }
 
+        if (bulletin)
+        {
+            Animation += Time.deltaTime;
+            bulletin.transform.position = Parabola.Parabola1(trunkend.position, player.position, 5f, Animation / 5f);
+        }
+        
     }
    
 
@@ -83,15 +88,10 @@ public class HellephantShoot : MonoBehaviour {
         timer = 0f;
 
         Debug.Log("Ist jetzt in shooting drin.");
-
-        Instantiate(bullet);
-       // Instantiate(bullet, temcross.position, temcross.rotation);
-
-    }
-
-    public float GetCounter()
-    {
-        return elCounter;
+        bulletin = Instantiate(bullet);
+        // Instantiate(bullet, temcross.position, temcross.rotation);
+       
+       
     }
 
 

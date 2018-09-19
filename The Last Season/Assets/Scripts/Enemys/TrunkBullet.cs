@@ -67,7 +67,7 @@ public class TrunkBullet : MonoBehaviour
         //Animation += Time.deltaTime;
         //transform.position = Parabola.Parabola1(startposition, targetP, 5f, Animation / 5f);
         timer += Time.deltaTime;
-        changePos();
+        //changePos();
 
     }
 
@@ -83,21 +83,21 @@ public class TrunkBullet : MonoBehaviour
     }
 
     
-    void changePos()
-    {
+    //void changePos()
+    //{
 
-        if (timer <= 5f)
-            {
-                Debug.Log("TIMER ! =" + sec);
-                Animation += Time.deltaTime;
-                transform.position = Parabola.Parabola1(startposition, targetP, 5f, Animation / 5f);
+    //    if (timer <= 5f)
+    //        {
+    //            Debug.Log("TIMER ! =" + sec);
+    //            Animation += Time.deltaTime;
+    //            transform.position = Parabola.Parabola1(startposition, targetP, 5f, Animation / 5f);
                 
 
-            }else if( timer <= 10f)
-            {
-                Debug.Log("TIMER 2 =" + sec);
-                Animation += Time.deltaTime;
-                transform.position = Parabola.Parabola1(startposition2, targetP, 5f, Animation / 5f);
-            }
-        }
+    //        }else if( timer <= 10f)
+    //        {
+    //            Debug.Log("TIMER 2 =" + sec);
+    //            Animation += Time.deltaTime;
+    //            transform.position = Parabola.Parabola1(startposition2, targetP, 5f, Animation / 5f);
+    //        }
+    //    }
     }
