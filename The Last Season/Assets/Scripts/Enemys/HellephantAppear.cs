@@ -5,12 +5,12 @@ using UnityEngine;
 public class HellephantAppear : MonoBehaviour {
 
     public GameObject Killerhellephant;
+    
 
     public Transform trunk;
 
     Vector3 position2;
     Vector3 position;
-    public Vector3 trunkpos;
 
     float c = 1;
     float c1 = 1;
@@ -36,6 +36,9 @@ public class HellephantAppear : MonoBehaviour {
             {
                 Instantiate(Killerhellephant, position, Quaternion.identity);
                 position.x = position.x + 30;
+
+              
+
                 c++;
             }
 

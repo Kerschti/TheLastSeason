@@ -62,7 +62,7 @@ public class EnemyManager : MonoBehaviour
         dirVec = player.transform.forward;
 
 
-        Debug.Log(dirVec);
+        //Debug.Log(dirVec);
         if(dirVec != Vector3.zero)
         {
             if (!isInvoking)

@@ -16,12 +16,28 @@ public class HellephantShoot : MonoBehaviour {
 
     private Transform trunkend;
 
+
+    Vector3 trunkposition;
+    Vector3 targetP;
+
+    protected float Animation;
+
+    Transform temcross;
+
+    public float elCounter;
+    
+
+    
+
     void Awake()
     {
         player = GameObject.FindWithTag("Player").transform;
+        targetP = GameObject.FindWithTag("Player").transform.position;
+
+        temcross = GameObject.FindWithTag("TemCross").transform;
+
 
         trunkend = GameObject.FindWithTag("TrunkEnd").transform;
-
     }
 
     //if player in trigger start shooting
@@ -30,6 +46,7 @@ public class HellephantShoot : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             InRange = true;
+            elCounter++;
         }
     }
 
@@ -64,8 +81,17 @@ public class HellephantShoot : MonoBehaviour {
     {
         // Reset the timer.
         timer = 0f;
-        Instantiate(bullet, trunkend.position, trunkend.rotation);
 
+        Debug.Log("Ist jetzt in shooting drin.");
+
+        Instantiate(bullet);
+       // Instantiate(bullet, temcross.position, temcross.rotation);
+
+    }
+
+    public float GetCounter()
+    {
+        return elCounter;
     }
 
 
