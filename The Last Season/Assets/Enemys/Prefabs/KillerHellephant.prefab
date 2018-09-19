@@ -295,6 +295,9 @@ MonoBehaviour:
   bullet: {fileID: 1094361104881548, guid: 07223867896864eedb45a4167131c62c, type: 2}
   timeBetweenAttacks: 1
   InRange: 0
+  trunkendPos: {fileID: 0}
+  trunk1: {fileID: 0}
+  elCounter: 0
 --- !u!114 &114382866627469114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,6 +313,9 @@ MonoBehaviour:
   bullet: {fileID: 1094361104881548, guid: 07223867896864eedb45a4167131c62c, type: 2}
   timeBetweenAttacks: 1
   InRange: 0
+  trunkendPos: {fileID: 0}
+  trunk1: {fileID: 0}
+  elCounter: 0
 --- !u!114 &114797893704507338
 MonoBehaviour:
   m_ObjectHideFlags: 1

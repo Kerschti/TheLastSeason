@@ -19,6 +19,8 @@ public class HellephantShoot : MonoBehaviour {
 
     private Transform trunkend;
 
+    public Transform trunkendPos;
+    public GameObject trunk1;
 
     Vector3 trunkposition;
     Vector3 targetP;
@@ -28,15 +30,17 @@ public class HellephantShoot : MonoBehaviour {
     Transform temcross;
 
     public float elCounter;
+
+    //public TrunkBullet trunkBullet;
     
 
-    
-
-    void Awake()
+    void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
 
         trunkend = GameObject.FindWithTag("TrunkEnd").transform;
+        trunk1 = transform.Find("Trunk1").gameObject;
+        //trunkendPos = trunk1.transform.Find("TrunkEnd");
     }
 
     //if player in trigger start shooting
@@ -46,6 +50,11 @@ public class HellephantShoot : MonoBehaviour {
         {
             InRange = true;
             elCounter++;
+
+            //trunkendPos = transform.Find("TrunkEnd");
+            trunkendPos = trunk1.transform.Find("TrunkEnd");
+            Debug.Log("Player NEAR" + trunkendPos.position);
+            TrunkBullet.SetBeginP(trunkendPos);
         }
     }
 
@@ -63,12 +72,12 @@ public class HellephantShoot : MonoBehaviour {
             Shooting();
         }
 
-        if (bulletin)
+       /* if (bulletin)
         {
             Animation += Time.deltaTime;
             bulletin.transform.position = Parabola.Parabola1(trunkend.position, player.position, 5f, Animation / 5f);
         }
-        
+        */
     }
    
 
@@ -78,7 +87,8 @@ public class HellephantShoot : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             InRange = false;
-            Debug.Log("Der Elefant schießt nicht mehr");
+            //Debug.Log("Der Elefant schießt nicht mehr");
+
         }
     }
 
@@ -87,8 +97,9 @@ public class HellephantShoot : MonoBehaviour {
         // Reset the timer.
         timer = 0f;
 
-        Debug.Log("Ist jetzt in shooting drin.");
+        //Debug.Log("Ist jetzt in shooting drin.");
         bulletin = Instantiate(bullet);
+        
         // Instantiate(bullet, temcross.position, temcross.rotation);
        
        
