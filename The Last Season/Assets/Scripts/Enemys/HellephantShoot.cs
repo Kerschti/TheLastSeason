@@ -5,42 +5,22 @@ using UnityEngine;
 public class HellephantShoot : MonoBehaviour {
 
 
-    public Transform trunk;
-    public GameObject bullet;
+    public GameObject bullet;                       //Gameobject for prefab bullet                   
+    private Transform player;                       //Position information from player needed
 
-    private GameObject bulletin;
+    private float timer;
+    private float timeBetweenAttacks = 1f;          //Time between shooting new bullet
+    private bool InRange;                           //Is Player entering trigger?
 
-    private Transform player;
+    public Transform trunkendPos;                   //saves trunkend position
+    public GameObject trunk1;                       //saves Gameobj trunk
 
-    float timer;
-    public float timeBetweenAttacks = 1f;
-
-    public bool InRange = false;
-
-    private Transform trunkend;
-
-    public Transform trunkendPos;
-    public GameObject trunk1;
-
-    Vector3 trunkposition;
-    Vector3 targetP;
-
-    protected float Animation;
-
-    Transform temcross;
-
-    public float elCounter;
-
-    //public TrunkBullet trunkBullet;
-    
-
+    //Initialization
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
-
-        trunkend = GameObject.FindWithTag("TrunkEnd").transform;
         trunk1 = transform.Find("Trunk1").gameObject;
-        //trunkendPos = trunk1.transform.Find("TrunkEnd");
+        InRange = false;
     }
 
     //if player in trigger start shooting
@@ -48,18 +28,20 @@ public class HellephantShoot : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            //set player in range true
             InRange = true;
-            elCounter++;
 
-            //trunkendPos = transform.Find("TrunkEnd");
+            //finding position of childelement trunkend from trunk1
             trunkendPos = trunk1.transform.Find("TrunkEnd");
-            Debug.Log("Player NEAR" + trunkendPos.position);
+
+            //give trunkend position to Trunkbullet
             TrunkBullet.SetBeginP(trunkendPos);
         }
     }
 
     void Update()
     {
+        //Hellephant looks at player
         transform.LookAt(player);
 
         // Add the time since Update was last called to the timer.
@@ -72,12 +54,6 @@ public class HellephantShoot : MonoBehaviour {
             Shooting();
         }
 
-       /* if (bulletin)
-        {
-            Animation += Time.deltaTime;
-            bulletin.transform.position = Parabola.Parabola1(trunkend.position, player.position, 5f, Animation / 5f);
-        }
-        */
     }
    
 
@@ -86,9 +62,8 @@ public class HellephantShoot : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            //player isn't in range anymore
             InRange = false;
-            //Debug.Log("Der Elefant schießt nicht mehr");
-
         }
     }
 
@@ -97,12 +72,8 @@ public class HellephantShoot : MonoBehaviour {
         // Reset the timer.
         timer = 0f;
 
-        //Debug.Log("Ist jetzt in shooting drin.");
-        bulletin = Instantiate(bullet);
-        
-        // Instantiate(bullet, temcross.position, temcross.rotation);
-       
-       
+        //New bullet
+        Instantiate(bullet);
     }
 
 

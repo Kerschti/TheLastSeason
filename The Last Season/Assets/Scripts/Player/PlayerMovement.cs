@@ -43,7 +43,9 @@ public class PlayerMovement : MonoBehaviour
     public SpeedSetting speedSetting = new SpeedSetting();
     public TimeSetting timeSetting = new TimeSetting();
 
-    void Awake()
+    bool inWater;
+
+    public void Awake()
     {
         // Create a layer mask for the floor layer.
 
@@ -74,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         // Turn the player.
         Turning();
 
+
     }
 
 
@@ -99,6 +102,9 @@ public class PlayerMovement : MonoBehaviour
 
     void TimeUntilRun()
     {
+        //Tanja Value of IsInWater
+        bool inWater = IsInWater();
+
         // Check if the Player is walking and isn't swimming
         bool IsWalking = h != 0f || v != 0f && !IsInWater();
 
@@ -111,6 +117,9 @@ public class PlayerMovement : MonoBehaviour
         else if (!IsWalking)
         {
             timeSetting.timeUntilRuns = initTime;
+
+            //Start force
+            
         }
     }
 
@@ -122,15 +131,28 @@ public class PlayerMovement : MonoBehaviour
                                     col.radius * 1.2f, floorMask);
     }
 
-    private bool IsInWater()
+     bool IsInWater()
     {
+
         return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
                                                                   col.bounds.min.y,
                                                                   col.bounds.center.z),
                                     col.radius * 1.2f, waterMask);
     }
 
-    void Move()
+    //void Force(bool forceTrue)
+    //{
+    //    if (forceTrue)
+    //    {
+    //        Vector3 direction = playerRigidbody.transform.position - transform.position;
+
+    //        playerRigidbody.AddForce(transform.forward*100);
+
+    //        Debug.Log("Player sollte jetzt schneller sein");
+    //    }
+    //}
+
+     void Move()
 
     {
 
@@ -190,7 +212,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    void Animating()
+    public void Animating()
     {
         bool IsWalking = h != 0f || v != 0f && !IsInWater();
         float running = timeSetting.timeUntilRuns <= 0 ? 1f : 0.5f;

@@ -42,7 +42,7 @@ public class CloudInParabola : MonoBehaviour {
         if(startAnim)
         {
             animTimer += Time.deltaTime;
-            //transform.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
+            transform.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
 
             if(transform.position.y <= 0)
             {
