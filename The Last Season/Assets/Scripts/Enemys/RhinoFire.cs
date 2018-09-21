@@ -4,74 +4,49 @@ using UnityEngine;
 
 public class RhinoFire : MonoBehaviour {
 
-    public GameObject flames;                       //Gameobject for prefab bullet                   
-    private Transform player;                       //Position information from player needed
+    Transform player;
+    public Transform toung;
+    public GameObject fireball;
+    Vector3 toungPos;
 
-    private float timer;
-    private float timeBetweenAttacks = 1f;          //Time between shooting new bullet
-    private bool InRange;                           //Is Player entering trigger?
-
-    public Transform tongue;                        //saves tongue position
-    public GameObject rino;                         //saves Gameobj rino
-
-    // Use this for initialization
-    void Start () {
-        player = GameObject.FindWithTag("Player").transform;
-        rino = transform.Find("Rino").gameObject;
-        InRange = false;
-        flames = GameObject.FindWithTag("Flames");
-    }
-
-    //if player in trigger start shooting
-    void OnTriggerEnter(Collider other)
+    void Awake()
     {
-        if (other.gameObject.tag == "Player")
-        {
-            //set player in range true
-            InRange = true;
+        player = GameObject.FindWithTag("Player").transform;
 
-            //finding position of childelement trunkend from trunk1
-            tongue = rino.transform.Find("tongue");
-
-            //give trunkend position to Trunkbullet
-            //TrunkBullet.SetBeginP(trunkendPos);
-        }
     }
 
     void Update()
     {
-        //Hellephant looks at player
         transform.LookAt(player);
-
-        // Add the time since Update was last called to the timer.
-        timer += Time.deltaTime;
-
-        // If the timer exceeds the time between attacks, the player is in range and this enemy is alive...
-        if (timer >= timeBetweenAttacks && InRange)
-        {
-            // ... attack.
-            Shooting();
-        }
-
     }
 
-    //If player not in trigger stop shooting
-    void OnTriggerExit(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
-            //player isn't in range anymore
-            InRange = false;
+            StartCoroutine("Shooting");
         }
     }
 
-    void Shooting()
+    private void OnTriggerExit(Collider other)
     {
-        // Reset the timer.
-        timer = 0f;
+        if(other.gameObject.tag == "Player")
+        {
+            StopCoroutine("Shooting");
+        }
+    }
 
-        //New bullet
-        Instantiate(flames);
+    IEnumerator Shooting()
+    {
+        while (true)
+        {
+            Instantiate(fireball, toung.position, toung.rotation);
+
+            Debug.Log("Toung position: "+toung.position);
+
+            yield return new WaitForSeconds(2);
+        }
+
     }
 }
 

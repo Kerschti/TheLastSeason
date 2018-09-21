@@ -70,6 +70,10 @@ public class Watercurrent : MonoBehaviour {
 
                     //Debug.Log("AFTER UNDO:" + waypoints.transform.position);
 
+                //Translate.To
+                //Lerp
+                //Move
+
                 }
 
             }

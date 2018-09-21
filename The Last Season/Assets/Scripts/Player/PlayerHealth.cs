@@ -95,7 +95,8 @@ public class PlayerHealth : MonoBehaviour
         {
 
             // Check to see if player passed the allowed falling distance and kill the player if necessary.
-            if (fallHeight <= -deathHeight)
+
+            if (Mathf.Abs( fallHeight) >= deathHeight)
                 TakeDamage(100);
 
             //reset fall height since we landed (doesn't matter if we're dead or alive)
@@ -119,5 +120,12 @@ public class PlayerHealth : MonoBehaviour
 
         anim.SetTrigger("Respawned");
     }
+
+    /*
+     * Spieler unsterblich
+     * Sphere erreicht, Spieler kann nicht sterben
+     * Fallhight sollte automatisch null sein, ist jetzt wieder grounded
+     * 
+     */ 
    
 }

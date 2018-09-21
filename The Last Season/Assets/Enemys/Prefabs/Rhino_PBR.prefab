@@ -85,6 +85,7 @@ GameObject:
   - component: {fileID: 4362683537437530}
   - component: {fileID: 95195563993796562}
   - component: {fileID: 135286988595977768}
+  - component: {fileID: 114902793105208370}
   m_Layer: 0
   m_Name: Rhino_PBR
   m_TagString: Untagged
@@ -1633,6 +1634,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114902793105208370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1056357666240436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb40217b91127dd408075e3df047a45e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toung: {fileID: 0}
+  fireball: {fileID: 0}
 --- !u!135 &135286988595977768
 SphereCollider:
   m_ObjectHideFlags: 1
