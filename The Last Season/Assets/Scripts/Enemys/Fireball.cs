@@ -18,8 +18,8 @@ public class Fireball : MonoBehaviour {
     {
          targetP = GameObject.FindWithTag("Player").transform.position;
          player = GameObject.FindGameObjectWithTag("Player");
-            playerhealth = player.GetComponent<PlayerHealth>();
-             Destroy(this.gameObject, 8.0f);
+         playerhealth = player.GetComponent<PlayerHealth>();
+         Destroy(this.gameObject, 8.0f);
      }
 
     // Use this for initialization
