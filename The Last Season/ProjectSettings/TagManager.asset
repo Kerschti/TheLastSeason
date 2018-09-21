@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Bunny
   - TrunkEnd
   - Floor
   - Holder
@@ -17,6 +16,7 @@ TagManager:
   - Flames
   - RhinoTongue
   - Rino
+  - Fightable
   layers:
   - Default
   - TransparentFX
@@ -29,7 +29,7 @@ TagManager:
   - Player
   - Floor
   - Fightable
-  - 
+  - SpawnArea
   - 
   - 
   - 

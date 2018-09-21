@@ -28,4 +28,6 @@ public class EnemyMovement : MonoBehaviour {
             nav.enabled = false;
         }
 	}
+
+    
 }

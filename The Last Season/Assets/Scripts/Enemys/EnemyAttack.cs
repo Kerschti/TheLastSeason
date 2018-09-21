@@ -11,6 +11,8 @@ public class EnemyAttack : MonoBehaviour
     private bool playerInRange;
     private PlayerHealth playerHealth;
 
+    private Animator anim;
+
     public int atkDamage = 10;
 
     // Use this for initialization
@@ -18,6 +20,7 @@ public class EnemyAttack : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,6 +42,7 @@ public class EnemyAttack : MonoBehaviour
         if (playerHealth.curHealth > 0)
         {
             playerHealth.TakeDamage(atkDamage);
+            anim.SetBool("IsAttacking", true);
         }
     }
 

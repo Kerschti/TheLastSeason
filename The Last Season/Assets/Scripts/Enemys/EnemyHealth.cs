@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
     private int currentHealth;
     private Animator anim;
     [HideInInspector]
-    public bool isDead;
+    public bool isDead = false;
 
 
 

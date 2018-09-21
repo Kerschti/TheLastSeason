@@ -11,7 +11,7 @@ public class KickAtk : MonoBehaviour {
     {
         
 
-        if(other.gameObject.CompareTag("Bunny"))
+        if(other.gameObject.CompareTag("Fightable"))
         {
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             enemyHealth.TakeDamage(amount);

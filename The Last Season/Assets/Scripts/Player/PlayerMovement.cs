@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
     private int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
     private int waterMask;                      // A layer mask for the Water layer.
+    private int spawnAreaMask;                  // A layer for the Area in which Enemys will spawn.
     private Vector2 rotation;                   // Vector to store the direction in wich the player should turn.
     private CapsuleCollider col;                // Reference to the Players CapsuleCollider.
     private float h;                            // Stores horizontal input
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private float verticalVelocity;             // Setting of upward velocity.
     Transform cameraTrans;                      // camera transform.
     Vector2 dir;                                // Vector2 for calculating movement & rotation of player.
+    EnemyManager enemyManager;
 
     public SpeedSetting speedSetting = new SpeedSetting();
     public TimeSetting timeSetting = new TimeSetting();
@@ -51,10 +53,12 @@ public class PlayerMovement : MonoBehaviour
 
         floorMask = LayerMask.GetMask("Floor");
         waterMask = LayerMask.GetMask("Water");
+        spawnAreaMask = LayerMask.GetMask("SpawnArea");
         col = GetComponent<CapsuleCollider>();
         playerRigidbody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         cameraTrans = Camera.main.transform;
+        enemyManager = Camera.main.GetComponent<EnemyManager>();
         initTime = timeSetting.timeUntilRuns;
         initSpeed = speedSetting.Speed;
 
@@ -75,6 +79,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Turn the player.
         Turning();
+
+        // Check if Enemies should be spawning.
+        MakeEnemiesSpawn();
 
 
     }
@@ -98,6 +105,21 @@ public class PlayerMovement : MonoBehaviour
         // Calculate Time.
         TimeUntilRun();
 
+    }
+
+
+    void MakeEnemiesSpawn()
+    {
+        if(IsInSpawnArea() && enemyManager.enabled == false)
+        {
+            Debug.Log("THEY ARE COMING");
+            enemyManager.enabled = true;
+        }
+        else if (!IsInSpawnArea() && enemyManager.enabled == true)
+        {
+            Debug.Log("GET SOME REST?");
+            enemyManager.enabled = false;
+        }
     }
 
     void TimeUntilRun()
@@ -138,6 +160,14 @@ public class PlayerMovement : MonoBehaviour
                                                                   col.bounds.min.y,
                                                                   col.bounds.center.z),
                                     col.radius * 1.2f, waterMask);
+    }
+
+    bool IsInSpawnArea()
+    {
+        return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
+                                                                col.bounds.min.y,
+                                                                col.bounds.center.z),
+                                    col.radius * 1.2f, spawnAreaMask);
     }
 
     //void Force(bool forceTrue)

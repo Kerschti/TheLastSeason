@@ -18,10 +18,12 @@ public class PlayerHealth : MonoBehaviour
     private float fallHeight = 0;               // Float to determine if falling.
     protected float deathHeight = 8;            // Float of max Height you can fall before dieing.
     private bool wasFalling = false;            // Determine if player fell in last frame.
+    private Vector3 playerSelf;
 
-    // Use this for initialization
-    
-    
+    [HideInInspector]
+    public bool isOnParaCloud = false;
+
+
     public Slider HealthBar;     //@Meltem
     
     void Start()
@@ -29,14 +31,22 @@ public class PlayerHealth : MonoBehaviour
         curHealth = health;
         anim = GetComponent<Animator>();
         playerMove = GetComponent<PlayerMovement>();
-        
+        //playerSelf = this.transform.lossyScale;
 
     }
 
 
     void FixedUpdate()
     {
-        CheckForFall();
+        if (!isOnParaCloud)
+        {
+            CheckForFall();
+        }
+        else
+        {
+            Debug.Log("THIS IS NOT WORKING");
+            //this.transform.lossyScale = playerSelf;
+        }
     }
 
 
@@ -76,6 +86,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (!playerMove.IsGrounded())
         {
+            Debug.Log("CHECKING FOR FALL NOW!");
 
             // Calculate the distance between players current height and the height he was in the last frame.
             lastYTravelDistance = transform.position.y - lastY;
