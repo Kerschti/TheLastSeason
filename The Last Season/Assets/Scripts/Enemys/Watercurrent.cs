@@ -30,6 +30,7 @@ public class Watercurrent : MonoBehaviour {
         {
 
             go = true;
+            Debug.Log("Trigger GO IST JETZT:" + go);
 
 
         }
@@ -48,16 +49,16 @@ public class Watercurrent : MonoBehaviour {
             {
                 if (dist > minDist)
                 {
-                    Debug.Log(dist);
+                    //.Log(dist);
                     Move();
                     Debug.Log("MOVE IS CALLING");
                 }
                 else
                 {
-                        Debug.Log("Player ist am Ende");
-
+                    Debug.Log("Player ist am Ende");
                     waypoints = null;
                     go = false;
+                    Debug.Log("ELSE GO IST JETZT:" + go);
 
                     //Debug.Log("BEFORE DESTROYING:"+ waypoints.transform.position);
 
