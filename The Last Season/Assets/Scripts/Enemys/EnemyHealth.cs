@@ -7,10 +7,12 @@ public class EnemyHealth : MonoBehaviour
 
     public int initalHealth = 50;
 
-    private int currentHealth;
+
     private Animator anim;
     [HideInInspector]
     public bool isDead = false;
+    [HideInInspector]
+    public int currentHealth;
 
 
 
