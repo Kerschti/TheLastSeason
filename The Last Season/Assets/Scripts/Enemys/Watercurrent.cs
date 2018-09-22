@@ -71,7 +71,7 @@ public class Watercurrent : MonoBehaviour {
                     go = false;
                     Debug.Log("ELSE GO IST JETZT:" + go + " "+ waypoints);
 
-
+                    playerMovement.onWayBetweenWaypoints = false;
                     //Destroy(waypoints);
 
                     //Debug.Log("AFTER DESTROYING:" + waypoints.transform.position);
@@ -80,9 +80,9 @@ public class Watercurrent : MonoBehaviour {
 
                     //Debug.Log("AFTER UNDO:" + waypoints.transform.position);
 
-                //Translate.To
-                //Lerp
-                //Move
+                    //Translate.To
+                    //Lerp
+                    //Move
 
                 }
 
