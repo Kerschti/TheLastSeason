@@ -8,7 +8,8 @@ public class EnemyManager : MonoBehaviour
     public GameObject[] enemies;    //Enemy prefab to be spawned.
     public float spawnTime = 4f;    //Time until new Enemy spawns.
     public int spawnDistance = 30;
-    public int upperSpawnLimit = 2; 
+    public int upperSpawnLimit = 2;
+    public Transform spawnArea;
     Vector3 dirVec = Vector3.zero;
 
     private GameObject player;          //Reference to player 
@@ -16,9 +17,12 @@ public class EnemyManager : MonoBehaviour
     private int spawnCount = 0;
     private bool isInvoking = true;
     private GameObject spawnInstance;
+    private Vector3 _spawnAreaPos;
 
 	// Use this for initialization
 	void Start () {
+
+        _spawnAreaPos = spawnArea.position;
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
         InvokeRepeating("Spawn", spawnTime, spawnTime);
