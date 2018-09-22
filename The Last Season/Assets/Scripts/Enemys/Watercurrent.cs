@@ -11,23 +11,36 @@ public class Watercurrent : MonoBehaviour {
     public int num = 0;
 
     public float minDist;
-    public float speed;
 
     public bool go = false;
+
+    public Transform targetVec;
+
+    //Vector3[] targetVec = new[] { new Vector3(8f, 0.5f, -36f),
+    //    new Vector3(-16f, 0.5f, 20f),
+    //    new Vector3(0.3f, 0.5f, 12f),
+    //    new Vector3(16f, 0.5f, 27f),
+    //    new Vector3(-16f, 0.5f, -25f) };
+
+    Vector3 targetPos;
+    Vector3 playerPos;
+
+    public float speed;
+    public float step;
+
+    public int countEnterTrigger = 0;
 
     private PlayerMovement playerMovement;
 
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         player = GameObject.FindWithTag("Player");
 
+        
+
         playerMovement = player.GetComponent<PlayerMovement>();
-
-        Debug.Log("hallo Start");
-
-
     }
 
     void OnTriggerEnter(Collider other)
@@ -35,73 +48,117 @@ public class Watercurrent : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             playerMovement.onWayBetweenWaypoints = true;
-            go = true;
-            //Debug.Log("Trigger GO IST JETZT:" + go);
 
+            countEnterTrigger++;
+
+            Debug.Log("EnterTrigger" + countEnterTrigger);
 
         }
 
     }
 
-
-    // Update is called once per frame
-    void Update() {
-
-
-
-
-
-        if (waypoints)
-        {
-            float dist = Vector3.Distance(player.transform.position, waypoints.transform.position);
-
-            if (go)
-            {
-                if (dist > minDist)
-                {
-                    Debug.Log(dist);
-                    Move();
-                    Debug.Log("MOVE IS CALLING");
-                }
-                else
-                {
-                    Debug.Log("Player ist am Ende");
-
-                    waypoints = null;
-                    go = false;
-                    Debug.Log("ELSE GO IST JETZT:" + go + " "+ waypoints);
-
-                    playerMovement.onWayBetweenWaypoints = false;
-                    //Destroy(waypoints);
-
-                    //Debug.Log("AFTER DESTROYING:" + waypoints.transform.position);
-
-                    //Undo.DestroyObjectImmediate(waypoints);
-
-                    //Debug.Log("AFTER UNDO:" + waypoints.transform.position);
-
-                    //Translate.To
-                    //Lerp
-                    //Move
-
-                }
-
-            }
-        }
-
-        
-    }
-
-    public void Move()
+    void Update()
     {
-        player.transform.LookAt(waypoints.transform.position);
-        player.transform.position += player.transform.forward * speed * Time.deltaTime;
+         step = speed * Time.deltaTime;
 
-        Debug.Log("IN MOVE");
-        
+        switch (countEnterTrigger)
+        {
+            case 1 :
+                Debug.Log("Target 1 im Visier");
+                targetPos = targetVec[0];
+                
+                Move(targetPos);
+                break;
+            case 2:
+                targetPos = targetVec[1];
+                Move(targetPos);
+                break;
+            case 3:
+                targetPos = targetVec[2];
+                Move(targetPos);
+                break;
+            case 4:
+                targetPos = targetVec[3];
+                Move(targetPos);
+                break;
+            case 5:
+                targetPos = targetVec[4];
+                Move(targetPos);
+                break;
+            default:
+                Debug.Log("Ende");
+                break;
+               
+        }
+
     }
+
+    void Move(Vector3 target)
+    {
+        Debug.Log("TargetPos in Move " + target);
+
+        
+
+        player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
+        Debug.Log("PlayerPosition " + player.transform.position);
+
+
+    }
+
+
+
+
+    //   case 1: printf("a ist eins\n"); break;
+    //case 2: printf("a ist zwei\n"); break;
+    //case 3: printf("a ist drei\n"); break;
+    //default: printf("a ist irgendwas\n"); break;
+
+    //// Update is called once per frame
+    //void Update() {
+
+
+
+
+
+    //    if (waypoints)
+    //    {
+    //        //float dist = Vector3.Distance(player.transform.position, waypoints.transform.position);
+
+    //        if (go)
+    //        {
+    //            if (dist > minDist)
+    //            {
+    //                //Move();
+
+    //            }
+    //            else
+    //            {
+
+
+    //                //waypoints = null;
+    //                //go = false;
+
+    //                playerMovement.onWayBetweenWaypoints = false;
+
+
+    //            }
+
+    //        }
+    //    }
+
+
+    //}
+
+    //public void Move()
+    //{
+    //    player.transform.LookAt(waypoints.transform.position);
+    //    player.transform.position += player.transform.forward * speed * Time.deltaTime;
+
+    //    Debug.Log("IN MOVE");
+
+    //}
 }
-	
+
 
 
 
