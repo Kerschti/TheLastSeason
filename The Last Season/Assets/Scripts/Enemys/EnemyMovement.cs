@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour {
 
+    public float enemyTriggerDist;
+
     private Transform player;
     private NavMeshAgent nav;
     private EnemyHealth health;
@@ -19,7 +21,7 @@ public class EnemyMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(!health.isDead)
+        if(!health.isDead && TriggerEnemyMovement())
         {
             nav.SetDestination(player.position);
         }
@@ -29,5 +31,13 @@ public class EnemyMovement : MonoBehaviour {
         }
 	}
 
-    
+    public bool TriggerEnemyMovement() 
+    {
+        Vector3 offset = player.position - transform.position;
+        float distanceToPlayer = offset.sqrMagnitude; 
+        Debug.Log("DISTANCE" + distanceToPlayer);
+        return health.currentHealth > 0 &&
+               distanceToPlayer < enemyTriggerDist * enemyTriggerDist;
+    }
+
 }

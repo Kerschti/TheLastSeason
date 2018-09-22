@@ -265,6 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initalHealth: 50
   isDead: 0
+  currentHealth: 0
 --- !u!114 &114989803350616832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -276,6 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c60d1a97df664d2582489ea6ac04c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyTriggerDist: 50
 --- !u!135 &135863847425351008
 SphereCollider:
   m_ObjectHideFlags: 1
