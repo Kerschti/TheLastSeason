@@ -100,8 +100,8 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 26
-    agentClimb: 0.3
+    agentSlope: 36
+    agentClimb: 0.6
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -5120,7 +5120,6 @@ GameObject:
   - component: {fileID: 457550686}
   - component: {fileID: 457550685}
   - component: {fileID: 457550687}
-  - component: {fileID: 457550688}
   - component: {fileID: 457550684}
   - component: {fileID: 457550683}
   - component: {fileID: 457550682}
@@ -5224,24 +5223,6 @@ MonoBehaviour:
   mouseSensitivity: 2
   distFromTarget: 5
   PitchMinMax: {x: 3, y: 60}
---- !u!114 &457550688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 457550681}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a420e225cb6124146b0f1635b8b59bbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 1661797258603590, guid: 285b0ba144eb642e8a19fde964423461, type: 2}
-  - {fileID: 1474698839295014, guid: b2de8b0d22f5f4bcc8a3cb2c987ebb75, type: 2}
-  spawnTime: 4
-  spawnDistance: 30
-  upperSpawnLimit: 2
-  spawnArea: {fileID: 0}
 --- !u!1001 &502620556
 Prefab:
   m_ObjectHideFlags: 0
@@ -21672,6 +21653,7 @@ GameObject:
   - component: {fileID: 1406708145}
   - component: {fileID: 1406708144}
   - component: {fileID: 1406708143}
+  - component: {fileID: 1406708147}
   m_Layer: 11
   m_Name: SpawnArea
   m_TagString: Untagged
@@ -21746,6 +21728,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1406708147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406708142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a420e225cb6124146b0f1635b8b59bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1474698839295014, guid: b2de8b0d22f5f4bcc8a3cb2c987ebb75, type: 2}
+  - {fileID: 1661797258603590, guid: 285b0ba144eb642e8a19fde964423461, type: 2}
+  spawnTime: 4
+  spawnDistance: 30
+  upperSpawnLimit: 2
 --- !u!1 &1423452402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1496071518638734, guid: 604bf223bc28f4085923687da63c9be4,

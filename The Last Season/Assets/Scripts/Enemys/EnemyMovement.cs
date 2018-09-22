@@ -35,7 +35,7 @@ public class EnemyMovement : MonoBehaviour {
     {
         Vector3 offset = player.position - transform.position;
         float distanceToPlayer = offset.sqrMagnitude; 
-        Debug.Log("DISTANCE" + distanceToPlayer);
+//        Debug.Log("DISTANCE" + distanceToPlayer);
         return health.currentHealth > 0 &&
                distanceToPlayer < enemyTriggerDist * enemyTriggerDist;
     }

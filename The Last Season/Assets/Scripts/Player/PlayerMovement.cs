@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private float initSpeed;                    // Stores initial value for Speed;
     private float SpeedVelocity;                // Obligatory Velocity value (0) for speedcalculation.
     private float curSpeed;                     // Stores current Speed of player.
+   
     
     private float verticalVelocity;             // Setting of upward velocity.
     Transform cameraTrans;                      // camera transform.
@@ -62,7 +63,8 @@ public class PlayerMovement : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         cameraTrans = Camera.main.transform;
-        enemyManager = Camera.main.GetComponent<EnemyManager>();
+        enemyManager = Object.FindObjectOfType<EnemyManager>();
+        
         initTime = timeSetting.timeUntilRuns;
         initSpeed = speedSetting.Speed;
 

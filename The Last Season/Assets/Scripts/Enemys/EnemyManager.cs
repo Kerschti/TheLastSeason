@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     public float spawnTime = 4f;    //Time until new Enemy spawns.
     public int spawnDistance = 30;
     public int upperSpawnLimit = 2;
-    public Transform spawnArea;
+
     Vector3 dirVec = Vector3.zero;
 
     private GameObject player;          //Reference to player 
@@ -17,12 +17,14 @@ public class EnemyManager : MonoBehaviour
     private int spawnCount = 0;
     private bool isInvoking = true;
     private GameObject spawnInstance;
+    private Collider spawnArea;
     private Vector3 _spawnAreaPos;
 
 	// Use this for initialization
 	void Start () {
 
-        _spawnAreaPos = spawnArea.position;
+        spawnArea = GetComponent<Collider>();
+        //_spawnAreaPos = spawnArea.position;
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
         InvokeRepeating("Spawn", spawnTime, spawnTime);
@@ -34,10 +36,20 @@ public class EnemyManager : MonoBehaviour
         return player.transform.position + dirVec * spawnDistance;
     }
 
-   /* bool ValidateSpawnPos(Vector3 spawnPos)
+    bool ValidateSpawnPos(Vector3 spawnPos)
     {
-        if
-    }*/
+        if (spawnArea.bounds.Contains(spawnPos))
+        {
+            Debug.Log("Bounds contain the point : " + spawnPos);
+            return true;
+        }
+        else
+        {
+            Debug.Log("POSITION NOT IN SPAWN");
+            return false;
+        }
+    }
+
 
     void Spawn(){
         if(playerHealth.curHealth <= 0f) return;
@@ -53,18 +65,22 @@ public class EnemyManager : MonoBehaviour
         spawnCount++;
        
         Vector3 spawnPos = GetSpawnPos();
-        //ValidateSpawnPos(spawnPos);
-        spawnPos.y = 50f;
-
-        int enemyIndex = Random.Range(0, enemies.Length);
-
-        RaycastHit hit;
-        if (Physics.Raycast(spawnPos, Vector3.down, out hit, 60f, LayerMask.GetMask("Floor")))
+        if (ValidateSpawnPos(spawnPos))
         {
 
-            spawnPos.y = hit.point.y;
+
+            spawnPos.y = 50f;
+
+            int enemyIndex = Random.Range(0, enemies.Length);
+
+            RaycastHit hit;
+            if (Physics.Raycast(spawnPos, Vector3.down, out hit, 60f, LayerMask.GetMask("Floor")))
+            {
+
+                spawnPos.y = hit.point.y;
+            }
+            spawnInstance = Instantiate(enemies[enemyIndex], spawnPos, Quaternion.identity);
         }
-        spawnInstance = Instantiate(enemies[enemyIndex], spawnPos, Quaternion.identity);
     }
 
     // Update is called once per frame
