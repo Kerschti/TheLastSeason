@@ -24,8 +24,6 @@ public class RhinoFire : MonoBehaviour {
         shouting.SetBool("IsShouting", value);
     }
 
-
-
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
@@ -55,9 +53,8 @@ public class RhinoFire : MonoBehaviour {
     {
         while (true)
         {
-            yield return new WaitForSeconds(2);
-
             Instantiate(fireball, toung.position, toung.rotation);
+            yield return new WaitForSeconds(6);
         }
 
     }
