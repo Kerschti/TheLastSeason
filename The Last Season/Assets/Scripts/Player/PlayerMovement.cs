@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -84,7 +85,11 @@ public class PlayerMovement : MonoBehaviour
         Turning();
 
         // Check if Enemies should be spawning.
-       // MakeEnemiesSpawn();
+        if(SceneManager.GetActiveScene().ToString().Equals("MeltemsScene"))
+        {
+            MakeEnemiesSpawn();
+        }
+      
 
 
     }
