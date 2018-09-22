@@ -161,7 +161,7 @@ public class PlayerMovement : MonoBehaviour
                                     col.radius * 1.2f, floorMask);
     }
 
-     bool IsInWater()
+    public bool IsInWater()
     {
 
         return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,

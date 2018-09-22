@@ -79,7 +79,7 @@ public class PlayerHealth : MonoBehaviour
     void CheckForFall()
     {
 
-        if (!playerMove.IsGrounded())
+        if (!playerMove.IsGrounded() && !playerMove.IsInWater())
         {
             //Debug.Log("CHECKING FOR FALL NOW!");
 
@@ -97,13 +97,17 @@ public class PlayerHealth : MonoBehaviour
 
             //Debug.Log("Travel Distance: "+ lastYTravelDistance);
         }
-        else if (playerMove.IsGrounded()/* && wasFalling*/)
+        else if (playerMove.IsGrounded() && !playerMove.IsInWater()/* && wasFalling*/)
         {
 
             // Check to see if player passed the allowed falling distance and kill the player if necessary.
 
             if (Mathf.Abs( fallHeight) >= deathHeight)
+            {
                 TakeDamage(100);
+                Debug.Log("PLAYER IS DEAAAAD");
+            }
+               
 
             //reset fall height since we landed (doesn't matter if we're dead or alive)
             fallHeight = 0;
