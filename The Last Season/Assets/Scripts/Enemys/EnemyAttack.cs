@@ -10,6 +10,7 @@ public class EnemyAttack : MonoBehaviour
     private GameObject player;
     private bool playerInRange;
     private PlayerHealth playerHealth;
+    private EnemyHealth enemyHealth;
 
     private Animator anim;
 
@@ -20,6 +21,7 @@ public class EnemyAttack : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
+        enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent<Animator>();
     }
 
@@ -39,7 +41,7 @@ public class EnemyAttack : MonoBehaviour
     {
         timer = 0f;
 
-        if (playerHealth.curHealth > 0)
+        if (playerHealth.curHealth > 0 && enemyHealth.currentHealth > 0)
         {
             playerHealth.TakeDamage(atkDamage);
             anim.SetBool("IsAttacking", true);

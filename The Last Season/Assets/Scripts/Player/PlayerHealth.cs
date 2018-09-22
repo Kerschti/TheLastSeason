@@ -131,11 +131,17 @@ public class PlayerHealth : MonoBehaviour
         anim.SetTrigger("Respawned");
     }
 
+    public void SetSpawnPoint(Transform _spawnPoint)
+    {
+        spawnPoint = _spawnPoint;
+    }
+
+
     /*
      * Spieler unsterblich
      * Sphere erreicht, Spieler kann nicht sterben
      * Fallhight sollte automatisch null sein, ist jetzt wieder grounded
      * 
-     */ 
-   
+     */
+
 }

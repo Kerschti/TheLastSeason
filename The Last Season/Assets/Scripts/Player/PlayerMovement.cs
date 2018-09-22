@@ -238,23 +238,24 @@ public class PlayerMovement : MonoBehaviour
 
         if (IsGrounded())
         {
-            
-            verticalVelocity = 0;
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                
-                verticalVelocity = speedSetting.jumpForce;
-            }
-        }
-        else
-        {
-            verticalVelocity -= speedSetting.downwardAccel;
-        }
 
-        Vector3 jumpVector = new Vector3(0, verticalVelocity, 0);
+              verticalVelocity = 0;
+               if (Input.GetKeyDown(KeyCode.Space))
+               {
 
-        playerRigidbody.velocity = transform.TransformDirection(jumpVector);
-    }
+                   verticalVelocity = speedSetting.jumpForce;
+               }
+           }
+           else
+           {
+               verticalVelocity -= speedSetting.downwardAccel;
+           }
+
+           Vector3 jumpVector = new Vector3(0, verticalVelocity, 0);
+
+           playerRigidbody.velocity = transform.TransformDirection(jumpVector);
+            //playerRigidbody.AddForce(new Vector3(0, 2, 0) * speedSetting.jumpForce, Fo⁄rceMode.Impulse);
+        }
 
 
     public void Animating()
