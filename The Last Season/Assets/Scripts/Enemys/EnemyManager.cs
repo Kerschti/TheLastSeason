@@ -34,6 +34,11 @@ public class EnemyManager : MonoBehaviour
         return player.transform.position + dirVec * spawnDistance;
     }
 
+   /* bool ValidateSpawnPos(Vector3 spawnPos)
+    {
+        if
+    }*/
+
     void Spawn(){
         if(playerHealth.curHealth <= 0f) return;
 
@@ -48,6 +53,7 @@ public class EnemyManager : MonoBehaviour
         spawnCount++;
        
         Vector3 spawnPos = GetSpawnPos();
+        //ValidateSpawnPos(spawnPos);
         spawnPos.y = 50f;
 
         int enemyIndex = Random.Range(0, enemies.Length);
