@@ -95,7 +95,7 @@ public class Watercurrent : MonoBehaviour {
     {
         Debug.Log("Target in Move " + target);
         player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
-        Debug.Log("PlayerPosition " + player.transform.position);
+        //Debug.Log("PlayerPosition " + player.transform.position);
 
         if (player.transform.position == target)
         {
