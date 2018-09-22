@@ -34,7 +34,7 @@ public class Watercurrent : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            playerMovement.onWayBetweenPoints = true;
+            playerMovement.onWayBetweenWaypoints = true;
             go = true;
             //Debug.Log("Trigger GO IST JETZT:" + go);
 
