@@ -31,10 +31,10 @@ public class EnemyMovement : MonoBehaviour {
         }
 	}
 
-    public bool TriggerEnemyMovement() //Grundlage für Kameraverbesserung, bei der Enemy im Bild ist (kommt später)
+    public bool TriggerEnemyMovement() 
     {
         Vector3 offset = player.position - transform.position;
-        float distanceToPlayer = offset.sqrMagnitude; //much better performance than Vector3.Distance()
+        float distanceToPlayer = offset.sqrMagnitude; 
         Debug.Log("DISTANCE" + distanceToPlayer);
         return health.currentHealth > 0 &&
                distanceToPlayer < enemyTriggerDist * enemyTriggerDist;
