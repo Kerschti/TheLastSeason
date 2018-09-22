@@ -14,7 +14,7 @@ public class Watercurrent : MonoBehaviour {
 
     public bool go = false;
 
-    public Transform targetVec;
+    public Transform[] targetVec;
 
     //Vector3[] targetVec = new[] { new Vector3(8f, 0.5f, -36f),
     //    new Vector3(-16f, 0.5f, 20f),
@@ -38,8 +38,6 @@ public class Watercurrent : MonoBehaviour {
     {
         player = GameObject.FindWithTag("Player");
 
-        
-
         playerMovement = player.GetComponent<PlayerMovement>();
     }
 
@@ -47,7 +45,7 @@ public class Watercurrent : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            playerMovement.onWayBetweenWaypoints = true;
+            //playerMovement.onWayBetweenWaypoints = true;
 
             countEnterTrigger++;
 
@@ -65,24 +63,24 @@ public class Watercurrent : MonoBehaviour {
         {
             case 1 :
                 Debug.Log("Target 1 im Visier");
-                targetPos = targetVec[0];
+                targetPos = targetVec[0].transform.position;
                 
                 Move(targetPos);
                 break;
             case 2:
-                targetPos = targetVec[1];
+                targetPos = targetVec[1].transform.position;
                 Move(targetPos);
                 break;
             case 3:
-                targetPos = targetVec[2];
+                targetPos = targetVec[2].transform.position;
                 Move(targetPos);
                 break;
             case 4:
-                targetPos = targetVec[3];
+                targetPos = targetVec[3].transform.position;
                 Move(targetPos);
                 break;
             case 5:
-                targetPos = targetVec[4];
+                targetPos = targetVec[4].transform.position;
                 Move(targetPos);
                 break;
             default:
@@ -95,68 +93,21 @@ public class Watercurrent : MonoBehaviour {
 
     void Move(Vector3 target)
     {
-        Debug.Log("TargetPos in Move " + target);
-
-        
-
+        Debug.Log("Target in Move " + target);
         player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
         Debug.Log("PlayerPosition " + player.transform.position);
+
+        if (player.transform.position == target)
+        {
+            //playerMovement.onWayBetweenWaypoints = false;
+            Debug.Log("ist am Ende angekommen");
+            countEnterTrigger = 8;
+
+        }
 
 
     }
 
-
-
-
-    //   case 1: printf("a ist eins\n"); break;
-    //case 2: printf("a ist zwei\n"); break;
-    //case 3: printf("a ist drei\n"); break;
-    //default: printf("a ist irgendwas\n"); break;
-
-    //// Update is called once per frame
-    //void Update() {
-
-
-
-
-
-    //    if (waypoints)
-    //    {
-    //        //float dist = Vector3.Distance(player.transform.position, waypoints.transform.position);
-
-    //        if (go)
-    //        {
-    //            if (dist > minDist)
-    //            {
-    //                //Move();
-
-    //            }
-    //            else
-    //            {
-
-
-    //                //waypoints = null;
-    //                //go = false;
-
-    //                playerMovement.onWayBetweenWaypoints = false;
-
-
-    //            }
-
-    //        }
-    //    }
-
-
-    //}
-
-    //public void Move()
-    //{
-    //    player.transform.LookAt(waypoints.transform.position);
-    //    player.transform.position += player.transform.forward * speed * Time.deltaTime;
-
-    //    Debug.Log("IN MOVE");
-
-    //}
 }
 
 
