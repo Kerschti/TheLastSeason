@@ -25,7 +25,10 @@ public class HellephantAppear : MonoBehaviour {
      */
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        FindObjectOfType<AudioManager>().Play("Hellephant");
+
+
+        if (other.gameObject.tag == "Player")
         {
 
             while (c < 5)

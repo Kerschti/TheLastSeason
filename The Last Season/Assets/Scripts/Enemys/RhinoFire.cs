@@ -30,8 +30,6 @@ public class RhinoFire : MonoBehaviour {
         {
             triggerEnter = true;
             StartCoroutine("Shooting");
-
-
         }
     }
 
@@ -54,6 +52,7 @@ public class RhinoFire : MonoBehaviour {
         while (true)
         {
             Instantiate(fireball, toung.position, toung.rotation);
+            FindObjectOfType<AudioManager>().Play("Rino");
             yield return new WaitForSeconds(6);
         }
 
