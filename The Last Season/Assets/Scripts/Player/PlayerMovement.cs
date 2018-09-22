@@ -37,10 +37,13 @@ public class PlayerMovement : MonoBehaviour
     private float initSpeed;                    // Stores initial value for Speed;
     private float SpeedVelocity;                // Obligatory Velocity value (0) for speedcalculation.
     private float curSpeed;                     // Stores current Speed of player.
+    
     private float verticalVelocity;             // Setting of upward velocity.
     Transform cameraTrans;                      // camera transform.
     Vector2 dir;                                // Vector2 for calculating movement & rotation of player.
     EnemyManager enemyManager;
+    [HideInInspector]
+    public bool onWayBetweenWaypoints = false;
 
     public SpeedSetting speedSetting = new SpeedSetting();
     public TimeSetting timeSetting = new TimeSetting();
@@ -94,10 +97,15 @@ public class PlayerMovement : MonoBehaviour
 
         // Move the player around the scene.
         //TODO: prevent moving the player while he's attacking 
-        Move();
+        if(!onWayBetweenWaypoints)
+        {
+            Move();
 
-        //Jump if desired.
-        Jump();
+            //Jump if desired.
+            Jump();
+
+        }
+
 
         // Animate the player.
         Animating();

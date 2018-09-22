@@ -15,12 +15,14 @@ public class Watercurrent : MonoBehaviour {
 
     public bool go = false;
 
+    private PlayerMovement playerMovement;
 
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        playerMovement = player.GetComponent<PlayerMovement>();
 
     }
 
@@ -28,7 +30,7 @@ public class Watercurrent : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-
+            playerMovement.onWayBetweenPoints = true;
             go = true;
             Debug.Log("Trigger GO IST JETZT:" + go);
 
@@ -40,6 +42,10 @@ public class Watercurrent : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+
+
+
 
         if (waypoints)
         {
