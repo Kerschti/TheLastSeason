@@ -22,7 +22,11 @@ public class Watercurrent : MonoBehaviour {
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+
         playerMovement = player.GetComponent<PlayerMovement>();
+
+        Debug.Log("hallo Start");
+
 
     }
 
@@ -32,7 +36,7 @@ public class Watercurrent : MonoBehaviour {
         {
             playerMovement.onWayBetweenPoints = true;
             go = true;
-            Debug.Log("Trigger GO IST JETZT:" + go);
+            //Debug.Log("Trigger GO IST JETZT:" + go);
 
 
         }
@@ -55,18 +59,18 @@ public class Watercurrent : MonoBehaviour {
             {
                 if (dist > minDist)
                 {
-                    //.Log(dist);
+                    Debug.Log(dist);
                     Move();
                     Debug.Log("MOVE IS CALLING");
                 }
                 else
                 {
                     Debug.Log("Player ist am Ende");
+
                     waypoints = null;
                     go = false;
-                    Debug.Log("ELSE GO IST JETZT:" + go);
+                    Debug.Log("ELSE GO IST JETZT:" + go + " "+ waypoints);
 
-                    //Debug.Log("BEFORE DESTROYING:"+ waypoints.transform.position);
 
                     //Destroy(waypoints);
 
