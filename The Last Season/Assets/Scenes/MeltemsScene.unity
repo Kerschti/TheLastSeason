@@ -16197,6 +16197,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1962171057032796, guid: 604bf223bc28f4085923687da63c9be4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604bf223bc28f4085923687da63c9be4, type: 2}
   m_IsPrefabAsset: 0
@@ -21176,7 +21180,7 @@ GameObject:
   - component: {fileID: 1196803635}
   m_Layer: 9
   m_Name: FirstIsland
-  m_TagString: Untagged
+  m_TagString: FirstIsle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -42,11 +42,6 @@ public class PlayerHealth : MonoBehaviour
         {
             CheckForFall();
         }
-        else
-        {
-            Debug.Log("THIS IS NOT WORKING");
-            //this.transform.lossyScale = playerSelf;
-        }
     }
 
 
@@ -86,7 +81,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (!playerMove.IsGrounded())
         {
-            Debug.Log("CHECKING FOR FALL NOW!");
+            //Debug.Log("CHECKING FOR FALL NOW!");
 
             // Calculate the distance between players current height and the height he was in the last frame.
             lastYTravelDistance = transform.position.y - lastY;

@@ -48,12 +48,20 @@ public class CloudInParabola : MonoBehaviour {
 
     private void Update()
     {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            playerHealth = player.GetComponent<PlayerHealth>();
+            if (firstIsland == null)
+                firstIsland = GameObject.FindGameObjectWithTag("FirstIsle");
+        }
+
         if(startAnim)
         {
             animTimer += Time.deltaTime;
             father.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
-
-            if(transform.position.y <= 0)
+            Debug.Log("POSITION ISLAND: "+ father.position);
+            if(father.position.y <= 0)
             {
                 startAnim = false;
             }
