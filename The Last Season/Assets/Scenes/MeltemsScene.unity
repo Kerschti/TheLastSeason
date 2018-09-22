@@ -14942,10 +14942,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 791598421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587b6742d5b9d40e3af291fdf279b06a, type: 3}
+  m_Script: {fileID: 11500000, guid: 06275b5c6dfa54807a8a22345179c7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 
+  levelToLoad: Room
 --- !u!1 &803152225
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,21 @@
             </e>
           </e>
         </e>
+        <e p="EffectExamples" t="Include">
+          <e p="Editor" t="Include">
+            <e p="PackageManagerAssembly" t="Include">
+              <e p="PackageImportList.txt" t="Include" />
+            </e>
+          </e>
+          <e p="TutorialInfo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ReadmeEditor.cs" t="Include" />
+              </e>
+              <e p="Readme.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Enemys" t="Include">
           <e p="Rhino" t="Include">
             <e p="Sheder" t="Include">
@@ -187,33 +202,26 @@
             </e>
           </e>
         </e>
-        <e p="LowPolyWater_Pack" t="Include">
-          <e p="LowPoly Island" t="Include">
-            <e p="Credits.txt" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="GeneratePlane.cs" t="Include" />
-            </e>
-            <e p="LowPolyWater.cs" t="Include" />
-          </e>
-          <e p="Shaders" t="Include">
-            <e p="WaterShaded.shader" t="Include" />
-          </e>
+        <e p="LowPolyWater" t="Include">
+          <e p="Water.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="Enemys" t="Include">
             <e p="BulletParabola.cs" t="Include" />
             <e p="EnemyAttack.cs" t="Include" />
             <e p="EnemyHealth.cs" t="Include" />
+            <e p="EnemyManager.cs" t="Include" />
             <e p="EnemyMovement.cs" t="Include" />
+            <e p="Fireball.cs" t="Include" />
             <e p="HealthBarFunction.cs" t="Include" />
             <e p="HealthBarTester.cs" t="Include" />
             <e p="HellephantAppear.cs" t="Include" />
             <e p="HellephantShoot.cs" t="Include" />
             <e p="Parabola.cs" t="Include" />
+            <e p="RhinoFire.cs" t="Include" />
             <e p="Rotator.cs" t="Include" />
             <e p="TrunkBullet.cs" t="Include" />
+            <e p="Watercurrent.cs" t="Include" />
           </e>
           <e p="Environment Winter" t="Include">
             <e p="CloudInParabola.cs" t="Include" />
@@ -236,6 +244,7 @@
             <e p="DoorOpen.cs" t="Include" />
             <e p="DoorOpen1.cs" t="Include" />
             <e p="DoorOpenGarten.cs" t="Include" />
+            <e p="DoorOpenHouse.cs" t="Include" />
             <e p="RoomTestScript.cs" t="Include" />
           </e>
         </e>
