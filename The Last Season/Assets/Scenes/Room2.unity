@@ -1266,11 +1266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallSegPref: {fileID: 554743179}
-  CoffeePrefab: {fileID: 0}
-  CouchPrefab: {fileID: 0}
-  TvPrefab: {fileID: 0}
-  CabinetPrefab: {fileID: 0}
-  DoorPrefab: {fileID: 0}
 --- !u!4 &1151668377
 Transform:
   m_ObjectHideFlags: 0
@@ -2426,7 +2421,7 @@ MonoBehaviour:
   smoothing: 0.5
   mouseSensitivity: 1
   distFromTarget: 3.54
-  PitchMinMax: {x: 4, y: 60}
+  PitchMinMax: {x: 20, y: 60}
 --- !u!1001 &1921352909
 Prefab:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 using UnityEngine;
 using Unity.Collections;
 
-public class RoomTestScript : MonoBehaviour
+public class Room2 : MonoBehaviour
 {
 	//FindObjectOfType<AudioManager>().Play("House");
 

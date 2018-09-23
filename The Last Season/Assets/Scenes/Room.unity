@@ -813,6 +813,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallSegPref: {fileID: 554743179}
+  CoffeePrefab: {fileID: 1974151466227008, guid: 4aea1a15c4b8041568e1981c5e635ed1,
+    type: 2}
+  CouchPrefab: {fileID: 1935324370710016, guid: 7b3c8cb21caae4de883a4c1370d63f5f,
+    type: 2}
+  TvPrefab: {fileID: 1672821080046334, guid: 2cff5edf4355d44ddb8230b8d9261847, type: 2}
+  CabinetPrefab: {fileID: 1621746758020588, guid: 7163c2ccbce6144dd9ceb6aeff049413,
+    type: 2}
+  DoorPrefab: {fileID: 1483219809272570, guid: f8ec91e6595a84079af49b43ed0a6085, type: 2}
 --- !u!4 &1151668377
 Transform:
   m_ObjectHideFlags: 0
@@ -1899,7 +1907,7 @@ MonoBehaviour:
   smoothing: 0.5
   mouseSensitivity: 1
   distFromTarget: 3.54
-  PitchMinMax: {x: 4, y: 60}
+  PitchMinMax: {x: 20, y: 60}
 --- !u!65 &1891416587
 BoxCollider:
   m_ObjectHideFlags: 0

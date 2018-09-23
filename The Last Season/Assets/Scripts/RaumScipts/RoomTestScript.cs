@@ -2,7 +2,7 @@
 using UnityEngine;
 using Unity.Collections;
 
-public class Room2 : MonoBehaviour
+public class RoomTestScript : MonoBehaviour
 {    
 	private float a, b; // xy
 

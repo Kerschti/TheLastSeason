@@ -11688,7 +11688,7 @@ MonoBehaviour:
   smoothing: 0.5
   mouseSensitivity: 1
   distFromTarget: 3.54
-  PitchMinMax: {x: 4, y: 60}
+  PitchMinMax: {x: 20, y: 60}
 --- !u!1001 &1897231913
 Prefab:
   m_ObjectHideFlags: 0
