@@ -4,7 +4,6 @@ using Unity.Collections;
 
 public class Room1 : MonoBehaviour
 {
-	//FindObjectOfType<AudioManager>().Play("House");
 
 	private float a, b; // xy
 
@@ -60,7 +59,8 @@ public class Room1 : MonoBehaviour
 
 	void Start()
 	{
-		pfad = new GameObject().transform;
+
+        pfad = new GameObject().transform;
 
 		// Verwendet feste Segmentgroesse wenn aktiv
 		if (fixSegmentBreite)
@@ -131,7 +131,9 @@ public class Room1 : MonoBehaviour
 
 	}
 
-	public void CreateWall()
+
+
+    public void CreateWall()
 	{
 		GameObject wallSeg;
 

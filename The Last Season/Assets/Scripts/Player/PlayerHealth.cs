@@ -69,6 +69,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Death()
     {
+        FindObjectOfType<AudioManager>().Play("Dead");
         dead = true;
         playerMove.enabled = false;
         anim.SetTrigger("IsDead");

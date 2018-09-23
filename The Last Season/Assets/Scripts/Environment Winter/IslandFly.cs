@@ -18,12 +18,14 @@ public class IslandFly : MonoBehaviour {
 	void Start () {
         newPosThirdI = new Vector3(ThirdIsland.position.x, height, ThirdIsland.position.z);
         oldPosThirdI = ThirdIsland.position;
-	}
+        FindObjectOfType<AudioManager>().Play("Wind");
 
-	void Update () {
+    }
+
+    void Update () {
         AnimateThirdIsland();
 
-	}
+    }
 
     void AnimateThirdIsland()
     {
@@ -32,7 +34,8 @@ public class IslandFly : MonoBehaviour {
         {
             
             ThirdIsland.position = Vector3.SmoothDamp(ThirdIsland.position, newPosThirdI, ref velocity, speed);
-            if(ThirdIsland.position == newPosThirdI)
+
+            if (ThirdIsland.position == newPosThirdI)
             {
                 firstPos = false;
             }
