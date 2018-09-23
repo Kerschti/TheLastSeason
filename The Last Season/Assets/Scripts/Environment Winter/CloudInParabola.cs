@@ -60,9 +60,9 @@ public class CloudInParabola : MonoBehaviour {
 
         if(startAnim)
         {
-            //animTimer += Time.deltaTime;
-            //father.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
-            father.position = Vector3.SmoothDamp(father.position, endPos, ref velocity, speed);
+            animTimer += Time.deltaTime;
+            father.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
+            //father.position = Vector3.SmoothDamp(father.position, endPos, ref velocity, speed);
             Debug.Log("POSITION ISLAND: "+ father.position);
             if(father.position.y <= 0)
             {
