@@ -108,11 +108,17 @@ public class PlayerMovement : MonoBehaviour
         if (SceneManager.GetActiveScene().ToString().Equals("MeltemsScene"))
         {
             MakeEnemiesSpawn();
+<<<<<<< HEAD
         }
 
 
 
+=======
+        }
+
+>>>>>>> 824290e437aa15c891766cd90d95309c81d295b5
     }
+    
 
 
     // Runs later than Update

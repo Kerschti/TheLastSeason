@@ -52,7 +52,7 @@ public class TrunkBullet : MonoBehaviour
         }
     }
 
-    //Evvery diffrent trunkend will be positioned
+    //Every diffrent trunkend will be positioned
     public static void SetBeginP(Transform trunkEnd)
     {
         beginP = trunkEnd.position;

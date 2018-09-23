@@ -16,7 +16,7 @@ public class Water : MonoBehaviour
 
         for (int i = 0; i < vertices.Length; i++)
         {
-            //new data, calculation was inspired by https://www.youtube.com/watch?v=3MoHJtBnn2U
+            //new waves
             vertices[i].y = scale * Mathf.PerlinNoise(Time.time + (vertices[i].x * scale), Time.time + (vertices[i].z * scale));
         }
         //new postion for vertices 

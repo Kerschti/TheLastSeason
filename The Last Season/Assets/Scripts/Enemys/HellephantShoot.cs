@@ -9,7 +9,7 @@ public class HellephantShoot : MonoBehaviour {
     private Transform player;                       //Position information from player needed
 
     private float timer;
-    private float timeBetweenAttacks = 0.3f;          //Time between shooting new bullet
+    private float timeBetweenAttacks = 0.3f;        //Time between shooting new bullet
     private bool InRange;                           //Is Player entering trigger?
 
     public Transform trunkendPos;                   //saves trunkend position
