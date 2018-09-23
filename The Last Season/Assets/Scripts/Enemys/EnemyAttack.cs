@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public float timeBetweenAttacks = 0.5f;
+    public float timeBetweenAttacks = 0.5f;     // leave some time between attacks.
 
-    private float timer;
-    private GameObject player;
-    private bool playerInRange;
+    private float timer;                        // the timer.
+    private GameObject player;                  // Reference to player.
+    private bool playerInRange;                 // a bool to determine if player is in Range of enemy.
     private PlayerHealth playerHealth;
     private EnemyHealth enemyHealth;
 
     private Animator anim;
 
-    public int atkDamage = 10;
+    public int atkDamage = 10;                  // the dmg an enemy does.
 
     // Use this for initialization
     void Start()
@@ -30,11 +30,12 @@ public class EnemyAttack : MonoBehaviour
     {
         timer += Time.deltaTime;
 
+        // if the player is in Range and the time is right
         if (timer >= timeBetweenAttacks && playerInRange)
         {
-           
             Attack();
         }
+        //if the player is dead..
         if (playerHealth.curHealth <= 0)
         {
             // ... tell the animator the player is dead.
@@ -44,8 +45,10 @@ public class EnemyAttack : MonoBehaviour
 
     void Attack()
     {
+        //reset timer.
         timer = 0f;
 
+        // deal damage to player if enemie & player arent dead.
         if (playerHealth.curHealth > 0 && enemyHealth.currentHealth > 0)
         {
             playerHealth.TakeDamage(atkDamage);
