@@ -59,7 +59,7 @@ public class Watercurrent : MonoBehaviour {
         {
             playerMovement.onWayBetweenWaypoints = false;
             countEnterTrigger = 42;
-            boxtext.SetActive(true);
+            boxtext.SetActive(false);
         }
 
     }
