@@ -21,7 +21,8 @@ public class CloudInParabola : MonoBehaviour {
     private void Start()
     {
         startPos = father.position;
-        endPos = new Vector3(transform.position.x + 10, 0, transform.position.z);
+        //endPos = new Vector3(transform.position.x + 10, 0, transform.position.z);
+        endPos = end.position;
         playerHealth = player.GetComponent<PlayerHealth>();
     }
 

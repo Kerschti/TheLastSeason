@@ -10,6 +10,8 @@ public class FinalRoutine : MonoBehaviour {
 
     public GameObject _rain;
     public GameObject _dust;
+    public Material skybox;
+    public GameObject directionallight;
 
 
 
@@ -30,5 +32,7 @@ public class FinalRoutine : MonoBehaviour {
         flash.notTheEnd = false;
         dust.Stop();
         rain.Stop();
+        RenderSettings.skybox = skybox;
+
     }
 }
