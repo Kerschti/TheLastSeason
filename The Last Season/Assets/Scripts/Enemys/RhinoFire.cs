@@ -15,7 +15,7 @@ public class RhinoFire : MonoBehaviour {
     {
         player = GameObject.FindWithTag("Player").transform;
         shouting = GetComponent<Animator>();
-       
+        shouting.SetTrigger("RhinoNeedFood");
     }
 
     void Update()

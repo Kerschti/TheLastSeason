@@ -5,6 +5,7 @@ using UnityEngine;
 public class HellephantAppear : MonoBehaviour {
 
     public GameObject Killerhellephant;
+    public GameObject fourthReSpawn;
 
     private Vector3 position2;
     private Vector3 position;
@@ -30,6 +31,7 @@ public class HellephantAppear : MonoBehaviour {
 
         if (other.gameObject.tag == "Player")
         {
+            fourthReSpawn.SetActive(true);
 
             while (c < 5)
             {

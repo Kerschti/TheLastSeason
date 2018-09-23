@@ -33,11 +33,11 @@ public class EnemyMovement : MonoBehaviour {
 
         if(!health.isDead && TriggerEnemyMovement())
         {
-           
-            nav.SetDestination(player.position);
-            if(isRhino)
+            //we need to check if the enemy is a big sparkling rhino, because the usual procedure is n/a for it.
+            if (isRhino)
             {
                 nav.enabled = true;
+                //
                 anim.SetBool("IsWalking", true);
                 if (rhinoFire.IstriggerEnter())
                 {
@@ -45,9 +45,18 @@ public class EnemyMovement : MonoBehaviour {
                     anim.SetBool("IsWalking", false);
                 }
             }
+            else
+            {
+             
+                nav.enabled = true;
+                nav.SetDestination(player.position);
+            }
+          
+
         }
         else
         {
+            Debug.Log("NOT ACITVVVVVVVVVE" + health.isDead + " #####" + TriggerEnemyMovement());
             nav.enabled = false;
             if (isRhino) anim.SetBool("IsWalking", false);
 
@@ -58,7 +67,7 @@ public class EnemyMovement : MonoBehaviour {
     {
         Vector3 offset = player.position - transform.position;
         float distanceToPlayer = offset.sqrMagnitude; 
-//        Debug.Log("DISTANCE" + distanceToPlayer);
+        //Debug.Log("DISTANCE" + this.name + "#########" + distanceToPlayer);
         return health.currentHealth > 0 &&
                distanceToPlayer < enemyTriggerDist * enemyTriggerDist;
     }

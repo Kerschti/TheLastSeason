@@ -17,6 +17,7 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
 
     private bool isRhino = false;
+    private ParticleSystem particles;
   
 
 
@@ -27,7 +28,11 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = initalHealth;
         anim = GetComponent<Animator>();
         if (this.name == "Rhino_PBR") isRhino = true;
-
+        
+        if(!isRhino)
+        {
+            particles = GetComponentInChildren<ParticleSystem>();
+        }
     }
 
     // Update is called once per frame
@@ -40,6 +45,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) return;
         currentHealth -= amount;
+        particles.Play();
         Debug.Log("Health of Enemy:" + currentHealth);
         if (currentHealth <= 0){
             Death();

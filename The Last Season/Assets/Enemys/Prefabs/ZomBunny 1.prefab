@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c60d1a97df664d2582489ea6ac04c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTriggerDist: 50
+  enemyTriggerDist: 10
 --- !u!114 &114204613376904388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -620,7 +620,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.09
       minScalar: 1
       maxCurve:
         serializedVersion: 2

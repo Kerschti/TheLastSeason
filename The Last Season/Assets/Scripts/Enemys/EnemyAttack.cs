@@ -35,6 +35,11 @@ public class EnemyAttack : MonoBehaviour
            
             Attack();
         }
+        if (playerHealth.curHealth <= 0)
+        {
+            // ... tell the animator the player is dead.
+            anim.SetTrigger("PlayerDead");
+        }
     }
 
     void Attack()
@@ -45,6 +50,7 @@ public class EnemyAttack : MonoBehaviour
         {
             playerHealth.TakeDamage(atkDamage);
             anim.SetBool("IsAttacking", true);
+           
         }
     }
 
@@ -66,6 +72,7 @@ public class EnemyAttack : MonoBehaviour
         {
             // ... the player is no longer in range.
             playerInRange = false;
+            anim.SetBool("IsAttacking", false);
         }
     }
 
