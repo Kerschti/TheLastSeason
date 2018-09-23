@@ -18,6 +18,9 @@ TagManager:
   - Rino
   - Fightable
   - FirstIsle
+  - Bunny
+  - cur1
+  - cur2
   layers:
   - Default
   - TransparentFX

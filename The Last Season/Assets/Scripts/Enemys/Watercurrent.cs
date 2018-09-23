@@ -32,39 +32,81 @@ public class Watercurrent : MonoBehaviour {
 
     private PlayerMovement playerMovement;
 
+    private GameObject curNum;
+    private GameObject curName;
+
+    private string colName;
+
 
     // Use this for initialization
     void Awake()
     {
         player = GameObject.FindWithTag("Player");
-
         playerMovement = player.GetComponent<PlayerMovement>();
     }
 
-    void OnTriggerEnter(Collider other)
+    string OnCollisionEnter(Collision collide)
     {
-        if (other.gameObject.tag == "Player")
+        Debug.Log("COLLISION NAME: " + collide.gameObject.tag);    //void OnTriggerEnter(Collider other)
         {
-            //playerMovement.onWayBetweenWaypoints = true;
+            if (other.gameObject.tag == "Player")
+            {
+                playerMovement.onWayBetweenWaypoints = true;
 
-            countEnterTrigger++;
+                countEnterTrigger++;
 
-            Debug.Log("EnterTrigger" + countEnterTrigger);
+                Debug.Log("EnterTrigger" + countEnterTrigger);
+
+            }
 
         }
+        return colName = collide.gameObject.tag;
 
     }
 
+
+
+
     void Update()
     {
-         step = speed * Time.deltaTime;
+        //step = speed * Time.deltaTime;
+
+        //switch (colName)
+        //{
+        //    case "cur1":
+        //        Debug.Log("In cur1");
+        //        targetPos = targetVec[0].transform.position;
+        //        Move(targetPos);
+        //        break;
+        //    case "cur2":
+        //        Debug.Log("In cur2");
+        //        targetPos = targetVec[1].transform.position;
+        //        Move(targetPos);
+        //        break;
+        //    case "cur3":
+        //        targetPos = targetVec[2].transform.position;
+        //        Move(targetPos);
+        //        break;
+        //    case "cur4":
+        //        targetPos = targetVec[3].transform.position;
+        //        Move(targetPos);
+        //        break;
+        //    case "cur5":
+        //        targetPos = targetVec[4].transform.position;
+        //        Move(targetPos);
+        //        break;
+        //    default:
+        //        Debug.Log("Ende");
+        //        break;
+
+        //}
 
         switch (countEnterTrigger)
         {
-            case 1 :
+            case 1:
                 Debug.Log("Target 1 im Visier");
                 targetPos = targetVec[0].transform.position;
-                
+
                 Move(targetPos);
                 break;
             case 2:
@@ -86,7 +128,7 @@ public class Watercurrent : MonoBehaviour {
             default:
                 Debug.Log("Ende");
                 break;
-               
+
         }
 
     }
@@ -99,9 +141,9 @@ public class Watercurrent : MonoBehaviour {
 
         if (player.transform.position == target)
         {
-            //playerMovement.onWayBetweenWaypoints = false;
+            playerMovement.onWayBetweenWaypoints = false;
             Debug.Log("ist am Ende angekommen");
-            countEnterTrigger = 8;
+            //countEnterTrigger = 8;
 
         }
 
@@ -109,6 +151,10 @@ public class Watercurrent : MonoBehaviour {
     }
 
 }
+
+
+
+
 
 
 
