@@ -9,7 +9,8 @@ public class CloudInParabola : MonoBehaviour {
     public Transform father;
     public GameObject parcours;
     public GameObject firstIsland;
-
+    public Vector3 velocity;
+    public float speed = 5f;
 
     private Vector3 startPos;
     private Vector3 endPos;
@@ -58,8 +59,9 @@ public class CloudInParabola : MonoBehaviour {
 
         if(startAnim)
         {
-            animTimer += Time.deltaTime;
-            father.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
+            //animTimer += Time.deltaTime;
+            //father.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
+            father.position = Vector3.SmoothDamp(father.position, endPos, ref velocity, speed);
             Debug.Log("POSITION ISLAND: "+ father.position);
             if(father.position.y <= 0)
             {

@@ -16,6 +16,7 @@ public class FlyingRock : MonoBehaviour
     public GameObject secIsle;
     public GameObject firstCloud;
     public GameObject flyingIsland;
+    public GameObject spawnPoint;
 
     private Collider playerCollider;
     private PlayerMovement playerMove;
@@ -59,10 +60,8 @@ public class FlyingRock : MonoBehaviour
             firstRock.position = Vector3.SmoothDamp(firstRock.position, newPos, ref velocity, speed);
             if(!animationPlays)
             {
-                /*  animScript.enabled = true;
-                  animSecIsle.Play();
-                  animCloud.Play();
-                  animationPlays = true;*/
+           
+                spawnPoint.SetActive(true);
                 Instantiate(flyingIsland, flyingIsland.transform.position, flyingIsland.transform.rotation);
                 animationPlays = true;
 
@@ -83,6 +82,7 @@ public class FlyingRock : MonoBehaviour
             collision.collider.transform.SetParent(transform);
             moving = true;
             groundParticles.Play();
+
         }
     }
 
