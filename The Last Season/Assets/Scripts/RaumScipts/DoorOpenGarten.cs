@@ -9,7 +9,7 @@ public class DoorOpenGarten : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			SceneManager.LoadScene ("MeltemsScene", LoadSceneMode.Single);
+            SceneManager.LoadScene (levelToLoad, LoadSceneMode.Single);
 
 		}
 	}

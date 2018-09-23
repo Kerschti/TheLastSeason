@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9c385d1d65a45bdb6957ec9e0625a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 
+  levelToLoad: LastScene
 --- !u!65 &455847003
 BoxCollider:
   m_ObjectHideFlags: 0
