@@ -64,42 +64,22 @@ public class Watercurrent : MonoBehaviour {
 
     //}
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            playerMovement.onWayBetweenWaypoints = true;
+
+            countEnterTrigger++;
+            Debug.Log("EnterTrigger" + countEnterTrigger);
+        }
+    }
 
 
 
     void Update()
     {
-        //step = speed * Time.deltaTime;
-
-        //switch (colName)
-        //{
-        //    case "cur1":
-        //        Debug.Log("In cur1");
-        //        targetPos = targetVec[0].transform.position;
-        //        Move(targetPos);
-        //        break;
-        //    case "cur2":
-        //        Debug.Log("In cur2");
-        //        targetPos = targetVec[1].transform.position;
-        //        Move(targetPos);
-        //        break;
-        //    case "cur3":
-        //        targetPos = targetVec[2].transform.position;
-        //        Move(targetPos);
-        //        break;
-        //    case "cur4":
-        //        targetPos = targetVec[3].transform.position;
-        //        Move(targetPos);
-        //        break;
-        //    case "cur5":
-        //        targetPos = targetVec[4].transform.position;
-        //        Move(targetPos);
-        //        break;
-        //    default:
-        //        Debug.Log("Ende");
-        //        break;
-
-        //}
+        step = speed * Time.deltaTime;
 
         switch (countEnterTrigger)
         {
@@ -108,14 +88,19 @@ public class Watercurrent : MonoBehaviour {
                 targetPos = targetVec[0].transform.position;
 
                 Move(targetPos);
+                //countEnterTrigger = 2;
                 break;
             case 2:
                 targetPos = targetVec[1].transform.position;
                 Move(targetPos);
+                countEnterTrigger = 3;
+
                 break;
             case 3:
                 targetPos = targetVec[2].transform.position;
                 Move(targetPos);
+                countEnterTrigger = 2;
+
                 break;
             case 4:
                 targetPos = targetVec[3].transform.position;
@@ -143,7 +128,7 @@ public class Watercurrent : MonoBehaviour {
         {
             playerMovement.onWayBetweenWaypoints = false;
             Debug.Log("ist am Ende angekommen");
-            //countEnterTrigger = 8;
+            countEnterTrigger = 8;
 
         }
 
