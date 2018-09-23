@@ -87,14 +87,13 @@ public class PlayerMovement : MonoBehaviour
         Turning();
 
         // Check if Enemies should be spawning.
-        if(SceneManager.GetActiveScene().ToString().Equals("MeltemsScene"))
+        if (SceneManager.GetActiveScene().ToString().Equals("MeltemsScene"))
         {
             MakeEnemiesSpawn();
         }
-      
-
 
     }
+    
 
 
 

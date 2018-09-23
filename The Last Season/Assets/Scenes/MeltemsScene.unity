@@ -192,15 +192,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc795051f2d4045a5437cd4dee35b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 938185266}
   num: 0
-  minDist: 1
-  go: 0
   targetVec:
   - {fileID: 938185267}
   speed: 5
   step: 0
   countEnterTrigger: 0
+  boxtext: {fileID: 126161661}
 --- !u!65 &83264926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -372,6 +370,81 @@ Transform:
   m_Father: {fileID: 1180864202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &126161661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126161662}
+  - component: {fileID: 126161664}
+  - component: {fileID: 126161663}
+  m_Layer: 5
+  m_Name: Water current text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &126161662
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126161661}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1071065327}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 41.4, y: 21}
+  m_SizeDelta: {x: 331.05, y: 30}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &126161663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126161661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.10702207, g: 0.12162835, b: 0.122641504, a: 0.53333336}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Oh no!!! I'm in a water current!!!
+--- !u!222 &126161664
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126161661}
+  m_CullTransparentMesh: 0
 --- !u!1 &130351044
 GameObject:
   m_ObjectHideFlags: 0
@@ -10114,15 +10187,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc795051f2d4045a5437cd4dee35b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 1360068120}
   num: 0
-  minDist: 1
-  go: 0
   targetVec:
   - {fileID: 1360068121}
   speed: 5
   step: 0
   countEnterTrigger: 0
+  boxtext: {fileID: 126161661}
 --- !u!65 &404368407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21645,15 +21716,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc795051f2d4045a5437cd4dee35b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 2050355397}
   num: 0
-  minDist: 1
-  go: 0
   targetVec:
   - {fileID: 2050355398}
   speed: 5
   step: 0
   countEnterTrigger: 0
+  boxtext: {fileID: 126161661}
 --- !u!65 &1012835240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21958,6 +22027,7 @@ RectTransform:
   m_Children:
   - {fileID: 803152226}
   - {fileID: 1645096619}
+  - {fileID: 126161662}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22488,15 +22558,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc795051f2d4045a5437cd4dee35b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 1167612858}
   num: 0
-  minDist: 2.5
-  go: 0
   targetVec:
   - {fileID: 1167612859}
   speed: 5
   step: 0
   countEnterTrigger: 0
+  boxtext: {fileID: 126161661}
 --- !u!65 &1138876035
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38687,15 +38755,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc795051f2d4045a5437cd4dee35b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 0}
   num: 0
-  minDist: 1
-  go: 0
   targetVec:
   - {fileID: 1289474488}
   speed: 5
   step: 0
   countEnterTrigger: 0
+  boxtext: {fileID: 126161661}
 --- !u!65 &1795240363
 BoxCollider:
   m_ObjectHideFlags: 0

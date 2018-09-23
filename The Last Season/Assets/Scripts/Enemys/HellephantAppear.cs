@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class HellephantAppear : MonoBehaviour {
 
-    public GameObject Killerhellephant;
-    public GameObject fourthReSpawn;
+    public GameObject Killerhellephant;     //Instantiate Killerhellephant
+    public GameObject fourthReSpawn;        //ReSpawn Point doing by kerstin
 
-    private Vector3 position2;
-    private Vector3 position;
+    private Vector3 position;               //saves first position for first row of Killerhellephants
+    private Vector3 position2;              //saves secound position for secound row of Killerhellephants
 
-    private float c = 1;
-    private float c1 = 1;
+    private float c = 1;                    //counter one
+    private float c1 = 1;                   //counter two
 
     void Awake()
     {
@@ -21,13 +21,12 @@ public class HellephantAppear : MonoBehaviour {
     }
 
     /*When player enter trigger, hellephants will appear.
-     * 2 whiles places  hellephants at defined position
+     * 2 whiles positions hellephants at defined position
      * c = amount of hellephants
      */
     void OnTriggerEnter(Collider other)
     {
         FindObjectOfType<AudioManager>().Play("Hellephant");
-
 
         if (other.gameObject.tag == "Player")
         {
