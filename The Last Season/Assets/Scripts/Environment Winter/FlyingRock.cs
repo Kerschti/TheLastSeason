@@ -17,6 +17,7 @@ public class FlyingRock : MonoBehaviour
     public GameObject firstCloud;
     public GameObject flyingIsland;
     public GameObject spawnPoint;
+    public GameObject rhinoPrefab;
 
     private Collider playerCollider;
     private PlayerMovement playerMove;
@@ -63,6 +64,7 @@ public class FlyingRock : MonoBehaviour
            
                 spawnPoint.SetActive(true);
                 Instantiate(flyingIsland, flyingIsland.transform.position, flyingIsland.transform.rotation);
+                Instantiate(rhinoPrefab, rhinoPrefab.transform.position, rhinoPrefab.transform.rotation);
                 animationPlays = true;
 
             }
