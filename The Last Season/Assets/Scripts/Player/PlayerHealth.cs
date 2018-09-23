@@ -5,41 +5,40 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public int health = 100;                    // Initial Health of player.
+    public Transform spawnPoint;                // Transform of the ReSpawn Point(if player dies he respawns there.)
 
-    public int health = 100;
-    public int curHealth;
-    public Transform spawnPoint;
-    private bool damaged;
-    private bool dead = false;
-    private Animator anim;
-    private PlayerMovement playerMove;
+    private bool dead = false;                  //bool that stores if player is dead.
+    private Animator anim;                      // Reference to players Animator.
+    private PlayerMovement playerMove;          // PlayerMovement script reference
     private float lastY;                        // Float that stores last Position of player when falling
     private float lastYTravelDistance;          // Float that stores the calculated distance traveled beween last frame of falling and now
     private float fallHeight = 0;               // Float to determine if falling.
     protected float deathHeight = 8;            // Float of max Height you can fall before dieing.
     private bool wasFalling = false;            // Determine if player fell in last frame.
-    private Vector3 playerSelf;
-
     [HideInInspector]
-    public bool isOnParaCloud = false;
+    public int curHealth;                       // Players Current Health.
+    [HideInInspector]
+    public bool isOnParaCloud = false;          // Check if player is on a cloud that is about to fly a parabola
 
 
     public Slider HealthBar;     //@Meltem
     
     void Start()
     {
+        // setting up Health for player and getting Components.
         curHealth = health;
         anim = GetComponent<Animator>();
         playerMove = GetComponent<PlayerMovement>();
-        //playerSelf = this.transform.lossyScale;
-
     }
 
 
     void FixedUpdate()
     {
+        // If player is and was not on a certain cloud (its an island now btw)...
         if (!isOnParaCloud)
         {
+            // Check if the player is falling & if he fell to his death.
             CheckForFall();
         }
     }
@@ -49,16 +48,11 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
 
-        damaged = true;
-
         curHealth -= amount;     //@Meltem
 
         HealthBar.value = curHealth;     //@Meltem
 
-
-
-        Debug.Log("Health of Player: " + curHealth);
-
+        // if player has no more health and is not dead already, die.
         if (curHealth <= 0 && !dead)
         {
             Death();
@@ -69,10 +63,12 @@ public class PlayerHealth : MonoBehaviour
 
     void Death()
     {
+        // Play dead sound, set dead bool to true and play animation.
         FindObjectOfType<AudioManager>().Play("Dead");
         dead = true;
         playerMove.enabled = false;
         anim.SetTrigger("IsDead");
+        //Start the Coroutine that brings him back to live.
         StartCoroutine(SpawnAfterSec());
 
     }
@@ -82,7 +78,6 @@ public class PlayerHealth : MonoBehaviour
 
         if (!playerMove.IsGrounded() && !playerMove.IsInWater())
         {
-            //Debug.Log("CHECKING FOR FALL NOW!");
 
             // Calculate the distance between players current height and the height he was in the last frame.
             lastYTravelDistance = transform.position.y - lastY;
@@ -93,56 +88,41 @@ public class PlayerHealth : MonoBehaviour
             // Cache players current Y position for comparison in the next frame.
             lastY = transform.position.y;
 
-            //store that a fall happened
-            //wasFalling = true;
-
-            //Debug.Log("Travel Distance: "+ lastYTravelDistance);
         }
-        else if (playerMove.IsGrounded() && !playerMove.IsInWater()/* && wasFalling*/)
+        else if (playerMove.IsGrounded() && !playerMove.IsInWater())
         {
 
             // Check to see if player passed the allowed falling distance and kill the player if necessary.
 
-            if (Mathf.Abs( fallHeight) >= deathHeight)
+            if (Mathf.Abs(fallHeight) >= deathHeight)
             {
                 TakeDamage(100);
-                Debug.Log("PLAYER IS DEAAAAD");
             }
-               
 
             //reset fall height since we landed (doesn't matter if we're dead or alive)
             fallHeight = 0;
 
-            //rest lastY
-            //lastY = transform.position.y;
-            //checked if player fell to death now prevent repeating
-            //wasFalling = false;
         }
 
     }
 
     private IEnumerator SpawnAfterSec()
     {
+        // when player died, wait for some seconds
         yield return new WaitForSeconds(5f);
+        // then reset everything and bring him to the last spawnpoint position.
+        dead = false;
         transform.position = spawnPoint.position;
         curHealth = health;
         playerMove.enabled = true;
-        dead = false;
 
         anim.SetTrigger("Respawned");
     }
 
+    // Function for setting the actual spawnPoint.
     public void SetSpawnPoint(Transform _spawnPoint)
     {
         spawnPoint = _spawnPoint;
     }
-
-
-    /*
-     * Spieler unsterblich
-     * Sphere erreicht, Spieler kann nicht sterben
-     * Fallhight sollte automatisch null sein, ist jetzt wieder grounded
-     * 
-     */
 
 }

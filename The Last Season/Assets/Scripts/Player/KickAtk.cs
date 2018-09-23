@@ -4,28 +4,18 @@ using UnityEngine;
 
 public class KickAtk : MonoBehaviour {
 
-    public int amount = 20;
+    public int amount = 20;                     // the amount of damage the player does.
    
-
     private void OnTriggerEnter(Collider other)
     {
         
 
         if(other.gameObject.CompareTag("Fightable"))
         {
-            Debug.Log("TRIGGER ENTER!!!");
+            // if the other GameObject is an Enemy, damage it.
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             enemyHealth.TakeDamage(amount);
         }
     }
 
-    // Use this for initialization
-    void Start () {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

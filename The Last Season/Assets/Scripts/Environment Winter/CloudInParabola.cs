@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class CloudInParabola : MonoBehaviour {
 
-    public Transform end;
-    public GameObject player;
-    public Transform father;
-    public GameObject parcours;
-    public GameObject firstIsland;
-    public Vector3 velocity;
-    public float speed = 5f;
+    public Transform end;                       // The Point where the Island should finally land.
+    public GameObject player;                   // Reference to player.
+    public Transform father;                    // Father transform of triggerObject.
+    public GameObject parcours;                 // Parcours prefab.
+    public GameObject firstIsland;              // reference to first Island of parcours. 
 
-    private Vector3 startPos;
+
+    private Vector3 startPos;                   
     private Vector3 endPos;
     private bool startAnim = false;
     private float animTimer;
@@ -20,8 +19,8 @@ public class CloudInParabola : MonoBehaviour {
 
     private void Start()
     {
+        // initializing the positions and getting reference to player health script.
         startPos = father.position;
-        //endPos = new Vector3(transform.position.x + 10, 0, transform.position.z);
         endPos = end.position;
         playerHealth = player.GetComponent<PlayerHealth>();
     }
@@ -30,6 +29,7 @@ public class CloudInParabola : MonoBehaviour {
     {
         if(other.CompareTag("Player"))
         {
+            // making sure player won't die if he comes from cloud and start the animation
             startAnim = true;
             playerHealth.isOnParaCloud = true;
 
@@ -40,7 +40,7 @@ public class CloudInParabola : MonoBehaviour {
     {
         if(other.CompareTag("Player"))
         {
-            //playerHealth.isOnParaCloud = false;
+            // blow up the whole parcours after player left it, no need to come back.
             Destroy(firstIsland, 4f);
             Destroy(parcours, 6f);
 
@@ -52,6 +52,7 @@ public class CloudInParabola : MonoBehaviour {
     {
         if(player == null)
         {
+            // Sometimes player, playerhealth & firstIsland are not found so to be sure, check a second time.
             player = GameObject.FindGameObjectWithTag("Player");
             playerHealth = player.GetComponent<PlayerHealth>();
             if (firstIsland == null)
@@ -60,10 +61,11 @@ public class CloudInParabola : MonoBehaviour {
 
         if(startAnim)
         {
+            // let the Island fly in a nice Parabola.
             animTimer += Time.deltaTime;
             father.position = Parabola.Parabola1(startPos, endPos, 5f, animTimer / 7f);
-            //father.position = Vector3.SmoothDamp(father.position, endPos, ref velocity, speed);
-            Debug.Log("POSITION ISLAND: "+ father.position);
+
+            // when done stop animating.
             if(father.position.y <= 0)
             {
                 startAnim = false;

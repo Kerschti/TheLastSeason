@@ -5,32 +5,21 @@ using UnityEngine;
 public class FlyingRock : MonoBehaviour
 {
 
-
-    //public GameObject rock;
-    public GameObject player;
-    public float height;
-    public float speed;
-    public Vector3 velocity;
-    public GameObject _groundParticles;
-    public GameObject holder;
-    public GameObject secIsle;
-    public GameObject firstCloud;
+    public GameObject player;               //reference to player.       
+    public float height;                    // height which to fly.
+    public float speed;                     //speed at which to go.
+    public Vector3 velocity;                //the velocity
+    public GameObject _groundParticles;     //Particle system which to play 
+    // The diverse objects to be set active when player enters the firstIsland.
     public GameObject flyingIsland;
     public GameObject spawnPoint;
     public GameObject rhinoPrefab;
 
-    private Collider playerCollider;
-    private PlayerMovement playerMove;
+    private Collider playerCollider;        // Reference to playerCollider.
     private Transform firstRock;
-    private Vector3 startingPos;
     private Vector3 newPos;
     private ParticleSystem groundParticles;
-    private Animation animSecIsle;
-    private Animation animCloud;
-    private IslandFly animScript;
-
-
-
+    //booleans to determine what to do next.
     private bool hasMoved = false;
     private bool moving = false;
     private bool animationPlays = false;
@@ -41,14 +30,9 @@ public class FlyingRock : MonoBehaviour
     void Start()
     {
         playerCollider = player.GetComponent<Collider>();
-        playerMove = player.GetComponent<PlayerMovement>();
         groundParticles = _groundParticles.GetComponent<ParticleSystem>();
-        animSecIsle = secIsle.GetComponent<Animation>();
-        animCloud = firstCloud.GetComponent<Animation>();
         firstRock = this.transform;
-        startingPos = firstRock.position;
         newPos = new Vector3(firstRock.position.x, height, firstRock.position.z);
-        animScript = holder.GetComponent<IslandFly>();
 
     }
 
@@ -61,7 +45,7 @@ public class FlyingRock : MonoBehaviour
             firstRock.position = Vector3.SmoothDamp(firstRock.position, newPos, ref velocity, speed);
             if(!animationPlays)
             {
-           
+                //if nothing is instantiated yet, instantiate the rest of the parcour.
                 spawnPoint.SetActive(true);
                 Instantiate(flyingIsland, flyingIsland.transform.position, flyingIsland.transform.rotation);
                 Instantiate(rhinoPrefab, rhinoPrefab.transform.position, rhinoPrefab.transform.rotation);
@@ -71,6 +55,7 @@ public class FlyingRock : MonoBehaviour
 
             if (firstRock.position == newPos)
             {
+                //stop moving if the Island reached final Position.
                 moving = false;
 
             }
@@ -81,8 +66,8 @@ public class FlyingRock : MonoBehaviour
     {
         if (collision.collider == playerCollider && !hasMoved)
         {
+            //Start moving, play sound and ground particles when player enters the Island.
             FindObjectOfType<AudioManager>().Play("FirstIsland");
-
             collision.collider.transform.SetParent(transform);
             moving = true;
             groundParticles.Play();
@@ -94,9 +79,8 @@ public class FlyingRock : MonoBehaviour
     {
         if (collision.collider == playerCollider)
         {
-            collision.collider.transform.SetParent(null);
-            FindObjectOfType<AudioManager>().Pause("FirstIsland");
 
+            collision.collider.transform.SetParent(null);
         }
     }
 

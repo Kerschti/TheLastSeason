@@ -7,7 +7,7 @@ public class TreeManager : MonoBehaviour
 
     public int numObjects = 10;     // Integer value of how many of each trees Object will be spawned.
     public GameObject[] trees;      // GameObject Array of tree GameObjects.
-    //float radius;                   
+                
 
 
     void Start()

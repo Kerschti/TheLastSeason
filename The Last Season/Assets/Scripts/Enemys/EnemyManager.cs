@@ -25,7 +25,6 @@ public class EnemyManager : MonoBehaviour
 	void Start () {
 
         spawnArea = GetComponent<Collider>();
-        //_spawnAreaPos = spawnArea.position;
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
         InvokeRepeating("Spawn", spawnTime, spawnTime);
@@ -41,18 +40,17 @@ public class EnemyManager : MonoBehaviour
     {
         if (spawnArea.bounds.Contains(spawnPos))
         {
-            Debug.Log("Bounds contain the point : " + spawnPos);
             return true;
         }
         else
         {
-            Debug.Log("POSITION NOT IN SPAWN");
             return false;
         }
     }
 
 
     void Spawn(){
+
         if(playerHealth.curHealth <= 0f) return;
 
         if (spawnCount > upperSpawnLimit && spawnInstance)
