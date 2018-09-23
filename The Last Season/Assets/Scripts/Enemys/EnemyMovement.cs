@@ -37,6 +37,7 @@ public class EnemyMovement : MonoBehaviour {
             if (isRhino)
             {
                 nav.enabled = true;
+                nav.SetDestination(player.position);
                 //
                 anim.SetBool("IsWalking", true);
                 if (rhinoFire.IstriggerEnter())

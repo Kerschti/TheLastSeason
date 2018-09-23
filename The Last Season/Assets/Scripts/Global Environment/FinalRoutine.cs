@@ -14,6 +14,7 @@ public class FinalRoutine : MonoBehaviour {
     public float duration = 20;
     public Light directionallight;
     public Gradient gradient;
+    public GameObject finalScreen;
 
     float t;
 
@@ -33,6 +34,7 @@ public class FinalRoutine : MonoBehaviour {
     public void TheEnd()
     {
         flash.notTheEnd = false;
+        FindObjectOfType<AudioManager>().Pause("Theme");
         dust.Stop();
         rain.Stop();
         RenderSettings.skybox = skybox;
@@ -43,6 +45,16 @@ public class FinalRoutine : MonoBehaviour {
             t += Time.deltaTime / duration;
             directionallight.color = gradient.Evaluate(value);
         }
+        StartCoroutine(StopGame());
 
+    }
+
+    IEnumerator StopGame()
+    {
+        yield return new WaitForSeconds(5);
+        finalScreen.SetActive(true);
+        yield return new WaitForSeconds(10);
+        Debug.Log("Application Quit now");
+        Application.Quit();
     }
 }

@@ -45,7 +45,11 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) return;
         currentHealth -= amount;
-        particles.Play();
+        if(!isRhino)
+        {
+            particles.Play();
+        }
+
         Debug.Log("Health of Enemy:" + currentHealth);
         if (currentHealth <= 0){
             Death();
