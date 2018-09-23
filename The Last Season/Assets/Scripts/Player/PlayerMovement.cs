@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     public void Awake()
     {
         // Create a layer mask for the floor layer.
-        Debug.Log(Object.FindObjectOfType<EnemyManager>());
+//        Debug.Log(Object.FindObjectOfType<EnemyManager>());
         floorMask = LayerMask.GetMask("Floor");
         waterMask = LayerMask.GetMask("Water");
         spawnAreaMask = LayerMask.GetMask("SpawnArea");

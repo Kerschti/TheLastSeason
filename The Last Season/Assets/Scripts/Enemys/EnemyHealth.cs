@@ -6,6 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
 
     public int initalHealth = 50;
+    
+    
 
 
     private Animator anim;
@@ -14,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
     [HideInInspector]
     public int currentHealth;
 
+    private bool isRhino = false;
+  
 
 
 
@@ -22,6 +26,8 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = initalHealth;
         anim = GetComponent<Animator>();
+        if (this.name == "Rhino_PBR") isRhino = true;
+
     }
 
     // Update is called once per frame
@@ -46,6 +52,11 @@ public class EnemyHealth : MonoBehaviour
         anim.SetTrigger("Dead");
 
         Destroy(gameObject, 3.0f);
+        if(isRhino)
+        {
+            Object.FindObjectOfType<FinalRoutine>().TheEnd();
+        }
+        
 
     }
 }

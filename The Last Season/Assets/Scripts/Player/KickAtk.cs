@@ -13,6 +13,7 @@ public class KickAtk : MonoBehaviour {
 
         if(other.gameObject.CompareTag("Fightable"))
         {
+            Debug.Log("TRIGGER ENTER!!!");
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             enemyHealth.TakeDamage(amount);
         }

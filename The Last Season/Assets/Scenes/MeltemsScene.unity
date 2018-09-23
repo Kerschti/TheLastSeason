@@ -15372,7 +15372,7 @@ MonoBehaviour:
   - {fileID: 1217889647}
 --- !u!1 &865454943 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1373711680895804, guid: 5f5bbc7195c114f478418af701980dbe,
+  m_CorrespondingSourceObject: {fileID: 1953447682349204, guid: 83532b7ce9c30442e998fde8f8afdb81,
     type: 2}
   m_PrefabInternal: {fileID: 1125987740}
 --- !u!1001 &872964783
@@ -16419,58 +16419,58 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_LocalPosition.x
       value: 140.16998
       objectReference: {fileID: 0}
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_LocalPosition.y
       value: 6.1746273
       objectReference: {fileID: 0}
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_LocalPosition.z
       value: 156.04082
       objectReference: {fileID: 0}
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_LocalRotation.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4647499587653064, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 4214080791766632, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114057081864154946, guid: 5f5bbc7195c114f478418af701980dbe,
+    - target: {fileID: 114775026382827374, guid: 83532b7ce9c30442e998fde8f8afdb81,
         type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 367814435}
-    - target: {fileID: 114057081864154946, guid: 5f5bbc7195c114f478418af701980dbe,
+    - target: {fileID: 114775026382827374, guid: 83532b7ce9c30442e998fde8f8afdb81,
         type: 2}
       propertyPath: firstIsland
       value: 
       objectReference: {fileID: 1196803633}
-    - target: {fileID: 1373711680895804, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 1953447682349204, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_Name
       value: FlyingIsland
       objectReference: {fileID: 0}
-    - target: {fileID: 1373711680895804, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+    - target: {fileID: 1953447682349204, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5f5bbc7195c114f478418af701980dbe, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 83532b7ce9c30442e998fde8f8afdb81, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1128291947
 Prefab:
@@ -21442,7 +21442,7 @@ MonoBehaviour:
   holder: {fileID: 865454943}
   secIsle: {fileID: 1423452402}
   firstCloud: {fileID: 2070848307}
-  flyingIsland: {fileID: 1373711680895804, guid: 5f5bbc7195c114f478418af701980dbe,
+  flyingIsland: {fileID: 1953447682349204, guid: 83532b7ce9c30442e998fde8f8afdb81,
     type: 2}
   spawnPoint: {fileID: 684135994}
 --- !u!54 &1196803636
@@ -22148,7 +22148,7 @@ Transform:
   m_PrefabInternal: {fileID: 723749353}
 --- !u!1 &1423452402 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1512118259573342, guid: 5f5bbc7195c114f478418af701980dbe,
+  m_CorrespondingSourceObject: {fileID: 1871303501192266, guid: 83532b7ce9c30442e998fde8f8afdb81,
     type: 2}
   m_PrefabInternal: {fileID: 1125987740}
 --- !u!1 &1446981514
@@ -22317,6 +22317,10 @@ Prefab:
     - target: {fileID: 4718715879714274, guid: f4b63c56bbeee7c4f89c5dd526a912d5, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056357666240436, guid: f4b63c56bbeee7c4f89c5dd526a912d5, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4b63c56bbeee7c4f89c5dd526a912d5, type: 2}
@@ -27024,7 +27028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a50fbf03b4454884b4a7a791fb50854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initalHealth: 50
+  initalHealth: 1000
   isDead: 0
   currentHealth: 0
 --- !u!82 &1617278032
@@ -28368,6 +28372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashingTime: 0.5
+  notTheEnd: 1
 --- !u!1 &2050355397
 GameObject:
   m_ObjectHideFlags: 0
@@ -28398,7 +28403,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070848307 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1231115588391392, guid: 5f5bbc7195c114f478418af701980dbe,
+  m_CorrespondingSourceObject: {fileID: 1780168856641688, guid: 83532b7ce9c30442e998fde8f8afdb81,
     type: 2}
   m_PrefabInternal: {fileID: 1125987740}
 --- !u!4 &2102626148 stripped

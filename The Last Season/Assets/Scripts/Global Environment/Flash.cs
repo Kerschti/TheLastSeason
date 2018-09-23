@@ -11,6 +11,8 @@ public class Flash : MonoBehaviour
     public float flashingTime = 0.5f;
     private float waitingTime;
     private Light lightning;
+    [HideInInspector]
+    public bool notTheEnd = true;
 
     // Use this for initialization
     void Start()
@@ -26,7 +28,7 @@ public class Flash : MonoBehaviour
     private IEnumerator StartFlash()
     {
 
-        while (true)
+        while (notTheEnd)
         {
             lightning.intensity = 0;
             yield return new WaitForSecondsRealtime(waitingTime);
@@ -34,5 +36,9 @@ public class Flash : MonoBehaviour
             lightning.intensity = 1;
             yield return new WaitForSeconds(flashingTime);
         }
+        lightning.intensity = 0;
+        Debug.Log("Done");
+        yield break;
+
     }
 }
