@@ -5400,10 +5400,30 @@ MonoBehaviour:
     volume: 1
     loop: 1
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: d0180829123152d46a79bf1737998aab, type: 3}
-    name: House
+  - clip: {fileID: 8300000, guid: f58adcda154b61a4d806fb7835286f62, type: 3}
+    name: Footsteps
     volume: 1
     loop: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 1a52231af49a60e4ea320d1c70cb18e4, type: 3}
+    name: DeadIsland
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 6fb33fc922c062f4b91ccfbaf780b6d9, type: 3}
+    name: Wind
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: ca2ddb73eb1f9ae4eb30da15ad849b7b, type: 3}
+    name: Dead
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: efa5c5e27fea8ac4ab9207027ce24d2b, type: 3}
+    name: FirstIsland
+    volume: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!1001 &550181011
 Prefab:
