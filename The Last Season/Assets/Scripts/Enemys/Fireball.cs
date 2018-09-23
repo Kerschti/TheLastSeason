@@ -36,7 +36,7 @@ public class Fireball : MonoBehaviour {
         if (playerhealth.curHealth > 0)
         {
             playerhealth.TakeDamage(attackDamage);
-            Debug.Log(playerhealth);
+           // Debug.Log(playerhealth);
         }
     }
 

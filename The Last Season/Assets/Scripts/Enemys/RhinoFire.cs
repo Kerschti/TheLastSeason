@@ -20,7 +20,7 @@ public class RhinoFire : MonoBehaviour {
     {
         transform.LookAt(player);
         bool value = IstriggerEnter();
-        Debug.Log("Trigger enter is:" + value);
+       // Debug.Log("Trigger enter is:" + value);
         shouting.SetBool("IsShouting", value);
     }
 
