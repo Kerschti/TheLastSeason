@@ -37,6 +37,7 @@ public class Flash : MonoBehaviour
             yield return new WaitForSeconds(flashingTime);
         }
         lightning.intensity = 0;
+        Debug.Log("Done");
         yield break;
 
     }
