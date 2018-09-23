@@ -6,36 +6,17 @@ using UnityEditor;
 
 public class Watercurrent : MonoBehaviour {
 
-    public GameObject waypoints;
-    private GameObject player;
-    public int num = 0;
+    private PlayerMovement playerMovement;      //stop it, if player is moving to waypoint
+    private GameObject player;                  //to get position
+    public Transform[] targetVec;               //Target current point for player
 
-    public float minDist;
+    Vector3 targetPos;                          //temp save variable for TargetVec        
 
-    public bool go = false;
+    public float speed;                         //speed from player position to target position
+    private float step;                         //temp variable to save speed
 
-    public Transform[] targetVec;
-
-    //Vector3[] targetVec = new[] { new Vector3(8f, 0.5f, -36f),
-    //    new Vector3(-16f, 0.5f, 20f),
-    //    new Vector3(0.3f, 0.5f, 12f),
-    //    new Vector3(16f, 0.5f, 27f),
-    //    new Vector3(-16f, 0.5f, -25f) };
-
-    Vector3 targetPos;
-    Vector3 playerPos;
-
-    public float speed;
-    public float step;
-
-    public int countEnterTrigger = 0;
-
-    private PlayerMovement playerMovement;
-
-    private GameObject curNum;
-    private GameObject curName;
-
-    private string colName;
+    public int countEnterTrigger = 0;           //is trigger enter -> 1 = go, other no
+    public GameObject boxtext;                  //to display text "Oh no, I'm in water currents!!"
 
 
     // Use this for initialization
@@ -45,93 +26,41 @@ public class Watercurrent : MonoBehaviour {
         playerMovement = player.GetComponent<PlayerMovement>();
     }
 
-    //string OnCollisionEnter(Collision collide)
-    //{
-    //    Debug.Log("COLLISION NAME: " + collide.gameObject.tag);    //void OnTriggerEnter(Collider other)
-    //    {
-    //        if (other.gameObject.tag == "Player")
-    //        {
-    //            playerMovement.onWayBetweenWaypoints = true;
-
-    //            countEnterTrigger++;
-
-    //            Debug.Log("EnterTrigger" + countEnterTrigger);
-
-    //        }
-
-    //    }
-    //    return colName = collide.gameObject.tag;
-
-    //}
-
+    //If Trigger enter playermovement will stopp and trigger counter set to 1
+    //Text will display
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
+            boxtext.SetActive(true);
             playerMovement.onWayBetweenWaypoints = true;
-
-            countEnterTrigger++;
-            Debug.Log("EnterTrigger" + countEnterTrigger);
+            countEnterTrigger = 1;
         }
     }
 
-
-
+    //counting speed and save targetpos and call Move with ist
     void Update()
     {
         step = speed * Time.deltaTime;
 
-        switch (countEnterTrigger)
+        if(countEnterTrigger == 1)
         {
-            case 1:
-                Debug.Log("Target 1 im Visier");
-                targetPos = targetVec[0].transform.position;
-
-                Move(targetPos);
-                //countEnterTrigger = 2;
-                break;
-            case 2:
-                targetPos = targetVec[1].transform.position;
-                Move(targetPos);
-                countEnterTrigger = 3;
-
-                break;
-            case 3:
-                targetPos = targetVec[2].transform.position;
-                Move(targetPos);
-                countEnterTrigger = 2;
-
-                break;
-            case 4:
-                targetPos = targetVec[3].transform.position;
-                Move(targetPos);
-                break;
-            case 5:
-                targetPos = targetVec[4].transform.position;
-                Move(targetPos);
-                break;
-            default:
-                Debug.Log("Ende");
-                break;
-
+            targetPos = targetVec[0].transform.position;
+            Move(targetPos);
         }
-
     }
 
+    //Move will speed player to target position and set trigger to default number
     void Move(Vector3 target)
     {
-        Debug.Log("Target in Move " + target);
         player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
-        //Debug.Log("PlayerPosition " + player.transform.position);
 
         if (player.transform.position == target)
         {
             playerMovement.onWayBetweenWaypoints = false;
-            Debug.Log("ist am Ende angekommen");
-            countEnterTrigger = 8;
-
+            countEnterTrigger = 42;
+            boxtext.SetActive(true);
         }
-
 
     }
 
