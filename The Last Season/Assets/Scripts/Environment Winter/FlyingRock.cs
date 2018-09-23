@@ -81,6 +81,8 @@ public class FlyingRock : MonoBehaviour
     {
         if (collision.collider == playerCollider && !hasMoved)
         {
+            FindObjectOfType<AudioManager>().Play("FirstIsland");
+
             collision.collider.transform.SetParent(transform);
             moving = true;
             groundParticles.Play();
@@ -93,6 +95,8 @@ public class FlyingRock : MonoBehaviour
         if (collision.collider == playerCollider)
         {
             collision.collider.transform.SetParent(null);
+            FindObjectOfType<AudioManager>().Pause("FirstIsland");
+
         }
     }
 

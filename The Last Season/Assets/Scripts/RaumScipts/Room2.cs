@@ -50,7 +50,8 @@ public class Room2 : MonoBehaviour
 
 	void Start()
 	{
-		pfad = new GameObject().transform;
+
+        pfad = new GameObject().transform;
 
 		// Verwendet feste Segmentgroesse wenn aktiv
 		if (fixSegmentBreite)
