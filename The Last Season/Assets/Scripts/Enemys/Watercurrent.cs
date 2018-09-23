@@ -45,24 +45,24 @@ public class Watercurrent : MonoBehaviour {
         playerMovement = player.GetComponent<PlayerMovement>();
     }
 
-    string OnCollisionEnter(Collision collide)
-    {
-        Debug.Log("COLLISION NAME: " + collide.gameObject.tag);    //void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.tag == "Player")
-            {
-                playerMovement.onWayBetweenWaypoints = true;
+    //string OnCollisionEnter(Collision collide)
+    //{
+    //    Debug.Log("COLLISION NAME: " + collide.gameObject.tag);    //void OnTriggerEnter(Collider other)
+    //    {
+    //        if (other.gameObject.tag == "Player")
+    //        {
+    //            playerMovement.onWayBetweenWaypoints = true;
 
-                countEnterTrigger++;
+    //            countEnterTrigger++;
 
-                Debug.Log("EnterTrigger" + countEnterTrigger);
+    //            Debug.Log("EnterTrigger" + countEnterTrigger);
 
-            }
+    //        }
 
-        }
-        return colName = collide.gameObject.tag;
+    //    }
+    //    return colName = collide.gameObject.tag;
 
-    }
+    //}
 
 
 

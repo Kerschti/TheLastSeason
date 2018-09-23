@@ -39,6 +39,8 @@ public class RhinoFire : MonoBehaviour {
         {
             triggerEnter = false;
             StopCoroutine("Shooting");
+            FindObjectOfType<AudioManager>().Pause("Rino");
+
         }
     }
 
