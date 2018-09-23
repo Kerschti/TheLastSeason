@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KickAtk : MonoBehaviour {
 
-    int amount = 20;
+    public int amount = 20;
    
 
     private void OnTriggerEnter(Collider other)
