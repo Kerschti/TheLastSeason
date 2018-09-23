@@ -2,28 +2,32 @@
 using UnityEngine;
 using Unity.Collections;
 
-public class RoomTestScript : MonoBehaviour
+public class Room1 : MonoBehaviour
 {
+	//FindObjectOfType<AudioManager>().Play("House");
+
 	private float a, b; // xy
 
-	float segHoehe = 5.0f; //height
+	float segHoehe = 9.0f; //height
 
-	float segTiefe = 0.25f;  //depth
+	float segTiefe = 0.25f; //depth
 
 	float segBreite = 0.0f;
-	
+
 	private bool fixSegmentBreite = true;
 
 	float fixedSegBreite = 5.0f; // Seg width
 
 	private Vector3 erstesSeg = Vector3.zero;
-	
+
 	//private Vector3 erstesSeg = erstesSeg.(new Vector3(-5, 0, -5));
 
-	Transform pfad; //path
+	//Konstruktionspfad
+	Transform pfad;
 
-	public GameObject wallSegPref; //Pfad
-
+	//Zuweisungen mit mittels ObjectInsepctor
+	public GameObject wallSegPref;
+	/*
 	public GameObject CoffeePrefab;
 
 	public GameObject CouchPrefab;
@@ -32,13 +36,15 @@ public class RoomTestScript : MonoBehaviour
 
 	public GameObject CabinetPrefab;
 
-	public GameObject DoorPrefab;
-	
+	public GameObject DoorPrefab;*/
+
+	//Liste die Wandsegmente enthält
 	private List<GameObject> wallSegList = new List<GameObject>();
 
-	private bool ersteSeg = true; //firstSegment
-	
-	
+	//Erstes Segment
+	private bool ersteSeg = true;
+
+
 	public void Zufall()
 	{
 		for (int i = 1; i <= 10; i++)
@@ -56,26 +62,29 @@ public class RoomTestScript : MonoBehaviour
 	{
 		pfad = new GameObject().transform;
 
+		// Verwendet feste Segmentgroesse wenn aktiv
 		if (fixSegmentBreite)
 		{
 			segBreite = fixedSegBreite;
 		}
-	
+
+		//Grundriss des Raumes
 		CreateWall();
 		CreateWall();
 		Turn(-90.0f);
-		CreateWall();		
+		CreateWall();
+		CreateWall();
+		CreateWall();
+		Turn(-90.0f);
 		CreateWall();
 		CreateWall();
 		Turn(-90.0f);
 		CreateWall();
 		CreateWall();
-		Turn(-90.0f);
-		CreateWall();		
-		CreateWall();	
 		CreateWall();
-		
-		//Coffee Table
+
+		/*//Coffee Table
+		// Speichervariable positoniert sich an dem Wandsegment in der Liste
 		Vector3 tmpCofPos = wallSegList[4].transform.position;
 		tmpCofPos = tmpCofPos + new Vector3(-5.44f - tmpCofPos.x, 0f, -1.18f - tmpCofPos.z);
 		
@@ -118,18 +127,18 @@ public class RoomTestScript : MonoBehaviour
 		Quaternion tmpDoorPrefabRot = DoorPrefab.transform.rotation;
 		tmpDoorPrefabRot = tmpDoorPrefabRot * Quaternion.Euler(0f, 0f, 0f);
 		
-		GameObject tmpDoorPrefab = (GameObject)Instantiate(DoorPrefab, tmpDoorPrefabPos, tmpDoorPrefabRot);
-		
+		GameObject tmpDoorPrefab = (GameObject)Instantiate(DoorPrefab, tmpDoorPrefabPos, tmpDoorPrefabRot);*/
+
 	}
-	
-		public void CreateWall()
+
+	public void CreateWall()
 	{
 		GameObject wallSeg;
 
 		if (!fixSegmentBreite)
 		{
 			int segWidth = Random.Range(7, 12);
-			segBreite = (float)segWidth;
+			segBreite = (float) segWidth;
 			Debug.Log("SegmentWidth = " + segWidth);
 		}
 
@@ -142,23 +151,29 @@ public class RoomTestScript : MonoBehaviour
 		{
 			pfad.Translate(new Vector3(segBreite / 2, 0, 0));
 		}
-			
+
 		ersteSeg = false;
 
 		Debug.Log("PathPos = " + pfad.position);
 		Debug.Log("PathRot = " + pfad.rotation);
 
-		wallSeg = (GameObject)Instantiate(wallSegPref, pfad.transform.position, pfad.transform.rotation);
+		// Neues Wandsegment wird angelegent
+		wallSeg = (GameObject) Instantiate(wallSegPref, pfad.transform.position, pfad.transform.rotation);
+		// Wandsegement wird scaliert
 		wallSeg.transform.localScale += new Vector3(segBreite, segHoehe, segTiefe);
+		// Wandsegment wird in Segementliste hinzugefügt
 		wallSegList.Add(wallSeg);
 		pfad.Translate(new Vector3(segBreite / 2, 0, 0));
-		
+
 	}
 
 	private void Turn(float angle)
 	{
+		// Halbe Tiefe, nur somit sind die Ecken richtig ausgerichtete sind in der Z-Achse
 		pfad.transform.Translate(new Vector3(0, 0, segTiefe / 2));
+		// Anwendung der Rotation
 		pfad.transform.Rotate(0.0f, angle, 0.0f);
+		// Halbe Tiefen, damit Ecken richtig ausgerichtet sind in der X-Achse
 		pfad.transform.Translate(new Vector3(0, 0, segTiefe / 2));
 	}
 }

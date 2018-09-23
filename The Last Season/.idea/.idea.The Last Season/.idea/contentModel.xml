@@ -5,7 +5,16 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AudioManager.cs" t="Include" />
         <e p="bla.cs" t="Include" />
+        <e p="BrokenVector" t="Include">
+          <e p="LowPolyShaders" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="LowPolyPBRShader.shader" t="Include" />
+              <e p="LowPolyUnlitShader.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Downloads" t="Include">
           <e p="RoomMobel" t="Include">
             <e p="HQ Old Books" t="Include">
@@ -205,6 +214,7 @@
         <e p="LowPolyWater" t="Include">
           <e p="Water.cs" t="Include" />
         </e>
+        <e p="NewBehaviourScript.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Enemys" t="Include">
             <e p="BulletParabola.cs" t="Include" />
@@ -233,6 +243,8 @@
             <e p="CameraFollow.cs" t="Include" />
             <e p="Flash.cs" t="Include" />
             <e p="HoldPlayer.cs" t="Include" />
+            <e p="RespawnEnter.cs" t="Include" />
+            <e p="RespawnManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="KickAtk.cs" t="Include" />
@@ -245,9 +257,12 @@
             <e p="DoorOpen1.cs" t="Include" />
             <e p="DoorOpenGarten.cs" t="Include" />
             <e p="DoorOpenHouse.cs" t="Include" />
+            <e p="Room1.cs" t="Include" />
+            <e p="Room2.cs" t="Include" />
             <e p="RoomTestScript.cs" t="Include" />
           </e>
         </e>
+        <e p="Sound.cs" t="Include" />
         <e p="Stylized Mushroom" t="Include">
           <e p="Shader" t="Include">
             <e p="mushroom.shader" t="Include" />
@@ -260,9 +275,7 @@
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
       <e p="The Last Season.sln" t="IncludeFlat" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_The Last Season.1424177501.00" t="ExcludeRecursive" />
