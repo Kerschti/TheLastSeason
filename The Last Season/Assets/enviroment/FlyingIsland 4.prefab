@@ -1987,8 +1987,6 @@ MonoBehaviour:
   father: {fileID: 4682044157525418}
   parcours: {fileID: 1953447682349204}
   firstIsland: {fileID: 0}
-  velocity: {x: 0, y: 0, z: 0}
-  speed: 5
 --- !u!114 &114817226351818798
 MonoBehaviour:
   m_ObjectHideFlags: 1
